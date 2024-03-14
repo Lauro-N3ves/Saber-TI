@@ -1,0 +1,37 @@
+object frmFormExc2: TfrmFormExc2
+  Left = 379
+  Height = 491
+  Top = 155
+  Width = 540
+  Caption = 'frmFormExc2'
+  ClientHeight = 491
+  ClientWidth = 540
+  Color = clInfoBk
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 112
+    Height = 20
+    Top = 88
+    Width = 256
+    Caption = 'DIGITE O CAPTION QUE VOCÊ DESEJA:'
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 28
+    Top = 120
+    Width = 256
+    TabOrder = 0
+    OnChange = Edit1Change
+  end
+  object Button1: TButton
+    Left = 176
+    Height = 40
+    Top = 168
+    Width = 126
+    Caption = 'TROCAR'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
