@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="uocultarimg.pas"/>
@@ -22,17 +22,57 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uOcultarImg"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="17"/>
-        <CursorPos X="45" Y="42"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="4"/>
+        <CursorPos X="45" Y="18"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="10">
       <Position>
         <Filename Value="uocultarimg.pas"/>
-        <Caret Line="42" Column="15" TopLine="16"/>
+        <Caret Line="42" Column="23" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="25" Column="40" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="47" Column="6" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="43" Column="3" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="48" Column="29" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="49" Column="27" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="43" Column="8" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="53" Column="9" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="46" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="38" Column="9" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="uocultarimg.pas"/>
+        <Caret Line="44" Column="5" TopLine="19"/>
       </Position>
     </JumpHistory>
     <RunParams>

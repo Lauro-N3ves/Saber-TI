@@ -1,7 +1,7 @@
 object frmFormExc3: TfrmFormExc3
-  Left = 379
+  Left = 337
   Height = 629
-  Top = 155
+  Top = 165
   Width = 825
   Caption = 'frmFormExc3'
   ClientHeight = 629
@@ -26,12 +26,11 @@ object frmFormExc3: TfrmFormExc3
     Caption = 'CLIQUE PARA OCULTAR A IMAGEM'
   end
   object Image1: TImage
-    Left = 136
-    Height = 448
-    Top = 152
-    Width = 448
+    Left = 208
+    Height = 410
+    Top = 168
+    Width = 400
     Enabled = False
-    OnClick = Image1Click
     ParentShowHint = False
     Picture.Data = {
       0A544A706567496D6167653B830000FFD8FFE000104A46494600010200000100
@@ -1086,7 +1085,6 @@ object frmFormExc3: TfrmFormExc3
       7632E24D3EE9BBB8EEF12BAF106AF86E3B5F10F16A16736DBDF9259902C6A972
       7D1F939952A7E713FFD9
     }
-    Proportional = True
-    Visible = False
+    Stretch = True
   end
 end

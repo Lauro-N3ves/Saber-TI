@@ -16,7 +16,6 @@ type
     Image1: TImage;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
-    procedure Image1Click(Sender: TObject);
   private
 
   public
@@ -35,12 +34,11 @@ implementation
 procedure TfrmFormExc3.Button1Click(Sender: TObject);
 begin
 
-end;
-
-procedure TfrmFormExc3.Image1Click(Sender: TObject);
-begin
- Image1.Visible:=False;
-end;
-
+  if Image1.Visible = true then
+     Image1.Visible:=false
+  else
+    Image1.Visible:= true;
+  end;
 end.
+
 
