@@ -1,0 +1,124 @@
+object PrincipalF: TPrincipalF
+  Left = 375
+  Height = 564
+  Top = 150
+  Width = 638
+  Caption = 'Média Classe'
+  ClientHeight = 564
+  ClientWidth = 638
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 64
+    Height = 20
+    Top = 117
+    Width = 48
+    Caption = 'Nota 1:'
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 125
+    Height = 28
+    Top = 112
+    Width = 100
+    TabOrder = 0
+    OnChange = Edit1Change
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 20
+    Top = 151
+    Width = 48
+    Caption = 'Nota 2:'
+    OnClick = Label1Click
+  end
+  object Edit2: TEdit
+    Left = 125
+    Height = 28
+    Top = 146
+    Width = 100
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 234
+    Height = 20
+    Top = 117
+    Width = 48
+    Caption = 'Nota 3:'
+    OnClick = Label1Click
+  end
+  object Edit3: TEdit
+    Left = 295
+    Height = 28
+    Top = 112
+    Width = 100
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 234
+    Height = 20
+    Top = 151
+    Width = 48
+    Caption = 'Nota 4:'
+    OnClick = Label1Click
+  end
+  object Edit4: TEdit
+    Left = 295
+    Height = 28
+    Top = 146
+    Width = 100
+    TabOrder = 3
+  end
+  object Label5: TLabel
+    Left = 315
+    Height = 20
+    Top = 226
+    Width = 49
+    Caption = 'MÉDIA:'
+  end
+  object EdtMedia: TEdit
+    Left = 288
+    Height = 28
+    Top = 257
+    Width = 100
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 64
+    Height = 31
+    Top = 304
+    Width = 456
+    Caption = 'VERIFICAR APROVAÇÃO'
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object Label6: TLabel
+    Left = 133
+    Height = 20
+    Top = 232
+    Width = 83
+    Caption = 'RESULTADO:'
+  end
+  object edtResult: TEdit
+    Left = 125
+    Height = 28
+    Top = 257
+    Width = 100
+    TabOrder = 6
+  end
+  object Label7: TLabel
+    Left = 64
+    Height = 20
+    Top = 189
+    Width = 40
+    Caption = 'Faltas:'
+    OnClick = Label1Click
+  end
+  object EdtFalta: TEdit
+    Left = 125
+    Height = 28
+    Top = 184
+    Width = 100
+    TabOrder = 7
+  end
+end
