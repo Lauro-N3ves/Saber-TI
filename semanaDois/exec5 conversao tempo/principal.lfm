@@ -1,0 +1,80 @@
+object PrincipalF: TPrincipalF
+  Left = 389
+  Height = 613
+  Top = 157
+  Width = 452
+  Caption = 'Conversao Tempo Segundos'
+  ClientHeight = 613
+  ClientWidth = 452
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object edtDuracao: TEdit
+    Left = 238
+    Height = 28
+    Top = 49
+    Width = 100
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 40
+    Top = 48
+    Width = 154
+    Caption = 'DURAÇÃO DO EVENTO'#13#10'      EM SEGUNDOS:'
+    OnClick = Label1Click
+  end
+  object Button1: TButton
+    Left = 144
+    Height = 40
+    Top = 96
+    Width = 136
+    Caption = 'CONVERSÃO'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object edtDuracaoH: TEdit
+    Left = 238
+    Height = 28
+    Top = 153
+    Width = 100
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 40
+    Top = 152
+    Width = 154
+    Caption = 'DURAÇÃO DO EVENTO'#13#10'      EM HORAS'
+    OnClick = Label1Click
+  end
+  object edtDuracaoM: TEdit
+    Left = 238
+    Height = 28
+    Top = 209
+    Width = 100
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 56
+    Height = 40
+    Top = 208
+    Width = 127
+    Caption = 'RESTO DO EVENTO'#13#10'      EM MINUTOS:'
+    OnClick = Label1Click
+  end
+  object edtDuracaoS: TEdit
+    Left = 238
+    Height = 28
+    Top = 273
+    Width = 100
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 56
+    Height = 40
+    Top = 272
+    Width = 127
+    Caption = 'RESTO DO EVENTO'#13#10'      EM SEGUNDOS'
+    OnClick = Label1Click
+  end
+end

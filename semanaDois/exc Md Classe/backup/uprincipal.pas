@@ -72,7 +72,6 @@ begin
   EdtMedia.Text:=FloatToStr(md);
   if (md<media) and (falta>frequencia) then
   begin
-       edtMotivo.Text:= 'NOTA E FREQUÊNCIA';
        edtResult.Text:='REPROVADO';
   end
   else if (md<media) and (falta<=frequencia) then

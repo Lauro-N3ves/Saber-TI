@@ -1,0 +1,48 @@
+object PrincipalF: TPrincipalF
+  Left = 384
+  Height = 580
+  Top = 170
+  Width = 459
+  Caption = 'Conversor de Temperatura'
+  ClientHeight = 580
+  ClientWidth = 459
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object edtCelc: TEdit
+    Left = 192
+    Height = 28
+    Top = 96
+    Width = 100
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 20
+    Top = 104
+    Width = 137
+    Caption = 'Temperatura Celcius:'
+  end
+  object Button1: TButton
+    Left = 104
+    Height = 40
+    Top = 168
+    Width = 144
+    Caption = 'CONVERTER'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object edtFah: TEdit
+    Left = 192
+    Height = 28
+    Top = 130
+    Width = 100
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 26
+    Height = 20
+    Top = 136
+    Width = 159
+    Caption = 'Temperatura Fahrenheit:'
+  end
+end
