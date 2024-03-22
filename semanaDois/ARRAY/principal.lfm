@@ -1,0 +1,20 @@
+object PrincipalF: TPrincipalF
+  Left = 446
+  Height = 240
+  Top = 232
+  Width = 320
+  Caption = 'Exemplo ARRAY'
+  ClientHeight = 240
+  ClientWidth = 320
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Button1: TButton
+    Left = 112
+    Height = 31
+    Top = 96
+    Width = 94
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+end
