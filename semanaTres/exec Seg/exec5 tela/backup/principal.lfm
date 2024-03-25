@@ -1,0 +1,89 @@
+object PrincipalF: TPrincipalF
+  Left = 394
+  Height = 631
+  Top = 157
+  Width = 428
+  Caption = 'PrincipalF'
+  ClientHeight = 631
+  ClientWidth = 428
+  DesignTimePPI = 120
+  Menu = MainMenu
+  LCLVersion = '3.2.0.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 631
+    Top = 0
+    Width = 428
+    Align = alClient
+    TabOrder = 0
+    OnChange = Memo1Change
+  end
+  object MainMenu: TMainMenu
+    Left = 40
+    Top = 336
+    object MenuItem1: TMenuItem
+      Caption = 'Arquivo'
+      object SubMenu1Abrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = SubMenu1AbrirClick
+      end
+      object SubMenu1Novo: TMenuItem
+        Caption = 'Novo'
+        OnClick = SubMenu1NovoClick
+      end
+      object SubMenu1Salvar: TMenuItem
+        Caption = 'Salvar'
+        OnClick = SubMenu1SalvarClick
+      end
+      object SubMenu1Imprimir: TMenuItem
+        Caption = 'Imprimir'
+        OnClick = SubMenu1ImprimirClick
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Editar'
+      object SubMenu2Localizar: TMenuItem
+        Caption = 'Localizar'
+        OnClick = SubMenu2LocalizarClick
+      end
+      object Submenu2Substituir: TMenuItem
+        Caption = 'Substituir'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Formatar'
+      object SubMenu3Fonte: TMenuItem
+        Caption = 'Fonte'
+        OnClick = SubMenu3FonteClick
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Exibir'
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Ajuda'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.txt'
+    Filter = 'Documento de Texto|.txt'
+    Left = 40
+    Top = 264
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'Arquivo de texto|.txt'
+    Left = 40
+    Top = 192
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 40
+    Top = 432
+  end
+  object FontDialog1: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 40
+    Top = 512
+  end
+end
