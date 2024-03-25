@@ -1,0 +1,164 @@
+object ExecLancheriaF: TExecLancheriaF
+  Left = 394
+  Height = 616
+  Top = 153
+  Width = 445
+  Caption = 'Lancheria'
+  ClientHeight = 616
+  ClientWidth = 445
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Item1: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 48
+    Width = 133
+    Caption = 'Cachorro Quente'
+    TabOrder = 0
+    OnChange = Item1Change
+  end
+  object Item2: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 80
+    Width = 115
+    Caption = 'Bauru Simples'
+    TabOrder = 1
+    OnChange = Item2Change
+  end
+  object Item3: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 112
+    Width = 123
+    Caption = 'Bauru com Ovo'
+    TabOrder = 2
+    OnChange = Item3Change
+  end
+  object Item4: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 144
+    Width = 105
+    Caption = 'Hambúrguer'
+    TabOrder = 3
+    OnChange = Item4Change
+  end
+  object Item5: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 176
+    Width = 120
+    Caption = 'Cheeseburguer'
+    TabOrder = 4
+    OnChange = Item5Change
+  end
+  object Item6: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 208
+    Width = 103
+    Caption = 'Refrigerante'
+    TabOrder = 5
+    OnChange = Item6Change
+  end
+  object Edt1: TEdit
+    Left = 232
+    Height = 28
+    Top = 44
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 6
+    Text = ' 12,00'
+  end
+  object Edt2: TEdit
+    Left = 232
+    Height = 28
+    Top = 76
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 7
+    Text = ' 13,00'
+  end
+  object Edt3: TEdit
+    Left = 232
+    Height = 28
+    Top = 108
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 8
+    Text = ' 15,00'
+  end
+  object Edt4: TEdit
+    Left = 232
+    Height = 28
+    Top = 140
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 9
+    Text = ' 12,00'
+  end
+  object Edt5: TEdit
+    Left = 232
+    Height = 28
+    Top = 172
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 10
+    Text = ' 13,00'
+  end
+  object Edt6: TEdit
+    Left = 232
+    Height = 28
+    Top = 204
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 11
+    Text = ' 5,00'
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 20
+    Top = 16
+    Width = 111
+    Caption = 'ESPECIFICAÇÕES'
+  end
+  object Label2: TLabel
+    Left = 260
+    Height = 20
+    Top = 16
+    Width = 45
+    Caption = 'PREÇO'
+  end
+  object EdtTotal: TEdit
+    Left = 160
+    Height = 28
+    Top = 320
+    Width = 100
+    Alignment = taCenter
+    ReadOnly = True
+    TabOrder = 12
+  end
+  object Label3: TLabel
+    Left = 190
+    Height = 20
+    Top = 296
+    Width = 41
+    Caption = 'TOTAL'
+  end
+  object Item7: TCheckBox
+    Left = 80
+    Height = 24
+    Top = 256
+    Width = 238
+    Caption = 'Embalagem para entrega R$4,00'
+    TabOrder = 13
+    OnChange = Item7Change
+  end
+end
