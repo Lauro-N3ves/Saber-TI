@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjSCP.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MenuPrincipalF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MenuPrincipal"/>
+        <TopLine Value="21"/>
+        <CursorPos X="29" Y="24"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadmodelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadModeloF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadModelo"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="oplogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpLoginF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpLogin"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadesqsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadEsqSenhaF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadEsqSenha"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="opsobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpSobreF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpSobre"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="17"/>
+        <CursorPos X="3" Y="40"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadProdutosF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadProdutos"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="23">
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="38" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="39" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="40" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="41" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="42" Column="3" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="44" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="24" Column="29" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="25" Column="29" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="26" Column="29" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="25" Column="29" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="26" Column="29" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="25" Column="29" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="24" Column="29" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="oplogin.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="oplogin.pas"/>
+        <Caret Line="23" Column="92" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="oplogin.pas"/>
+        <Caret Line="24" Column="92" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="oplogin.pas"/>
+        <Caret Line="25" Column="92" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="cadesqsenha.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="34" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="36" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="41" Column="3" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="opsobre.pas"/>
+        <Caret Line="40" Column="3" TopLine="17"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

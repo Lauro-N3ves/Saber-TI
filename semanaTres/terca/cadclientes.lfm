@@ -1,7 +1,7 @@
 object CadClientesF: TCadClientesF
-  Left = 385
+  Left = 391
   Height = 461
-  Top = 227
+  Top = 240
   Width = 408
   Caption = 'Cadastro de clientes'
   ClientHeight = 461

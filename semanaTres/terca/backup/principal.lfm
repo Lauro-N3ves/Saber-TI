@@ -1,7 +1,7 @@
 object PrincipalF: TPrincipalF
-  Left = 333
+  Left = 298
   Height = 588
-  Top = 289
+  Top = 154
   Width = 617
   Caption = 'Form Principal'
   ClientHeight = 588

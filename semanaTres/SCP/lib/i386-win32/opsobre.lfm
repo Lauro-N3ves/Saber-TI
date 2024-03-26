@@ -1,0 +1,35 @@
+object OpSobreF: TOpSobreF
+  Left = 999
+  Height = 562
+  Top = 309
+  Width = 489
+  Caption = 'Sobre'
+  ClientHeight = 562
+  ClientWidth = 489
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Memo1: TMemo
+    Left = 16
+    Height = 416
+    Top = 16
+    Width = 464
+    Lines.Strings = (
+      'Sobre o Sistema'
+      ''
+      'Nome do Sistema: GestorPro'
+      ''
+      'Desenvolvido por: Tech Innovations Ltda.'
+      ''
+      'Linguagem de Programação: Object Pascal'
+      ''
+      'Banco de Dados Utilizado: PostgreSQL 13.2'
+      ''
+      'Ano do Desenvolvimento: 2024'
+      ''
+      'Descrição:'
+      'O GestorPro é uma solução integrada de gerenciamento empresarial projetada para otimizar processos, facilitar a tomada de decisões e maximizar a eficiência operacional. Utilizando tecnologias de ponta e uma interface intuitiva, o GestorPro oferece uma experiência robusta e confiável para negócios de todos os tamanhos.'
+    )
+    TabOrder = 0
+    OnChange = Memo1Change
+  end
+end

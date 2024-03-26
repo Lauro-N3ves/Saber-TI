@@ -13,6 +13,8 @@ type
 
   TCadClientesF = class(TForm)
     btnCadCliente: TButton;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -25,6 +27,20 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TCadClientesF }
+
+procedure TCadClientesF.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TCadClientesF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+  ShowMessage('fechei tb');
+  CloseAction:=caFree;
+end;
 
 end.
 

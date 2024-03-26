@@ -13,6 +13,7 @@ type
 
   TCadUsuariosF = class(TForm)
     btnCadUsuario: TButton;
+    procedure btnCadUsuarioClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
@@ -34,6 +35,11 @@ procedure TCadUsuariosF.FormClose(Sender: TObject; var CloseAction: TCloseAction
 begin
      ShowMessage('fechei');
      CloseAction:= caFree;
+end;
+
+procedure TCadUsuariosF.btnCadUsuarioClick(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

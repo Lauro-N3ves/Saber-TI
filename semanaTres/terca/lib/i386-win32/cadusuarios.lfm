@@ -1,11 +1,11 @@
 object CadUsuariosF: TCadUsuariosF
-  Left = 302
-  Height = 610
-  Top = 157
-  Width = 599
+  Left = 367
+  Height = 386
+  Top = 435
+  Width = 423
   Caption = 'Cadastro de usuários'
-  ClientHeight = 610
-  ClientWidth = 599
+  ClientHeight = 386
+  ClientWidth = 423
   DesignTimePPI = 120
   OnClose = FormClose
   LCLVersion = '3.2.0.0'
@@ -16,5 +16,6 @@ object CadUsuariosF: TCadUsuariosF
     Width = 94
     Caption = 'Fechar'
     TabOrder = 0
+    OnClick = btnCadUsuarioClick
   end
 end
