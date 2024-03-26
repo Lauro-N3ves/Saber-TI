@@ -103,6 +103,7 @@ begin
   Memo1.font.Name:=FontDialog1.Font.Name;
   Memo1.font.Size:=FontDialog1.Font.size;
   Memo1.Font.color:=FontDialog1.Font.Color;
+  Memo1.SetFocus;
 end;
 
 procedure TPrincipalF.Memo1Change(Sender: TObject);

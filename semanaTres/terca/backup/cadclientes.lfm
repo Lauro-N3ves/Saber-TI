@@ -1,0 +1,19 @@
+object CadClientesF: TCadClientesF
+  Left = 312
+  Height = 461
+  Top = 157
+  Width = 408
+  Caption = 'Cadastro de clientes'
+  ClientHeight = 461
+  ClientWidth = 408
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object btnCadCliente: TButton
+    Left = 152
+    Height = 31
+    Top = 136
+    Width = 94
+    Caption = 'Fechar'
+    TabOrder = 0
+  end
+end
