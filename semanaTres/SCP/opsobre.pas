@@ -13,7 +13,6 @@ type
 
   TOpSobreF = class(TForm)
     Memo1: TMemo;
-    procedure Label1Click(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
   private
 
@@ -35,10 +34,6 @@ begin
 
 end;
 
-procedure TOpSobreF.Label1Click(Sender: TObject);
-begin
-
-end;
 
 end.
 

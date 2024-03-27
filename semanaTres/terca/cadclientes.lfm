@@ -17,5 +17,6 @@ object CadClientesF: TCadClientesF
     Width = 94
     Caption = 'Fechar'
     TabOrder = 0
+    OnClick = btnCadClienteClick
   end
 end

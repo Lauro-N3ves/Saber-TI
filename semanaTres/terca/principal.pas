@@ -19,6 +19,7 @@ type
     subCliente: TMenuItem;
     subUsuario: TMenuItem;
     mnCadastros: TMenuItem;
+    procedure btnCadClientesClick(Sender: TObject);
     procedure subClienteClick(Sender: TObject);
     procedure subUsuarioClick(Sender: TObject);
   private
@@ -42,6 +43,11 @@ procedure TPrincipalF.subClienteClick(Sender: TObject);
 begin
   CadClientesF:=TCadClientesF.Create(Self);
   CadClientesF.ShowModal;
+end;
+
+procedure TPrincipalF.btnCadClientesClick(Sender: TObject);
+begin
+
 end;
 
 procedure TPrincipalF.subUsuarioClick(Sender: TObject);

@@ -1,0 +1,120 @@
+inherited CadFornecedorF: TCadFornecedorF
+  Left = 1084
+  Top = 240
+  Caption = 'Cadastro de Forncedor'
+  inherited Panel1: TPanel
+    TabOrder = 8
+  end
+  object lblIdCadFornec: TLabel[1]
+    Left = 84
+    Height = 20
+    Top = 47
+    Width = 160
+    Caption = 'ID Cadastro Fornecedor:'
+  end
+  object lblCpfCnpj: TLabel[2]
+    Left = 84
+    Height = 20
+    Top = 81
+    Width = 65
+    Caption = 'CPF/CNPJ:'
+  end
+  object lblNomeFantasia: TLabel[3]
+    Left = 84
+    Height = 20
+    Top = 115
+    Width = 101
+    Caption = 'Nome Fantasia:'
+  end
+  object lblRazaoSocial: TLabel[4]
+    Left = 84
+    Height = 20
+    Top = 149
+    Width = 88
+    Caption = 'Razão Social:'
+  end
+  object lblEndereco: TLabel[5]
+    Left = 84
+    Height = 20
+    Top = 216
+    Width = 65
+    Caption = 'Endereço:'
+  end
+  object lblCep: TLabel[6]
+    Left = 84
+    Height = 20
+    Top = 183
+    Width = 28
+    Caption = 'CEP:'
+  end
+  object lblTelefone: TLabel[7]
+    Left = 84
+    Height = 20
+    Top = 251
+    Width = 60
+    Caption = 'Telefone:'
+  end
+  object lblEmail: TLabel[8]
+    Left = 84
+    Height = 20
+    Top = 285
+    Width = 40
+    Caption = 'Email:'
+  end
+  object edtIdCadFornec: TEdit[9]
+    Left = 254
+    Height = 28
+    Top = 47
+    Width = 132
+    TabOrder = 0
+  end
+  object edtCpfCnpj: TEdit[10]
+    Left = 254
+    Height = 28
+    Top = 81
+    Width = 132
+    TabOrder = 1
+  end
+  object edtNomeFantasia: TEdit[11]
+    Left = 254
+    Height = 28
+    Top = 115
+    Width = 132
+    TabOrder = 2
+  end
+  object edtRazaoSocial: TEdit[12]
+    Left = 254
+    Height = 28
+    Top = 149
+    Width = 132
+    TabOrder = 3
+  end
+  object edtEndereco: TEdit[13]
+    Left = 254
+    Height = 28
+    Top = 216
+    Width = 132
+    TabOrder = 5
+  end
+  object edtCep: TEdit[14]
+    Left = 254
+    Height = 28
+    Top = 183
+    Width = 132
+    TabOrder = 4
+  end
+  object edtTelefone: TEdit[15]
+    Left = 254
+    Height = 28
+    Top = 251
+    Width = 132
+    TabOrder = 6
+  end
+  object edtEmail: TEdit[16]
+    Left = 254
+    Height = 28
+    Top = 285
+    Width = 132
+    TabOrder = 7
+  end
+end

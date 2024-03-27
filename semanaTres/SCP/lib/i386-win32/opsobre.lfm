@@ -1,7 +1,7 @@
 object OpSobreF: TOpSobreF
-  Left = 999
+  Left = 398
   Height = 562
-  Top = 309
+  Top = 484
   Width = 489
   Caption = 'Sobre'
   ClientHeight = 562
@@ -30,6 +30,5 @@ object OpSobreF: TOpSobreF
       'O GestorPro é uma solução integrada de gerenciamento empresarial projetada para otimizar processos, facilitar a tomada de decisões e maximizar a eficiência operacional. Utilizando tecnologias de ponta e uma interface intuitiva, o GestorPro oferece uma experiência robusta e confiável para negócios de todos os tamanhos.'
     )
     TabOrder = 0
-    OnChange = Memo1Change
   end
 end

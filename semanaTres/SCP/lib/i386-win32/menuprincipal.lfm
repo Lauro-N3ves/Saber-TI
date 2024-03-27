@@ -1,42 +1,51 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 1426
-  Height = 523
-  Top = 168
+  Left = 586
+  Height = 531
+  Top = 411
   Width = 483
   Caption = 'Menu Principal'
   DesignTimePPI = 120
   Menu = MainMenu1
+  OnClose = FormClose
+  Position = poDesktopCenter
   LCLVersion = '3.2.0.0'
+  WindowState = wsMaximized
   object MainMenu1: TMainMenu
     Left = 184
     Top = 168
     object MnCadastros: TMenuItem
       Caption = 'Cadastros'
-      OnClick = MnCadastrosClick
       object MnCliente: TMenuItem
         Caption = 'Cliente'
+        OnClick = MnClienteClick
       end
       object MnProdutos: TMenuItem
         Caption = 'Produtos'
+        OnClick = MnProdutosClick
       end
       object MnFornecedor: TMenuItem
         Caption = 'Fornecedor'
+        OnClick = MnFornecedorClick
       end
       object MnVenderores: TMenuItem
         Caption = 'Vendedores'
+        OnClick = MnVenderoresClick
       end
     end
     object MnManutencao: TMenuItem
       Caption = 'Manutenção'
       object MnUsuario: TMenuItem
         Caption = 'Usuário'
+        OnClick = MnUsuarioClick
       end
     end
     object MnSobre: TMenuItem
       Caption = 'Sobre'
+      OnClick = MnSobreClick
     end
     object MnSair: TMenuItem
       Caption = 'Sair'
+      OnClick = MnSairClick
     end
   end
 end

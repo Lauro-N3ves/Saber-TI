@@ -18,6 +18,8 @@ type
     BtnExcluir: TButton;
     BtnSair: TButton;
     Panel1: TPanel;
+    procedure BtnSairClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -30,6 +32,18 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TCadModeloF }
+
+procedure TCadModeloF.BtnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TCadModeloF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  CloseAction:=caFree;
+end;
 
 end.
 

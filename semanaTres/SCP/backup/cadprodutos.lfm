@@ -1,0 +1,82 @@
+inherited CadProdutosF: TCadProdutosF
+  Left = 767
+  Top = 314
+  Width = 488
+  Caption = 'Cadastro de Produtos'
+  ClientWidth = 488
+  inherited Panel1: TPanel
+    TabOrder = 5
+  end
+  object boxTipoProd: TComboBox[1]
+    Left = 240
+    Height = 28
+    Top = 242
+    Width = 160
+    ItemHeight = 20
+    TabOrder = 4
+  end
+  object lblTipoProd: TLabel[2]
+    Left = 88
+    Height = 20
+    Top = 244
+    Width = 112
+    Caption = 'Tipo do Produto:'
+  end
+  object lblValorVenda: TLabel[3]
+    Left = 88
+    Height = 20
+    Top = 204
+    Width = 82
+    Caption = 'Valor Venda:'
+  end
+  object lblDescCompleta: TLabel[4]
+    Left = 88
+    Height = 20
+    Top = 164
+    Width = 135
+    Caption = 'Descrição completa:'
+  end
+  object lblDescSimples: TLabel[5]
+    Left = 88
+    Height = 20
+    Top = 124
+    Width = 124
+    Caption = 'Descrição Simples:'
+    OnClick = lblDescSimplesClick
+  end
+  object edtValorVenda: TEdit[6]
+    Left = 240
+    Height = 28
+    Top = 202
+    Width = 160
+    TabOrder = 3
+  end
+  object edtDescCompleta: TEdit[7]
+    Left = 240
+    Height = 28
+    Top = 162
+    Width = 160
+    TabOrder = 2
+  end
+  object edtDescSimples: TEdit[8]
+    Left = 240
+    Height = 28
+    Top = 122
+    Width = 160
+    TabOrder = 1
+  end
+  object lbIdCadProd: TLabel[9]
+    Left = 88
+    Height = 20
+    Top = 82
+    Width = 105
+    Caption = 'ID Cad Produto:'
+  end
+  object edtCadProd: TEdit[10]
+    Left = 240
+    Height = 28
+    Top = 80
+    Width = 160
+    TabOrder = 0
+  end
+end

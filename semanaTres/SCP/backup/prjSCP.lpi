@@ -38,6 +38,7 @@
         <Filename Value="menuprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MenuPrincipalF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
       </Unit>
@@ -45,6 +46,7 @@
         <Filename Value="cadmodelo.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CadModeloF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
       </Unit>
@@ -52,6 +54,7 @@
         <Filename Value="oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
       </Unit>
@@ -59,6 +62,7 @@
         <Filename Value="cadesqsenha.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
       </Unit>
@@ -66,8 +70,54 @@
         <Filename Value="opsobre.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpSobreF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpSobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadProdutos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadClientes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadusuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadUsuariosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadUsuarios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadfornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadFornecedorF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadFornecedor"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadvendedores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadVendedoresF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadVendedores"/>
+      </Unit>
+      <Unit>
+        <Filename Value="global.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Global"/>
       </Unit>
     </Units>
   </ProjectOptions>

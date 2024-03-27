@@ -1,0 +1,150 @@
+inherited CadClientesF: TCadClientesF
+  Left = 870
+  Height = 529
+  Top = 310
+  Width = 490
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 529
+  ClientWidth = 490
+  inherited Panel1: TPanel
+    Height = 97
+    Top = 432
+    Width = 490
+    ClientHeight = 97
+    ClientWidth = 490
+    TabOrder = 8
+    OnClick = Panel1Click
+    inherited BtnNovo: TButton
+      Left = 56
+      Top = 16
+    end
+    inherited BtnEditar: TButton
+      Left = 152
+      Top = 16
+    end
+    inherited BtnGravar: TButton
+      Left = 248
+      Top = 16
+    end
+    inherited BtnExcluir: TButton
+      Left = 344
+      Top = 16
+    end
+    inherited BtnSair: TButton
+      Left = 200
+      Top = 56
+    end
+  end
+  object lblIdCadCli: TLabel[1]
+    Left = 104
+    Height = 20
+    Top = 62
+    Width = 131
+    Caption = 'ID Cadastro Cliente:'
+  end
+  object lblCpfCnpj: TLabel[2]
+    Left = 104
+    Height = 20
+    Top = 96
+    Width = 65
+    Caption = 'CPF/CNPJ:'
+  end
+  object lblNomeFantasia: TLabel[3]
+    Left = 104
+    Height = 20
+    Top = 130
+    Width = 101
+    Caption = 'Nome Fantasia:'
+  end
+  object lblRazaoSocial: TLabel[4]
+    Left = 104
+    Height = 20
+    Top = 164
+    Width = 88
+    Caption = 'Razão Social:'
+  end
+  object lblEndereco: TLabel[5]
+    Left = 104
+    Height = 20
+    Top = 231
+    Width = 65
+    Caption = 'Endereço:'
+  end
+  object lblCep: TLabel[6]
+    Left = 104
+    Height = 20
+    Top = 198
+    Width = 28
+    Caption = 'CEP:'
+  end
+  object lblTelefone: TLabel[7]
+    Left = 104
+    Height = 20
+    Top = 266
+    Width = 60
+    Caption = 'Telefone:'
+  end
+  object lblEmail: TLabel[8]
+    Left = 104
+    Height = 20
+    Top = 300
+    Width = 40
+    Caption = 'Email:'
+  end
+  object edtIdCadCli: TEdit[9]
+    Left = 246
+    Height = 28
+    Top = 62
+    Width = 132
+    TabOrder = 0
+  end
+  object edtCpfCnpj: TEdit[10]
+    Left = 246
+    Height = 28
+    Top = 96
+    Width = 132
+    TabOrder = 1
+  end
+  object edtNomeFantasia: TEdit[11]
+    Left = 246
+    Height = 28
+    Top = 130
+    Width = 132
+    TabOrder = 2
+  end
+  object edtRazaoSocial: TEdit[12]
+    Left = 246
+    Height = 28
+    Top = 164
+    Width = 132
+    TabOrder = 3
+  end
+  object edtEndereco: TEdit[13]
+    Left = 246
+    Height = 28
+    Top = 231
+    Width = 132
+    TabOrder = 5
+  end
+  object edtCep: TEdit[14]
+    Left = 246
+    Height = 28
+    Top = 198
+    Width = 132
+    TabOrder = 4
+  end
+  object edtTelefone: TEdit[15]
+    Left = 246
+    Height = 28
+    Top = 266
+    Width = 132
+    TabOrder = 6
+  end
+  object edtEmail: TEdit[16]
+    Left = 246
+    Height = 28
+    Top = 300
+    Width = 132
+    TabOrder = 7
+  end
+end

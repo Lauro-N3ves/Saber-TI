@@ -1,0 +1,135 @@
+inherited CadVendedoresF: TCadVendedoresF
+  Left = 979
+  Top = 275
+  Caption = 'Cadastro de Vendedor'
+  inherited Panel1: TPanel
+    Left = 26
+    TabOrder = 9
+  end
+  object lblIdVend: TLabel[1]
+    Left = 92
+    Height = 20
+    Top = 38
+    Width = 86
+    Caption = 'ID Vendedor:'
+  end
+  object lblCpfCnpj: TLabel[2]
+    Left = 92
+    Height = 20
+    Top = 72
+    Width = 65
+    Caption = 'CPF/CNPJ:'
+  end
+  object lblNomeFantasia: TLabel[3]
+    Left = 92
+    Height = 20
+    Top = 106
+    Width = 101
+    Caption = 'Nome Fantasia:'
+  end
+  object lblRazaoSocial: TLabel[4]
+    Left = 92
+    Height = 20
+    Top = 140
+    Width = 88
+    Caption = 'Razão Social:'
+  end
+  object lblEndereco: TLabel[5]
+    Left = 92
+    Height = 20
+    Top = 207
+    Width = 65
+    Caption = 'Endereço:'
+  end
+  object lblCep: TLabel[6]
+    Left = 92
+    Height = 20
+    Top = 174
+    Width = 28
+    Caption = 'CEP:'
+  end
+  object lblTelefone: TLabel[7]
+    Left = 92
+    Height = 20
+    Top = 242
+    Width = 60
+    Caption = 'Telefone:'
+  end
+  object lblEmail: TLabel[8]
+    Left = 92
+    Height = 20
+    Top = 276
+    Width = 40
+    Caption = 'Email:'
+  end
+  object edtIdVend: TEdit[9]
+    Left = 262
+    Height = 28
+    Top = 38
+    Width = 132
+    TabOrder = 0
+  end
+  object edtCpfCnpj: TEdit[10]
+    Left = 262
+    Height = 28
+    Top = 72
+    Width = 132
+    TabOrder = 1
+  end
+  object edtNomeFantasia: TEdit[11]
+    Left = 262
+    Height = 28
+    Top = 106
+    Width = 132
+    TabOrder = 2
+  end
+  object edtRazaoSocial: TEdit[12]
+    Left = 262
+    Height = 28
+    Top = 140
+    Width = 132
+    TabOrder = 3
+  end
+  object edtEndereco: TEdit[13]
+    Left = 262
+    Height = 28
+    Top = 207
+    Width = 132
+    TabOrder = 5
+  end
+  object edtCep: TEdit[14]
+    Left = 262
+    Height = 28
+    Top = 174
+    Width = 132
+    TabOrder = 4
+  end
+  object edtTelefone: TEdit[15]
+    Left = 262
+    Height = 28
+    Top = 242
+    Width = 132
+    TabOrder = 6
+  end
+  object edtEmail: TEdit[16]
+    Left = 262
+    Height = 28
+    Top = 276
+    Width = 132
+    TabOrder = 7
+  end
+  object lblPercentual: TLabel[17]
+    Left = 92
+    Height = 20
+    Top = 310
+    Width = 160
+    Caption = 'Percentual de Comissão:'
+  end
+  object edtPercentual: TEdit[18]
+    Left = 262
+    Height = 28
+    Top = 310
+    Width = 132
+    TabOrder = 8
+  end
+end

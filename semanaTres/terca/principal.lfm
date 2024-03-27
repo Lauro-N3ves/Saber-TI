@@ -16,6 +16,7 @@ object PrincipalF: TPrincipalF
     Width = 208
     Caption = 'CADASTRO DE CLIENTES'
     TabOrder = 0
+    OnClick = btnCadClientesClick
   end
   object BtnCadUsuarios: TButton
     Left = 160

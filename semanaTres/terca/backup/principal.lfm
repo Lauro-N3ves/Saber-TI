@@ -1,7 +1,7 @@
 object PrincipalF: TPrincipalF
-  Left = 298
+  Left = 378
   Height = 588
-  Top = 154
+  Top = 190
   Width = 617
   Caption = 'Form Principal'
   ClientHeight = 588
@@ -35,7 +35,7 @@ object PrincipalF: TPrincipalF
         OnClick = subUsuarioClick
       end
       object subCliente: TMenuItem
-        Caption = 'Cliente'
+        Caption = 'subCliente'
         OnClick = subClienteClick
       end
     end

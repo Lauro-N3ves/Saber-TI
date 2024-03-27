@@ -1,61 +1,64 @@
 object CadModeloF: TCadModeloF
-  Left = 1260
-  Height = 546
-  Top = 86
+  Left = 1306
+  Height = 563
+  Top = 175
   Width = 485
   Caption = 'Modelo'
-  ClientHeight = 546
+  ClientHeight = 563
   ClientWidth = 485
   DesignTimePPI = 120
+  OnClose = FormClose
+  Position = poDesktopCenter
   LCLVersion = '3.2.0.0'
   object Panel1: TPanel
-    Left = 24
-    Height = 168
-    Top = 360
-    Width = 464
-    Caption = 'Panel1'
-    ClientHeight = 168
-    ClientWidth = 464
+    Left = 0
+    Height = 107
+    Top = 456
+    Width = 485
+    Align = alBottom
+    ClientHeight = 107
+    ClientWidth = 485
     TabOrder = 0
     object BtnNovo: TButton
-      Left = 24
+      Left = 48
       Height = 31
-      Top = 72
+      Top = 24
       Width = 94
       Caption = 'Novo'
       TabOrder = 0
     end
     object BtnEditar: TButton
-      Left = 120
+      Left = 144
       Height = 31
-      Top = 72
+      Top = 24
       Width = 94
       Caption = 'Editar'
       TabOrder = 1
     end
     object BtnGravar: TButton
-      Left = 216
+      Left = 240
       Height = 31
-      Top = 72
+      Top = 24
       Width = 94
       Caption = 'Gravar'
       TabOrder = 2
     end
     object BtnExcluir: TButton
-      Left = 312
+      Left = 336
       Height = 31
-      Top = 72
+      Top = 24
       Width = 94
       Caption = 'Excluir'
       TabOrder = 3
     end
     object BtnSair: TButton
-      Left = 168
+      Left = 200
       Height = 31
-      Top = 112
+      Top = 64
       Width = 94
       Caption = 'Sair'
       TabOrder = 4
+      OnClick = BtnSairClick
     end
   end
 end
