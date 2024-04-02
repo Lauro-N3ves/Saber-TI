@@ -48,9 +48,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="36"/>
-        <CursorPos X="26" Y="56"/>
+        <TopLine Value="46"/>
+        <CursorPos X="8" Y="56"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -62,10 +63,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="35"/>
-        <CursorPos X="4" Y="61"/>
+        <TopLine Value="34"/>
+        <CursorPos X="99" Y="8"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -119,7 +119,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="39"/>
+        <TopLine Value="42"/>
         <CursorPos X="3" Y="64"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>

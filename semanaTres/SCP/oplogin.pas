@@ -5,7 +5,7 @@ unit OpLogin;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,CadEsqSenha,MenuPrincipal;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,CadEsqSenha,MenuPrincipal,Global;
 
 type
 
@@ -53,7 +53,7 @@ end;
 
 procedure TOpLoginF.lblEsqSenhaClick(Sender: TObject);
 begin
-  //tela:=1;
+  tela:=1;
   CadEsqSenhaF:=TCadEsqSenhaF.create(self);
   OpLoginF.Visible:=False;
   CadEsqSenhaF.ShowModal;

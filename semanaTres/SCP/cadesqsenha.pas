@@ -5,7 +5,7 @@ unit CadEsqSenha;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,MenuPrincipal,CadUsuarios;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,MenuPrincipal,CadUsuarios,Global;
 
 type
 
@@ -47,18 +47,16 @@ end;
 
 procedure TCadEsqSenhaF.btnRedefinirClick(Sender: TObject);
 begin
-  //if (tela = 1 )then
-  //begin
-  //OpLoginF.Visible:=true;
-  //Close;
-  //end
-  //else if ( tela = 2) then
-  //begin
-  //CadUsuariosF.Visible:=true;
-  //Close;
-  //end;
-   OpLoginF.Visible:=true;
-   Close;
+  if (tela = 1 )then
+  begin
+  OpLoginF.Visible:=true;
+  Close;
+  end
+  else if ( tela = 2) then
+  begin
+  CadUsuariosF.Visible:=true;
+  Close;
+  end;
 end;
 
 end.

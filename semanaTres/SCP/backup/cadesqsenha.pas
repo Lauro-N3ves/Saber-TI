@@ -57,7 +57,8 @@ begin
   //CadUsuariosF.Visible:=true;
   //Close;
   //end;
-
+   OpLoginF.Visible:=true;
+   Close;
 end;
 
 end.

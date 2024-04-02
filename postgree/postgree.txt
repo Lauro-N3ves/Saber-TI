@@ -1,0 +1,136 @@
+create table CATEGORIA_PRODUTO (
+CATEGORIAPRODUTOID   INTEGER not null,
+DS_CATEGORIA_PRODUTO VARCHAR(50) not null,
+primary key (CATEGORIAPRODUTOID)
+);
+
+create table CLIENTE(
+CLIENTEID		 INTEGER not null,
+TIPO_CLIENTE 	 CHAR(1) not null,
+CPF_CNPJ_CLIENTE VARCHAR(18) not null,
+NOME_CLIENTE	 VARCHAR(100) not null,
+primary key (CLIENTEID)
+);
+
+create table PRODUTO(
+PRODUTOID		    INTEGER not null,
+CATEGORIAPRODUTOID  INTEGER not null,
+DS_PRODUTO 		    VARCHAR(50) not null,
+OBS_PRODUTO		    VARCHAR(300) not null,
+VL_VENDA_CLIENTE    NUMERIC(15,2) not null,
+DT_CADASTRO_PRODUTO TIMESTAMP not null,
+STATUS_PRODUTO		VARCHAR(10) not null,
+primary key (PRODUTOID),
+foreign key (CATEGORIAPRODUTOID) references
+CATEGORIA_PRODUTO (CATEGORIAPRODUTOID)
+);
+
+CREATE TABLE ORCAMENTO(
+ORCAMENTOID				INTEGER not null,
+CLIENTEID				INTEGER not null,
+DT_ORCAMENTO			TIMESTAMP not null,
+DT_VALIDADE_ORCAMENTO	TIMESTAMP not null,
+VL_TOTAL_ORCAMENTO		NUMERIC(15,2) not null,
+primary key (ORCAMENTOID),
+foreign key (CLIENTEID) references CLIENTE(CLIENTEID)
+);
+
+create table ORCAMENTO_ITEM(
+ORCAMENTOITEMID		INTEGER not null,
+ORCAMENTOID 		INTEGER not null,
+PRODUTOID			INTEGER not null,
+QT_PRODUTO			NUMERIC(15,2) not null,
+VL_UNITARIO			NUMERIC(15,2) not null,
+VL_TOTAL			NUMERIC(15,2) not null,
+primary key (ORCAMENTOITEMID), 
+foreign key (ORCAMENTOID) references ORCAMENTO (ORCAMENTOID),
+foreign key (PRODUTOID) references PRODUTO(PRODUTOID)
+);
+
+create table USUARIOS(
+ID 			  SERIAL primary key,
+USUARIO		  VARCHAR(30),
+NOME_COMPLETO VARCHAR(60),
+SENHA		  VARCHAR(50)
+);
+-- tabela cliente
+insert into categoria_produto (categoriaprodutoid, ds_categoria_produto) values (1,'BASIC');
+insert into categoria_produto (categoriaprodutoid, ds_categoria_produto) values (2,'PLATINUM');
+insert into categoria_produto (categoriaprodutoid, ds_categoria_produto) values (3,'PREMIUM');
+insert into categoria_produto (categoriaprodutoid, ds_categoria_produto) values (4,'ELITE');
+
+--tabela cliente
+insert into cliente (clienteid,cpf_cnpj_cliente,nome_cliente,tipo_cliente) values(1,'943.051.830-56','JOSÉ DA SILVA','F');
+insert into cliente (clienteid,cpf_cnpj_cliente,nome_cliente,tipo_cliente) values(2,'802.202.930-07','PEDRO DE OLIVEIRA','F');
+insert into cliente (clienteid,cpf_cnpj_cliente,nome_cliente, tipo_cliente) values(3,'637.502.500-14','MARIA DE OLIVEIRA','F');
+insert into cliente (clienteid,cpf_cnpj_cliente,nome_cliente, tipo_cliente) values(4,'997.192.890-66','SANDRA GOMES','F');
+
+alter table produto rename VL_VENDA_CLIENTE to VL_VENDA_PRODUTO
+
+--tabela produto
+insert into produto (produtoid,categoriaprodutoid,ds_produto,obs_produto,vl_venda_produto,dt_cadastro_produto,
+status_produto)values(1, 1,'CHAPA METALICA', 'CHAPA GENERICA', 106.22,'18/02/2022','ATIVO');
+insert into produto (produtoid,categoriaprodutoid,ds_produto,obs_produto,vl_venda_produto,dt_cadastro_produto,
+status_produto)values(2, 1,'FOLHA METALICA','FOLHA GENERICA',10.88,'18/02/2022','ATIVO');
+insert into produto (produtoid,categoriaprodutoid,ds_produto,obs_produto,vl_venda_produto,dt_cadastro_produto,
+status_produto)values(3, 1,'CHAPA DOURADA','CHAPA ESPECIFICA',158.88,'18/02/2022','ATIVO');
+insert into produto (produtoid,categoriaprodutoid,ds_produto,obs_produto,vl_venda_produto,dt_cadastro_produto,
+status_produto)values(4, 1, 'FOLHA DIAMANTE', 'FOLHA UNICA', 665.33, '18/02/2022','ATIVO');
+
+update produto set categoriaprodutoid = 3 where produtoid = 3;
+update produto set categoriaprodutoid = 4 where produtoid = 4;
+-- TABELA ORCAMENTO
+
+insert into orcamento (orcamentoid,clienteid,dt_orcamento,dt_validade_orcamento,
+vl_total_orcamento) values (1, 1, '18/02/2022','19/02/2022',10700.00);
+insert into orcamento (orcamentoid,clienteid,dt_orcamento,dt_validade_orcamento,
+vl_total_orcamento) values (2, 3, '17/02/2022', '19/02/2022', 2700.00 ); 
+insert into orcamento (orcamentoid,clienteid,dt_orcamento,dt_validade_orcamento,
+vl_total_orcamento) values (3, 4, '18/02/2022', '19/02/2022', 1200.00);
+insert into orcamento (orcamentoid,clienteid,dt_orcamento,dt_validade_orcamento,
+vl_total_orcamento) values (4,2, '17/02/2022', '19/02/2022', 8000.00);
+
+
+--TAB ORCAMENTO ITEM
+
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (1, 1, 1, 10, 100.00, 1000.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (2, 1, 2, 20, 10.00, 200.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (3, 1, 4, 30, 500.00, 1500.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (4, 1, 3, 40, 200.00, 8000.00);
+
+--TAB ORCAMENTO ITEM
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (5, 2, 1, 10, 100.00, 1000.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (6, 2, 2, 20, 10.00, 200.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (7, 2, 4, 30, 500.00, 1500.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (8, 3, 1, 10, 100.00, 1000.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (9, 3, 2, 20, 10.00, 200.00);
+insert into orcamento_item (orcamentoitemid,orcamentoid,produtoid,qt_produto,
+vl_unitario,vl_total) values (10, 4, 3, 40, 200.00, 8000.00);
+
+--EXEC 1
+select *  from produto where status_produto = 'ATIVO';
+
+--EXEC 2
+
+select p.ds_produto, cp.ds_categoria_produto from produto p inner join categoria_produto cp on 
+p.CATEGORIAPRODUTOID = cp.CATEGORIAPRODUTOID; 
+
+select * from categoria_produto cp;
+
+--exec 3
+select * from produto p where p.vl_venda_produto > 50.00;
+
+--exec 4
+
+select * from orcamento o inner join orcamento_item oi on
+o.ORCAMENTOID = oi.orcamentoid inner join cliente c on o.orcamentoid = c.CLIENTEID;
+

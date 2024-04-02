@@ -5,7 +5,7 @@ unit CadUsuarios;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CadModelo;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CadModelo, Global;
 
 type
 
@@ -61,7 +61,7 @@ end;
 
 procedure TCadUsuariosF.btnRedefSenhaClick(Sender: TObject);
 begin
-  //tela:=2;
+  tela:=2;
   CadEsqSenhaF:=TCadEsqSenhaF.Create(self);
   CadUsuariosF.Visible:=false;
   CadEsqSenhaF.ShowModal;
