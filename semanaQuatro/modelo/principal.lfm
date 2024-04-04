@@ -1,19 +1,21 @@
 object PrincipalF: TPrincipalF
-  Left = 362
-  Height = 768
-  Top = 149
+  Left = 381
+  Height = 715
+  Top = 223
   Width = 1462
   Align = alClient
   Caption = 'Cadastro Modelo'
-  ClientHeight = 768
+  ClientHeight = 715
   ClientWidth = 1462
   DesignTimePPI = 120
+  OnClose = FormClose
   OnCreate = FormCreate
+  OnShow = FormShow
   LCLVersion = '3.2.0.0'
   WindowState = wsMaximized
   object PageControl1: TPageControl
     Left = 0
-    Height = 768
+    Height = 715
     Top = 0
     Width = 1462
     ActivePage = tbCadastro
@@ -23,11 +25,11 @@ object PrincipalF: TPrincipalF
     OnChange = PageControl1Change
     object tbPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 735
+      ClientHeight = 682
       ClientWidth = 1454
       object DBGrid1: TDBGrid
         Left = 0
-        Height = 672
+        Height = 619
         Top = 0
         Width = 1454
         Align = alClient
@@ -48,11 +50,12 @@ object PrincipalF: TPrincipalF
           end>
         DataSource = dsCatProd
         TabOrder = 0
+        OnDblClick = DBGrid1DblClick
       end
       object Panel2: TPanel
         Left = 0
         Height = 63
-        Top = 672
+        Top = 619
         Width = 1454
         Align = alBottom
         ClientHeight = 63
@@ -72,14 +75,16 @@ object PrincipalF: TPrincipalF
           Height = 31
           Top = 16
           Width = 94
+          Anchors = [akRight]
           Caption = 'Sair'
+          OnClick = BitBtn2Click
           TabOrder = 1
         end
       end
     end
     object tbCadastro: TTabSheet
       Caption = 'Cadastro'
-      ClientHeight = 735
+      ClientHeight = 682
       ClientWidth = 1454
       object dbEdtDescric: TDBEdit
         Left = 184
@@ -88,9 +93,9 @@ object PrincipalF: TPrincipalF
         Width = 268
         DataField = 'ds_categoria_produto'
         DataSource = dsCatProd
+        ReadOnly = True
         MaxLength = 50
-        TabOrder = 0
-        OnEditingDone = dbEdtDescricEditingDone
+        TabOrder = 1
       end
       object lblIdCad: TLabel
         Left = 143
@@ -109,12 +114,12 @@ object PrincipalF: TPrincipalF
       object Panel1: TPanel
         Left = 0
         Height = 63
-        Top = 672
+        Top = 619
         Width = 1454
         Align = alBottom
         ClientHeight = 63
         ClientWidth = 1454
-        TabOrder = 1
+        TabOrder = 2
         OnClick = Panel1Click
         object BitBtn3: TBitBtn
           Left = 24
@@ -131,6 +136,7 @@ object PrincipalF: TPrincipalF
           Top = 16
           Width = 94
           Caption = 'Gravar'
+          OnClick = BitBtn4Click
           TabOrder = 1
         end
         object BitBtn5: TBitBtn
@@ -139,6 +145,7 @@ object PrincipalF: TPrincipalF
           Top = 16
           Width = 94
           Caption = 'Cancelar'
+          OnClick = BitBtn5Click
           TabOrder = 2
         end
         object BitBtn6: TBitBtn
@@ -146,7 +153,9 @@ object PrincipalF: TPrincipalF
           Height = 31
           Top = 18
           Width = 94
-          Caption = 'Sair'
+          Anchors = [akRight]
+          Caption = 'Excluir'
+          OnClick = BitBtn6Click
           TabOrder = 3
         end
       end
@@ -169,9 +178,10 @@ object PrincipalF: TPrincipalF
           777777780000F777777777777777777800007FFFFFFFFFFFFFFFFFF700007777
           77777777777777770000
         }
+        OnClick = SpeedButton3Click
       end
       object SpeedButton4: TSpeedButton
-        Left = 280
+        Left = 288
         Height = 28
         Top = 101
         Width = 29
@@ -213,7 +223,7 @@ object PrincipalF: TPrincipalF
         OnClick = SpeedButton5Click
       end
       object SpeedButton6: TSpeedButton
-        Left = 320
+        Left = 328
         Height = 28
         Top = 101
         Width = 29
@@ -231,19 +241,21 @@ object PrincipalF: TPrincipalF
           7777777F00007888888888888888888700007777777777777777777700007777
           77777777777777770000
         }
+        OnClick = SpeedButton6Click
+      end
+      object dbEdtID: TDBEdit
+        Left = 184
+        Height = 28
+        Top = 104
+        Width = 72
+        DataField = 'categoriaprodutoid'
+        DataSource = dsCatProd
+        ReadOnly = True
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 0
       end
     end
-  end
-  object dbEdtDescric1: TDBEdit
-    Left = 192
-    Height = 28
-    Top = 128
-    Width = 72
-    DataField = 'categoriaprodutoid'
-    DataSource = dsCatProd
-    MaxLength = 50
-    TabOrder = 1
-    OnEditingDone = dbEdtDescricEditingDone
   end
   object dsCatProd: TDataSource
     DataSet = qryCatProd
@@ -252,9 +264,10 @@ object PrincipalF: TPrincipalF
   end
   object qryCatProd: TZQuery
     Connection = dmF.ZConnection1
+    OnNewRecord = qryCatProdNewRecord
     Active = True
     SQL.Strings = (
-      'select * from categoria_produto'
+      'select * from categoria_produto order by categoriaprodutoid; '
     )
     Params = <>
     Left = 1152

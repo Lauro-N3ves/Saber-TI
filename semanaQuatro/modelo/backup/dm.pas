@@ -13,6 +13,7 @@ type
 
   TdmF = class(TDataModule)
     ZConnection1: TZConnection;
+    qryGenerica: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure ZConnection1AfterConnect(Sender: TObject);
   private
