@@ -1,0 +1,28 @@
+object dmF: TdmF
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 275
+  HorizontalOffset = 694
+  VerticalOffset = 116
+  Width = 245
+  PPI = 120
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+      'controls_cp=CP_UTF8'
+    )
+    AutoCommit = False
+    Connected = True
+    AfterConnect = ZConnection1AfterConnect
+    HostName = 'localhost'
+    Port = 5432
+    Database = 'postgres'
+    User = 'postgres'
+    Password = '1234'
+    Protocol = 'postgresql'
+    Left = 48
+    Top = 24
+  end
+end
