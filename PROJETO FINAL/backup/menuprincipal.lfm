@@ -1,0 +1,62 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 417
+  Height = 614
+  Top = 193
+  Width = 1144
+  Caption = 'Menu Principal'
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  WindowState = wsMaximized
+  object MainMenu1: TMainMenu
+    Left = 448
+    Top = 96
+    object mnCadastro: TMenuItem
+      Caption = 'Cadastro'
+      OnClick = mnCadastroClick
+      object subMnCadastroCategoria: TMenuItem
+        Caption = 'Categoria'
+        OnClick = subMnCadastroCategoriaClick
+      end
+      object subMnCadastroCliente: TMenuItem
+        Caption = 'Cliente'
+      end
+      object subMnCadastroProdutos: TMenuItem
+        Caption = 'Produtos'
+      end
+      object subMnCadastroUsuarios: TMenuItem
+        Caption = 'Usuários'
+      end
+    end
+    object mnVendas: TMenuItem
+      Caption = 'Vendas'
+      object subMnVendasOrcamento: TMenuItem
+        Caption = 'Orçamento'
+      end
+    end
+    object mnReltorios: TMenuItem
+      Caption = 'Relatórios'
+      object subMnRelatoriosClientes: TMenuItem
+        Caption = 'Clientes'
+      end
+      object subMnRelatoriosProdutos: TMenuItem
+        Caption = 'Produtos'
+      end
+      object subMnRelatoriosOrcamento: TMenuItem
+        Caption = 'Orçamento'
+      end
+      object subMnRelatoriosCategorias: TMenuItem
+        Caption = 'Categorias'
+      end
+    end
+    object mnSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+    object mnSair: TMenuItem
+      Caption = 'Sair'
+      OnClick = mnSairClick
+    end
+  end
+end

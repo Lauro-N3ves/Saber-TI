@@ -8,11 +8,10 @@
       <Unit>
         <Filename Value="prjModelo.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="70"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="12" Y="7"/>
+        <UsageCount Value="105"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="principal.pas"/>
@@ -21,9 +20,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="79"/>
-        <CursorPos X="31" Y="99"/>
-        <UsageCount Value="70"/>
+        <TopLine Value="53"/>
+        <CursorPos X="54" Y="62"/>
+        <UsageCount Value="105"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,22 +32,14 @@
         <ComponentName Value="dmF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="6"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="105"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="82" Column="3" TopLine="72"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="77" Column="19" TopLine="72"/>
-      </Position>
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="43" Column="45" TopLine="31"/>
@@ -160,6 +151,14 @@
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="82" Column="32" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="99" Column="31" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="104" Column="3" TopLine="79"/>
       </Position>
     </JumpHistory>
     <RunParams>
