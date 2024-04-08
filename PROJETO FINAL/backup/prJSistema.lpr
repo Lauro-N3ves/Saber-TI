@@ -21,7 +21,7 @@ begin
   Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
   Application.CreateForm(TdmF, dmF);
   Application.CreateForm(TModeloF, ModeloF);
-  Application.CreateForm(TModeloF1, ModeloF1);
+  Application.CreateForm(TcadCategoriaF, cadCategoriaF);
   Application.Run;
 end.
 

@@ -1,5 +1,0 @@
-inherited cadCategoriaF: TcadCategoriaF
-  Left = 446
-  Top = 244
-  Caption = 'Cadastro de Categoria'
-end
