@@ -20,8 +20,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="53"/>
-        <CursorPos X="54" Y="62"/>
+        <TopLine Value="145"/>
+        <CursorPos X="17" Y="161"/>
         <UsageCount Value="105"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -40,18 +40,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="43" Column="45" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="78" Column="41" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="72" Column="3" TopLine="70"/>
-      </Position>
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="87" Column="23" TopLine="70"/>
@@ -160,6 +148,18 @@
         <Filename Value="principal.pas"/>
         <Caret Line="104" Column="3" TopLine="79"/>
       </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="62" Column="54" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="82" Column="32" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="98" Column="3" TopLine="79"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -173,7 +173,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="principal.pas"/>
-        <Line Value="157"/>
+        <Line Value="163"/>
       </Item>
     </BreakPoints>
   </Debugging>

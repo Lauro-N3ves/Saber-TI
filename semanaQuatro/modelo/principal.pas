@@ -44,6 +44,7 @@ type
     procedure BitBtn4Click(Sender: TObject);
     procedure BitBtn5Click(Sender: TObject);
     procedure BitBtn6Click(Sender: TObject);
+    procedure dbEdtIDChange(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -112,6 +113,11 @@ begin
       qryCatProd.delete;
       PageControl1.ActivePage := tbPesquisa;
   end;
+end;
+
+procedure TPrincipalF.dbEdtIDChange(Sender: TObject);
+begin
+
 end;
 
 procedure TPrincipalF.BitBtn1Click(Sender: TObject);

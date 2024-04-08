@@ -1,7 +1,7 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 582
-  Height = 614
-  Top = 150
+  Left = 290
+  Height = 553
+  Top = 201
   Width = 1144
   Caption = 'Menu Principal'
   Menu = MainMenu1

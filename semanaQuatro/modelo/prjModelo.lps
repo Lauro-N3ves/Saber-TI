@@ -8,7 +8,6 @@
       <Unit>
         <Filename Value="prjModelo.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="12" Y="7"/>
         <UsageCount Value="105"/>
@@ -20,8 +19,9 @@
         <ComponentName Value="PrincipalF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="47"/>
-        <CursorPos X="54" Y="62"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="86"/>
+        <CursorPos X="40" Y="88"/>
         <UsageCount Value="105"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -40,26 +40,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="43" Column="45" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="78" Column="41" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="72" Column="3" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="87" Column="23" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="93" Column="18" TopLine="72"/>
-      </Position>
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="85" Column="40" TopLine="72"/>
@@ -160,6 +140,26 @@
         <Filename Value="principal.pas"/>
         <Caret Line="104" Column="3" TopLine="79"/>
       </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="62" Column="54" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="82" Column="32" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="98" Column="3" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="161" Column="17" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="principal.pas"/>
+        <Caret Line="90" Column="33" TopLine="86"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -173,7 +173,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="principal.pas"/>
-        <Line Value="157"/>
+        <Line Value="163"/>
       </Item>
     </BreakPoints>
   </Debugging>

@@ -1,44 +1,241 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 381
-  Top = 252
+  Left = 328
+  Height = 667
+  Top = 345
+  Width = 1031
   Caption = 'Cadastro de Categoria'
+  ClientHeight = 667
+  ClientWidth = 1031
+  Font.Height = -16
+  OnClose = FormClose
+  OnCreate = FormCreate
   inherited PageControl1: TPageControl
+    Height = 667
+    Width = 1031
+    ActivePage = tbCadastro
+    TabIndex = 1
+    OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
-      inherited pnlPesquisa: TPanel
+      ClientHeight = 633
+      ClientWidth = 1023
+      object pnlBotoes: TPanel[0]
+        Left = 0
+        Height = 73
+        Top = 560
+        Width = 1023
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 73
+        ClientWidth = 1023
+        TabOrder = 0
+        object bitBtnFechar: TBitBtn
+          Left = 917
+          Height = 73
+          Top = 0
+          Width = 106
+          Align = alRight
+          Caption = 'Fechar'
+          Images = ImageList1
+          ImageIndex = 11
+          OnClick = bitBtnFecharClick
+          TabOrder = 0
+        end
+        object bitBtnNovo: TBitBtn
+          Left = 0
+          Height = 73
+          Top = 0
+          Width = 98
+          Align = alLeft
+          Caption = 'Novo'
+          Images = ImageList1
+          ImageIndex = 9
+          OnClick = bitBtnNovoClick
+          TabOrder = 1
+        end
+        object bitBtnEditar: TBitBtn
+          Left = 96
+          Height = 73
+          Top = 0
+          Width = 96
+          Caption = 'Editar'
+          Images = ImageList1
+          ImageIndex = 1
+          OnClick = bitBtnEditarClick
+          TabOrder = 2
+        end
+      end
+      inherited pnlPesquisa: TPanel[1]
+        Width = 1023
+        ClientWidth = 1023
+        TabOrder = 1
         inherited dbEdtPesquisar: TDBEdit
           DataSource = dsCadModelo
         end
+        inherited bitBtnPesquisar: TBitBtn
+          Left = 889
+        end
       end
-      inherited pnlGrid: TPanel
+      inherited pnlGrid: TPanel[2]
+        Height = 490
+        Width = 1023
+        ClientHeight = 490
+        ClientWidth = 1023
+        TabOrder = 2
         inherited DBGrid1: TDBGrid
+          Height = 490
+          Width = 1023
           Columns = <          
             item
+              Alignment = taCenter
               PickList.Strings = (              )
-              Title.Caption = 'Title'
+              Title.Alignment = taCenter
+              Title.Caption = 'ID'
+              Width = 90
+              FieldName = 'categoriaprodutoid'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Descrição'
+              Width = 180
+              FieldName = 'ds_categoria_produto'
             end>
           DataSource = dsCadModelo
+          ReadOnly = True
+          OnDblClick = DBGrid1DblClick
         end
       end
     end
+    inherited tbCadastro: TTabSheet
+      ClientHeight = 633
+      ClientWidth = 1023
+      object pnlCadBotoes: TPanel[0]
+        Left = 0
+        Height = 73
+        Top = 560
+        Width = 1023
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 73
+        ClientWidth = 1023
+        TabOrder = 0
+        object bitBtnGravar: TBitBtn
+          Left = 0
+          Height = 73
+          Top = 0
+          Width = 104
+          Align = alLeft
+          Caption = 'Gravar'
+          Images = ImageList1
+          ImageIndex = 14
+          OnClick = bitBtnGravarClick
+          TabOrder = 0
+        end
+        object bitBtnExcluir: TBitBtn
+          Left = 104
+          Height = 73
+          Top = 0
+          Width = 102
+          Align = alLeft
+          Caption = 'Excluir'
+          Images = ImageList1
+          ImageIndex = 2
+          OnClick = bitBtnExcluirClick
+          TabOrder = 1
+        end
+        object bitBtnancelar: TBitBtn
+          Left = 909
+          Height = 73
+          Top = 0
+          Width = 114
+          Align = alRight
+          Caption = 'Cancelar'
+          Images = ImageList1
+          ImageIndex = 18
+          OnClick = bitBtnancelarClick
+          TabOrder = 2
+        end
+        object bitBtnExcluir1: TBitBtn
+          Left = 206
+          Height = 73
+          Top = 0
+          Width = 102
+          Align = alLeft
+          Caption = 'Imprimir'
+          Images = ImageList1
+          ImageIndex = 4
+          OnClick = bitBtnExcluir1Click
+          TabOrder = 3
+        end
+      end
+      inherited pnlCadTop: TPanel[1]
+        Height = 113
+        Width = 1023
+        ClientHeight = 113
+        ClientWidth = 1023
+        TabOrder = 1
+        object lblCadCategoriaID: TLabel[0]
+          Left = 76
+          Height = 21
+          Top = 29
+          Width = 18
+          Caption = 'ID:'
+        end
+        object lblCadCategoriaDescricao: TLabel[1]
+          Left = 24
+          Height = 21
+          Top = 69
+          Width = 70
+          Caption = 'Descrição:'
+        end
+        object dbEdtCadCategoriaID: TDBEdit[2]
+          Left = 112
+          Height = 29
+          Top = 24
+          Width = 80
+          DataField = 'categoriaprodutoid'
+          DataSource = dsCadModelo
+          ReadOnly = True
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object dbEdtCadCategoriaDescricao: TDBEdit[3]
+          Left = 112
+          Height = 29
+          Top = 64
+          Width = 312
+          DataField = 'ds_categoria_produto'
+          DataSource = dsCadModelo
+          ReadOnly = True
+          MaxLength = 50
+          TabOrder = 1
+        end
+      end
+      inherited Panel1: TPanel[2]
+        Height = 447
+        Top = 113
+        Width = 1023
+        TabOrder = 2
+      end
+    end
   end
-  inherited dsCadModelo: TDataSource
+  inherited dsCadModelo: TDataSource[1]
     DataSet = qryCadCategoria
     OnDataChange = dsCadModeloDataChange
-    Left = 1080
+    Left = 880
     Top = 232
   end
-  inherited ImageList1: TImageList
-    Left = 1080
+  inherited ImageList1: TImageList[2]
+    Left = 880
     Top = 304
   end
   object qryCadCategoria: TZQuery[3]
     Connection = dmF.ZConnection1
-    Active = True
+    OnNewRecord = qryCadCategoriaNewRecord
     SQL.Strings = (
       'select * from categoria_produto '
     )
     Params = <>
-    Left = 1080
+    Left = 880
     Top = 164
     object qryCadCategoriacategoriaprodutoid: TLongintField
       FieldKind = fkData

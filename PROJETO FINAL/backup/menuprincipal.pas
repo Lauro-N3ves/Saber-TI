@@ -5,7 +5,7 @@ unit menuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus,modelo;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria ;
 
 type
 
@@ -71,8 +71,8 @@ end;
 
 procedure TMenuPrincipalF.subMnCadastroCategoriaClick(Sender: TObject);
 begin
-  ModeloF:=TModeloF.Create(Self);
-  ModeloF.ShowModal;
+  CadCategoriaF:=TCadCategoriaF.Create(self);
+  CadCategoriaF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.subMnRelatoriosProdutosClick(Sender: TObject);

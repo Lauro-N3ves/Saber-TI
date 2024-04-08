@@ -1,12 +1,12 @@
 object PrincipalF: TPrincipalF
-  Left = 392
-  Height = 715
-  Top = 228
-  Width = 1462
+  Left = 255
+  Height = 678
+  Top = 10
+  Width = 1188
   Align = alClient
   Caption = 'Cadastro Modelo'
-  ClientHeight = 715
-  ClientWidth = 1462
+  ClientHeight = 678
+  ClientWidth = 1188
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
@@ -14,23 +14,23 @@ object PrincipalF: TPrincipalF
   WindowState = wsMaximized
   object PageControl1: TPageControl
     Left = 0
-    Height = 715
+    Height = 678
     Top = 0
-    Width = 1462
-    ActivePage = tbPesquisa
+    Width = 1188
+    ActivePage = tbCadastro
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     OnChange = PageControl1Change
     object tbPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 687
-      ClientWidth = 1454
+      ClientHeight = 650
+      ClientWidth = 1180
       object DBGrid1: TDBGrid
         Left = 0
-        Height = 637
+        Height = 600
         Top = 0
-        Width = 1454
+        Width = 1180
         Align = alClient
         Color = clWindow
         Columns = <        
@@ -54,11 +54,11 @@ object PrincipalF: TPrincipalF
       object Panel2: TPanel
         Left = 0
         Height = 50
-        Top = 637
-        Width = 1454
+        Top = 600
+        Width = 1180
         Align = alBottom
         ClientHeight = 50
-        ClientWidth = 1454
+        ClientWidth = 1180
         TabOrder = 1
         object BitBtn1: TBitBtn
           Left = 26
@@ -70,7 +70,7 @@ object PrincipalF: TPrincipalF
           TabOrder = 0
         end
         object BitBtn2: TBitBtn
-          Left = 1366
+          Left = 1092
           Height = 25
           Top = 10
           Width = 75
@@ -83,8 +83,8 @@ object PrincipalF: TPrincipalF
     end
     object tbCadastro: TTabSheet
       Caption = 'Cadastro'
-      ClientHeight = 687
-      ClientWidth = 1454
+      ClientHeight = 650
+      ClientWidth = 1180
       object dbEdtDescric: TDBEdit
         Left = 147
         Height = 23
@@ -113,11 +113,11 @@ object PrincipalF: TPrincipalF
       object Panel1: TPanel
         Left = 0
         Height = 50
-        Top = 637
-        Width = 1454
+        Top = 600
+        Width = 1180
         Align = alBottom
         ClientHeight = 50
-        ClientWidth = 1454
+        ClientWidth = 1180
         TabOrder = 2
         OnClick = Panel1Click
         object BitBtn3: TBitBtn
@@ -148,7 +148,7 @@ object PrincipalF: TPrincipalF
           TabOrder = 2
         end
         object BitBtn6: TBitBtn
-          Left = 1373
+          Left = 1099
           Height = 25
           Top = 12
           Width = 75
@@ -253,6 +253,7 @@ object PrincipalF: TPrincipalF
         Alignment = taRightJustify
         MaxLength = 0
         TabOrder = 0
+        OnChange = dbEdtIDChange
       end
     end
   end

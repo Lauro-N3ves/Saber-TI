@@ -13,29 +13,35 @@ type
   { TModeloF }
 
   TModeloF = class(TForm)
-    bitBtnancelar: TBitBtn;
-    bitBtnGravar: TBitBtn;
-    bitBtnExcluir: TBitBtn;
-    bitBtnPesquisar: TBitBtn;
-    bitBtnFechar: TBitBtn;
-    bitBtnNovo: TBitBtn;
-    dbEdtPesquisar: TDBEdit;
-    DBGrid1: TDBGrid;
+    bitBtnModeloCancelar: TBitBtn;
+    bitBtnModeloEditar: TBitBtn;
+    bitBtnModeloExcluir: TBitBtn;
+    bitBtnModeloImprimir: TBitBtn;
+    bitBtnModeloFechar: TBitBtn;
+    bitBtnModeloGravar: TBitBtn;
+    bitBtnModeloNovo: TBitBtn;
+    bitBtnModeloPesquisar: TBitBtn;
+    dbEdtModeloPesquisar: TDBEdit;
+    dbGridModelo: TDBGrid;
     dsCadModelo: TDataSource;
     ImageList1: TImageList;
-    Label1: TLabel;
+    lblModeloPesquisar: TLabel;
     Panel1: TPanel;
+    pnlModeloPesquisaBotoes: TPanel;
+    pnlModeloCadBotoes: TPanel;
     pnlCadTop: TPanel;
     pnlGrid: TPanel;
-    pnlBotoes: TPanel;
     pnlPesquisa: TPanel;
-    pnlCadBotoes: TPanel;
     PageControl1: TPageControl;
     tbPesquisa: TTabSheet;
     tbCadastro: TTabSheet;
-    procedure bitBtnancelarClick(Sender: TObject);
-    procedure bitBtnFecharClick(Sender: TObject);
-    procedure bitBtnNovoClick(Sender: TObject);
+    procedure bitBtnModeloCancelarClick(Sender: TObject);
+    procedure bitBtnModeloEditarClick(Sender: TObject);
+    procedure bitBtnModeloImprimirClick(Sender: TObject);
+    procedure bitBtnModeloExcluirClick(Sender: TObject);
+    procedure bitBtnModeloFecharClick(Sender: TObject);
+    procedure bitBtnModeloGravarClick(Sender: TObject);
+    procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure SClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -73,19 +79,39 @@ begin
 
 end;
 
-procedure TModeloF.bitBtnNovoClick(Sender: TObject);
+procedure TModeloF.bitBtnModeloNovoClick(Sender: TObject);
 begin
   PageControl1.ActivePage:=tbCadastro;
 end;
 
-procedure TModeloF.bitBtnFecharClick(Sender: TObject);
+procedure TModeloF.bitBtnModeloFecharClick(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TModeloF.bitBtnancelarClick(Sender: TObject);
+procedure TModeloF.bitBtnModeloGravarClick(Sender: TObject);
+begin
+
+end;
+
+procedure TModeloF.bitBtnModeloCancelarClick(Sender: TObject);
 begin
   PageControl1.ActivePage:=tbPesquisa;
+end;
+
+procedure TModeloF.bitBtnModeloEditarClick(Sender: TObject);
+begin
+
+end;
+
+procedure TModeloF.bitBtnModeloImprimirClick(Sender: TObject);
+begin
+
+end;
+
+procedure TModeloF.bitBtnModeloExcluirClick(Sender: TObject);
+begin
+
 end;
 
 procedure TModeloF.PageControl1Change(Sender: TObject);

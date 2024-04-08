@@ -5,7 +5,7 @@ unit dataModel;
 interface
 
 uses
-  Classes, SysUtils, ZConnection;
+  Classes, SysUtils, ZConnection, ZDataset;
 
 type
 
@@ -37,7 +37,13 @@ end;
 
 procedure TdmF.DataModuleCreate(Sender: TObject);
 begin
-
+  ZConnection1.HostName := 'localhost';
+  ZConnection1.DataBase := 'postgres';
+  ZConnection1.User     := 'postgres';
+  ZConnection1.Password := '1234';
+  ZConnection1.Port     := 5432;
+  ZConnection1.Protocol := 'postgresql';
+  ZConnection1.Connected := True;
 end;
 
 end.

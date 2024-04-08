@@ -2,8 +2,8 @@ object dmF: TdmF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 410
-  HorizontalOffset = 1668
-  VerticalOffset = 515
+  HorizontalOffset = 819
+  VerticalOffset = 224
   Width = 526
   PPI = 120
   object ZConnection1: TZConnection
@@ -23,5 +23,11 @@ object dmF: TdmF
     Protocol = 'postgresql'
     Left = 110
     Top = 40
+  end
+  object qryGenerica: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 127
+    Top = 154
   end
 end

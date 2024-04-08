@@ -1,15 +1,16 @@
 object ModeloF: TModeloF
-  Left = 484
-  Height = 664
-  Top = 201
-  Width = 1217
+  Left = 461
+  Height = 550
+  Top = 174
+  Width = 1089
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Modelo'
-  ClientHeight = 664
-  ClientWidth = 1217
+  ClientHeight = 550
+  ClientWidth = 1089
+  DesignTimePPI = 120
   Font.CharSet = ANSI_CHARSET
-  Font.Height = -14
+  Font.Height = -18
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   OnClose = FormClose
@@ -18,198 +19,225 @@ object ModeloF: TModeloF
   LCLVersion = '3.2.0.0'
   object PageControl1: TPageControl
     Left = 0
-    Height = 664
+    Height = 550
     Top = 0
-    Width = 1217
-    ActivePage = tbCadastro
+    Width = 1089
+    ActivePage = tbPesquisa
     Align = alClient
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     OnChange = PageControl1Change
     object tbPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 632
-      ClientWidth = 1209
+      ClientHeight = 512
+      ClientWidth = 1081
       OnContextPopup = tbPesquisaContextPopup
-      object pnlBotoes: TPanel
-        Left = 0
-        Height = 73
-        Top = 559
-        Width = 1209
-        Align = alBottom
-        BevelOuter = bvNone
-        ClientHeight = 73
-        ClientWidth = 1209
-        TabOrder = 0
-        object bitBtnFechar: TBitBtn
-          Left = 1103
-          Height = 73
-          Top = 0
-          Width = 106
-          Align = alRight
-          Caption = 'Fechar'
-          Images = ImageList1
-          ImageIndex = 11
-          OnClick = bitBtnFecharClick
-          TabOrder = 0
-        end
-        object bitBtnNovo: TBitBtn
-          Left = 0
-          Height = 73
-          Top = 0
-          Width = 98
-          Align = alLeft
-          Caption = 'Novo'
-          Images = ImageList1
-          ImageIndex = 9
-          OnClick = bitBtnNovoClick
-          TabOrder = 1
-        end
-      end
       object pnlPesquisa: TPanel
         Left = 0
-        Height = 70
+        Height = 88
         Top = 0
-        Width = 1209
+        Width = 1081
         Align = alTop
         BevelOuter = bvNone
-        ClientHeight = 70
-        ClientWidth = 1209
+        ClientHeight = 88
+        ClientWidth = 1081
         Font.CharSet = ANSI_CHARSET
-        Font.Height = -14
+        Font.Height = -18
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         ParentFont = False
-        TabOrder = 1
-        object dbEdtPesquisar: TDBEdit
-          Left = 26
-          Height = 27
-          Top = 32
-          Width = 346
+        TabOrder = 0
+        object dbEdtModeloPesquisar: TDBEdit
+          Left = 32
+          Height = 33
+          Top = 40
+          Width = 432
           MaxLength = 0
           TabOrder = 0
         end
-        object bitBtnPesquisar: TBitBtn
-          Left = 1075
-          Height = 70
+        object bitBtnModeloPesquisar: TBitBtn
+          Left = 913
+          Height = 88
           Top = 0
-          Width = 134
+          Width = 168
           Align = alRight
           Caption = 'Pesquisar'
           Images = ImageList1
           ImageIndex = 7
           TabOrder = 1
         end
-        object Label1: TLabel
-          Left = 26
-          Height = 19
-          Top = 6
-          Width = 71
+        object lblModeloPesquisar: TLabel
+          Left = 32
+          Height = 25
+          Top = 8
+          Width = 93
           Caption = 'PESQUISAR'
         end
       end
       object pnlGrid: TPanel
         Left = 0
-        Height = 489
-        Top = 70
-        Width = 1209
+        Height = 333
+        Top = 88
+        Width = 1081
         Align = alClient
         BevelOuter = bvNone
-        ClientHeight = 489
-        ClientWidth = 1209
-        TabOrder = 2
+        ClientHeight = 333
+        ClientWidth = 1081
+        TabOrder = 1
         OnClick = pnlGridClick
-        object DBGrid1: TDBGrid
+        object dbGridModelo: TDBGrid
           Left = 0
-          Height = 489
+          Height = 333
           Top = 0
-          Width = 1209
+          Width = 1081
           Align = alClient
           Color = clWindow
           Columns = <>
           TabOrder = 0
         end
       end
-    end
-    object tbCadastro: TTabSheet
-      Caption = 'Cadastro'
-      ClientHeight = 632
-      ClientWidth = 1209
-      object pnlCadBotoes: TPanel
+      object pnlModeloPesquisaBotoes: TPanel
         Left = 0
-        Height = 73
-        Top = 559
-        Width = 1209
+        Height = 91
+        Top = 421
+        Width = 1081
         Align = alBottom
         BevelOuter = bvNone
-        ClientHeight = 73
-        ClientWidth = 1209
-        TabOrder = 0
-        object bitBtnGravar: TBitBtn
-          Left = 0
-          Height = 73
+        ClientHeight = 91
+        ClientWidth = 1081
+        TabOrder = 2
+        object bitBtnModeloFechar: TBitBtn
+          Left = 949
+          Height = 91
           Top = 0
-          Width = 104
-          Align = alLeft
-          Caption = 'Gravar'
+          Width = 132
+          Align = alRight
+          Caption = 'Fechar'
           Images = ImageList1
-          ImageIndex = 14
+          ImageIndex = 11
+          OnClick = bitBtnModeloFecharClick
           TabOrder = 0
         end
-        object bitBtnExcluir: TBitBtn
-          Left = 104
-          Height = 73
+        object bitBtnModeloNovo: TBitBtn
+          Left = 0
+          Height = 91
           Top = 0
-          Width = 102
+          Width = 122
           Align = alLeft
-          Caption = 'Excluir'
+          Caption = 'Novo'
           Images = ImageList1
-          ImageIndex = 5
+          ImageIndex = 9
+          OnClick = bitBtnModeloNovoClick
           TabOrder = 1
         end
-        object bitBtnancelar: TBitBtn
-          Left = 1095
-          Height = 73
+        object bitBtnModeloEditar: TBitBtn
+          Left = 120
+          Height = 91
           Top = 0
-          Width = 114
-          Align = alRight
-          Caption = 'Cancelar'
+          Width = 120
+          Caption = 'Editar'
           Images = ImageList1
-          ImageIndex = 18
-          OnClick = bitBtnancelarClick
+          ImageIndex = 1
+          OnClick = bitBtnModeloEditarClick
           TabOrder = 2
         end
       end
+    end
+    object tbCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 512
+      ClientWidth = 1081
       object pnlCadTop: TPanel
         Left = 0
-        Height = 57
+        Height = 71
         Top = 0
-        Width = 1209
+        Width = 1081
         Align = alTop
         BevelOuter = bvNone
-        TabOrder = 1
+        TabOrder = 0
       end
       object Panel1: TPanel
         Left = 0
-        Height = 502
-        Top = 57
-        Width = 1209
+        Height = 441
+        Top = 71
+        Width = 1081
         Align = alClient
         BevelOuter = bvNone
-        TabOrder = 2
+        ClientHeight = 441
+        ClientWidth = 1081
+        TabOrder = 1
+        object pnlModeloCadBotoes: TPanel
+          Left = 0
+          Height = 91
+          Top = 350
+          Width = 1081
+          Align = alBottom
+          BevelOuter = bvNone
+          ClientHeight = 91
+          ClientWidth = 1081
+          TabOrder = 0
+          object bitBtnModeloGravar: TBitBtn
+            Left = 0
+            Height = 91
+            Top = 0
+            Width = 130
+            Align = alLeft
+            Caption = 'Gravar'
+            Images = ImageList1
+            ImageIndex = 14
+            OnClick = bitBtnModeloGravarClick
+            TabOrder = 0
+          end
+          object bitBtnModeloExcluir: TBitBtn
+            Left = 130
+            Height = 91
+            Top = 0
+            Width = 128
+            Align = alLeft
+            Caption = 'Excluir'
+            Images = ImageList1
+            ImageIndex = 2
+            OnClick = bitBtnModeloExcluirClick
+            TabOrder = 1
+          end
+          object bitBtnModeloCancelar: TBitBtn
+            Left = 939
+            Height = 91
+            Top = 0
+            Width = 142
+            Align = alRight
+            Caption = 'Cancelar'
+            Images = ImageList1
+            ImageIndex = 18
+            OnClick = bitBtnModeloCancelarClick
+            TabOrder = 2
+          end
+          object bitBtnModeloImprimir: TBitBtn
+            Left = 258
+            Height = 91
+            Top = 0
+            Width = 128
+            Align = alLeft
+            Caption = 'Imprimir'
+            Images = ImageList1
+            ImageIndex = 4
+            OnClick = bitBtnModeloImprimirClick
+            TabOrder = 3
+          end
+        end
       end
     end
   end
   object dsCadModelo: TDataSource
-    Left = 1082
-    Top = 211
+    Left = 1353
+    Top = 264
   end
   object ImageList1: TImageList
     DrawingStyle = dsTransparent
     Height = 32
     Width = 32
-    Left = 1082
-    Top = 294
+    Left = 1353
+    Top = 368
     Bitmap = {
       4C7A160000002000000020000000A73700000000000078DAED9D075C14C7F7C0
       97DE8F0E2A6201290AA258C0AE5862456CD8110BF6124B54D4D87B41ECA222F6
