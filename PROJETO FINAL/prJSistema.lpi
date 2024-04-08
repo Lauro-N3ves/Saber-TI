@@ -63,6 +63,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="menuPrincipal"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadCategoria"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

@@ -13,9 +13,9 @@ type
   { TModeloF }
 
   TModeloF = class(TForm)
+    bitBtnancelar: TBitBtn;
     bitBtnGravar: TBitBtn;
     bitBtnExcluir: TBitBtn;
-    bitBtnancelar: TBitBtn;
     bitBtnPesquisar: TBitBtn;
     bitBtnFechar: TBitBtn;
     bitBtnNovo: TBitBtn;
@@ -24,13 +24,17 @@ type
     dsCadModelo: TDataSource;
     ImageList1: TImageList;
     Label1: TLabel;
+    Panel1: TPanel;
+    pnlCadTop: TPanel;
     pnlGrid: TPanel;
     pnlBotoes: TPanel;
     pnlPesquisa: TPanel;
-    Panel3: TPanel;
+    pnlCadBotoes: TPanel;
     PageControl1: TPageControl;
     tbPesquisa: TTabSheet;
     tbCadastro: TTabSheet;
+    procedure bitBtnancelarClick(Sender: TObject);
+    procedure bitBtnFecharClick(Sender: TObject);
     procedure bitBtnNovoClick(Sender: TObject);
     procedure SClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -56,13 +60,12 @@ implementation
 
 procedure TModeloF.FormCreate(Sender: TObject);
 begin
-
+  PageControl1.ActivePage:=tbPesquisa;
 end;
 
 procedure TModeloF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
    CloseAction:= caFree;
-
 end;
 
 procedure TModeloF.SClick(Sender: TObject);
@@ -72,7 +75,17 @@ end;
 
 procedure TModeloF.bitBtnNovoClick(Sender: TObject);
 begin
+  PageControl1.ActivePage:=tbCadastro;
+end;
 
+procedure TModeloF.bitBtnFecharClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TModeloF.bitBtnancelarClick(Sender: TObject);
+begin
+  PageControl1.ActivePage:=tbPesquisa;
 end;
 
 procedure TModeloF.PageControl1Change(Sender: TObject);

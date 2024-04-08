@@ -1,18 +1,17 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 586
-  Height = 531
-  Top = 411
+  Left = 1297
+  Height = 532
+  Top = 121
   Width = 483
   Caption = 'Menu Principal'
-  DesignTimePPI = 120
   Menu = MainMenu1
   OnClose = FormClose
   Position = poDesktopCenter
   LCLVersion = '3.2.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
-    Left = 184
-    Top = 168
+    Left = 147
+    Top = 134
     object MnCadastros: TMenuItem
       Caption = 'Cadastros'
       object MnCliente: TMenuItem

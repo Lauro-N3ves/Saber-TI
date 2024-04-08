@@ -1,2 +1,63 @@
-inherited ModeloF1: TModeloF1
+inherited CadCategoriaF: TCadCategoriaF
+  Left = 381
+  Top = 252
+  Caption = 'Cadastro de Categoria'
+  inherited PageControl1: TPageControl
+    inherited tbPesquisa: TTabSheet
+      inherited pnlPesquisa: TPanel
+        inherited dbEdtPesquisar: TDBEdit
+          DataSource = dsCadModelo
+        end
+      end
+      inherited pnlGrid: TPanel
+        inherited DBGrid1: TDBGrid
+          Columns = <          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Title'
+            end>
+          DataSource = dsCadModelo
+        end
+      end
+    end
+  end
+  inherited dsCadModelo: TDataSource
+    DataSet = qryCadCategoria
+    OnDataChange = dsCadModeloDataChange
+    Left = 1080
+    Top = 232
+  end
+  inherited ImageList1: TImageList
+    Left = 1080
+    Top = 304
+  end
+  object qryCadCategoria: TZQuery[3]
+    Connection = dmF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from categoria_produto '
+    )
+    Params = <>
+    Left = 1080
+    Top = 164
+    object qryCadCategoriacategoriaprodutoid: TLongintField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadCategoriads_categoria_produto: TStringField
+      FieldKind = fkData
+      FieldName = 'ds_categoria_produto'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+  end
 end

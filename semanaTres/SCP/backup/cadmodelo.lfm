@@ -1,10 +1,10 @@
 object CadModeloF: TCadModeloF
-  Left = 1306
-  Height = 563
-  Top = 175
+  Left = 1363
+  Height = 528
+  Top = 309
   Width = 485
   Caption = 'Modelo'
-  ClientHeight = 563
+  ClientHeight = 528
   ClientWidth = 485
   DesignTimePPI = 120
   OnClose = FormClose
@@ -13,7 +13,7 @@ object CadModeloF: TCadModeloF
   object Panel1: TPanel
     Left = 0
     Height = 107
-    Top = 456
+    Top = 421
     Width = 485
     Align = alBottom
     ClientHeight = 107
@@ -52,7 +52,7 @@ object CadModeloF: TCadModeloF
       TabOrder = 3
     end
     object BtnSair: TButton
-      Left = 200
+      Left = 192
       Height = 31
       Top = 64
       Width = 94

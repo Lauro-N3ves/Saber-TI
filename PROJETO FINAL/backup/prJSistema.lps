@@ -9,9 +9,8 @@
         <Filename Value="prJSistema.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="2"/>
-        <CursorPos X="68" Y="13"/>
-        <UsageCount Value="21"/>
+        <CursorPos X="56" Y="10"/>
+        <UsageCount Value="152"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -21,9 +20,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="15"/>
-        <CursorPos X="3" Y="35"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="61"/>
+        <CursorPos X="38" Y="63"/>
+        <UsageCount Value="152"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -34,23 +33,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dataModel"/>
-        <TopLine Value="23"/>
+        <TopLine Value="17"/>
         <CursorPos Y="32"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="152"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="cadcategoria.pas"/>
-        <ComponentName Value="cadCategoria"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="cadCategoria"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="3" Y="19"/>
-        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -61,38 +48,142 @@
         <UnitName Value="menuPrincipal"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="77" Y="8"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="52"/>
+        <CursorPos X="24" Y="69"/>
+        <UsageCount Value="151"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="cadCategoriaF"/>
+        <ComponentName Value="cadCategoria"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="5"/>
+        <UsageCount Value="85"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="3">
+    <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="menuprincipal.pas"/>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="79" Column="3" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="78" Column="3" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="77" Column="3" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="78" Column="3" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="77" Column="3" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="prJSistema.lpr"/>
+        <Caret Line="13" Column="54"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
-        <Caret Line="68" Column="3" TopLine="50"/>
+        <Caret Line="8" Column="77"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
-        <Caret Line="58" Column="23" TopLine="50"/>
+        <Caret Line="52" Column="3" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
-        <Caret Line="68" Column="24" TopLine="50"/>
+        <Caret Line="74" Column="3" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="85" Column="3" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="77" Column="3" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="8" Column="63"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="75" Column="16" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="78" Column="3" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="63" Column="125" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="83" Column="24" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="75" Column="20" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="71" Column="29" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="67" Column="2" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="70" Column="9" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="60" Column="3" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="83" Column="9" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="75" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="68" Column="25" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="88" Column="38" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="75" Column="32" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="65" Column="16" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="modelo.pas"/>
+        <Caret Line="78" Column="38" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="65" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="54" Column="3" TopLine="52"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -53,7 +53,7 @@ end;
 
 procedure TOpLoginF.lblEsqSenhaClick(Sender: TObject);
 begin
-  //tela:=1;
+  tela:=1;
   CadEsqSenhaF:=TCadEsqSenhaF.create(self);
   OpLoginF.Visible:=False;
   CadEsqSenhaF.ShowModal;

@@ -8,6 +8,7 @@
       <Unit>
         <Filename Value="prjModelo.lpr"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="12" Y="7"/>
         <UsageCount Value="105"/>
@@ -19,8 +20,7 @@
         <ComponentName Value="PrincipalF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="53"/>
+        <TopLine Value="47"/>
         <CursorPos X="54" Y="62"/>
         <UsageCount Value="105"/>
         <Loaded Value="True"/>

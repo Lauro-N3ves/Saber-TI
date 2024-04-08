@@ -5,7 +5,7 @@ unit menuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, cadCategoria;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus,modelo;
 
 type
 
@@ -32,6 +32,8 @@ type
     procedure mnCadastroClick(Sender: TObject);
     procedure mnSairClick(Sender: TObject);
     procedure subMnCadastroCategoriaClick(Sender: TObject);
+    procedure subMnRelatoriosProdutosClick(Sender: TObject);
+    procedure subMnVendasOrcamentoClick(Sender: TObject);
   private
 
   public
@@ -60,8 +62,7 @@ end;
 
 procedure TMenuPrincipalF.mnCadastroClick(Sender: TObject);
 begin
-
-end;
+  end;
 
 procedure TMenuPrincipalF.mnSairClick(Sender: TObject);
 begin
@@ -70,7 +71,16 @@ end;
 
 procedure TMenuPrincipalF.subMnCadastroCategoriaClick(Sender: TObject);
 begin
-  cadCategoriaF.showmodal;
+end;
+
+procedure TMenuPrincipalF.subMnRelatoriosProdutosClick(Sender: TObject);
+begin
+
+end;
+
+procedure TMenuPrincipalF.subMnVendasOrcamentoClick(Sender: TObject);
+begin
+
 end;
 
 end.

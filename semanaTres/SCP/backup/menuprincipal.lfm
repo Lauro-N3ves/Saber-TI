@@ -7,7 +7,9 @@ object MenuPrincipalF: TMenuPrincipalF
   DesignTimePPI = 120
   Menu = MainMenu1
   OnClose = FormClose
+  Position = poDesktopCenter
   LCLVersion = '3.2.0.0'
+  WindowState = wsMaximized
   object MainMenu1: TMainMenu
     Left = 184
     Top = 168

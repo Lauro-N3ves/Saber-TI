@@ -1,81 +1,80 @@
 object OpLoginF: TOpLoginF
   Left = 688
-  Height = 555
+  Height = 444
   Top = 378
-  Width = 489
+  Width = 391
   Caption = 'Login'
-  ClientHeight = 555
-  ClientWidth = 489
-  DesignTimePPI = 120
+  ClientHeight = 444
+  ClientWidth = 391
   OnClose = FormClose
   LCLVersion = '3.2.0.0'
   object lblEmail: TLabel
-    Left = 112
-    Height = 24
-    Top = 72
-    Width = 51
+    Left = 90
+    Height = 20
+    Top = 58
+    Width = 41
     Caption = 'E-mail:'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -20
+    Font.Height = -16
     Font.Name = 'Arial Narrow'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
   end
   object lblSenha: TLabel
-    Left = 112
-    Height = 24
-    Top = 152
-    Width = 52
+    Left = 90
+    Height = 20
+    Top = 122
+    Width = 42
     Caption = 'Senha:'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -20
+    Font.Height = -16
     Font.Name = 'Arial Narrow'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
   end
   object edtEmail: TEdit
-    Left = 112
-    Height = 28
-    Top = 105
-    Width = 224
+    Left = 90
+    Height = 23
+    Top = 84
+    Width = 179
     TabOrder = 0
   end
   object edtSenha: TEdit
-    Left = 112
-    Height = 28
-    Top = 184
-    Width = 224
+    Left = 90
+    Height = 23
+    Top = 147
+    Width = 179
     TabOrder = 1
   end
   object btnEntrar: TButton
-    Left = 112
-    Height = 32
-    Top = 264
-    Width = 224
+    Left = 90
+    Height = 26
+    Top = 211
+    Width = 179
     Caption = 'Entrar'
     TabOrder = 2
     OnClick = btnEntrarClick
   end
   object btnCancelar: TButton
-    Left = 184
-    Height = 24
-    Top = 328
-    Width = 94
+    Left = 147
+    Height = 19
+    Top = 262
+    Width = 75
     Caption = 'Cancelar'
     TabOrder = 3
     OnClick = btnCancelarClick
   end
   object lblEsqSenha: TLabel
-    Left = 112
-    Height = 20
-    Top = 216
-    Width = 122
+    Left = 90
+    Height = 16
+    Top = 173
+    Width = 93
     Caption = 'Esqueci Minha Senha'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlue
-    Font.Height = -15
+    Font.Height = -12
     Font.Name = 'Arial Narrow'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft

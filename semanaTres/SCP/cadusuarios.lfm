@@ -1,9 +1,9 @@
 inherited CadUsuariosF: TCadUsuariosF
-  Left = 478
-  Height = 563
-  Top = 441
+  Left = 466
+  Height = 531
+  Top = 438
   Caption = 'Cadastro de Usuário'
-  ClientHeight = 563
+  ClientHeight = 531
   inherited Panel1: TPanel
     Left = 24
     Height = 88
@@ -36,140 +36,140 @@ inherited CadUsuariosF: TCadUsuariosF
   end
   object lblIdCadUsu: TLabel[1]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 30
-    Width = 135
+    Width = 107
     Caption = 'ID Cadastro Usuário:'
   end
   object lblCpfCnpj: TLabel[2]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 64
-    Width = 65
+    Width = 56
     Caption = 'CPF/CNPJ:'
   end
   object lblNomeFantasia: TLabel[3]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 98
-    Width = 101
+    Width = 82
     Caption = 'Nome Fantasia:'
   end
   object lblRazaoSocial: TLabel[4]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 132
-    Width = 88
+    Width = 68
     Caption = 'Razão Social:'
   end
   object lblEndereco: TLabel[5]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 199
-    Width = 65
+    Width = 52
     Caption = 'Endereço:'
   end
   object lblCep: TLabel[6]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 166
-    Width = 28
+    Width = 24
     Caption = 'CEP:'
   end
   object lblTelefone: TLabel[7]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 234
-    Width = 60
+    Width = 47
     Caption = 'Telefone:'
   end
   object lblEmail: TLabel[8]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 268
-    Width = 40
+    Width = 32
     Caption = 'Email:'
   end
   object edtIdCadUsu: TEdit[9]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 30
     Width = 132
     TabOrder = 0
   end
   object edtCpfCnpj: TEdit[10]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 64
     Width = 132
     TabOrder = 1
   end
   object edtNomeFantasia: TEdit[11]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 98
     Width = 132
     TabOrder = 2
   end
   object edtRazaoSocial: TEdit[12]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 132
     Width = 132
     TabOrder = 3
   end
   object edtEndereco: TEdit[13]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 199
     Width = 132
     TabOrder = 5
   end
   object edtCep: TEdit[14]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 166
     Width = 132
     TabOrder = 4
   end
   object edtTelefone: TEdit[15]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 234
     Width = 132
     TabOrder = 6
   end
   object edtEmail: TEdit[16]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 268
     Width = 132
     TabOrder = 7
   end
   object lblNomeUsuario: TLabel[17]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 302
-    Width = 119
+    Width = 95
     Caption = 'Nome de Usuário:'
   end
   object edtNomeUsuario: TEdit[18]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 302
     Width = 132
     TabOrder = 8
   end
   object lblSenha: TLabel[19]
     Left = 104
-    Height = 20
+    Height = 15
     Top = 336
-    Width = 43
+    Width = 35
     Caption = 'Senha:'
   end
   object edtSenha: TEdit[20]
     Left = 254
-    Height = 28
+    Height = 23
     Top = 336
     Width = 132
     TabOrder = 9

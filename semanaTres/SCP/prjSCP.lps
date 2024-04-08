@@ -21,8 +21,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <TopLine Value="68"/>
-        <CursorPos X="3" Y="87"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="56"/>
+        <CursorPos Y="62"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -48,10 +49,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
         <TopLine Value="46"/>
-        <CursorPos X="56" Y="63"/>
+        <CursorPos X="116" Y="69"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -160,7 +160,7 @@
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="27">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="cadesqsenha.pas"/>
         <Caret Line="22" Column="20" TopLine="19"/>
@@ -272,6 +272,10 @@
       <Position>
         <Filename Value="cadesqsenha.pas"/>
         <Caret Line="54" Column="7" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="87" Column="3" TopLine="68"/>
       </Position>
     </JumpHistory>
     <RunParams>
