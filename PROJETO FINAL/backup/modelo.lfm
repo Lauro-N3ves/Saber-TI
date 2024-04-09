@@ -32,7 +32,7 @@ object ModeloF: TModeloF
       ClientHeight = 512
       ClientWidth = 1081
       OnContextPopup = tbPesquisaContextPopup
-      object pnlModeloPesquisa: TPanel
+      object pnlPesquisa: TPanel
         Left = 0
         Height = 88
         Top = 0

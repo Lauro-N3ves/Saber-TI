@@ -6,15 +6,13 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, ZDataset, modelo, DB;
+  Buttons, DBGrids, ZDataset, modelo, DB;
 
 type
 
   { TCadCategoriaF }
 
   TCadCategoriaF = class(TModeloF)
-    bitBtnEditar: TBitBtn;
-    bitBtnExcluir1: TBitBtn;
     dbEdtCadCategoriaID: TDBEdit;
     dbEdtCadCategoriaDescricao: TDBEdit;
     lblCadCategoriaID: TLabel;
@@ -22,14 +20,24 @@ type
     qryCadCategoria: TZQuery;
     qryCadCategoriacategoriaprodutoid: TLongintField;
     qryCadCategoriads_categoria_produto: TStringField;
+    procedure BitBtn1Click(Sender: TObject);
     procedure bitBtnancelarClick(Sender: TObject);
     procedure bitBtnEditarClick(Sender: TObject);
     procedure bitBtnExcluir1Click(Sender: TObject);
     procedure bitBtnExcluirClick(Sender: TObject);
     procedure bitBtnFecharClick(Sender: TObject);
     procedure bitBtnGravarClick(Sender: TObject);
+    procedure bitBtnModeloCancelarClick(Sender: TObject);
+    procedure bitBtnModeloEditarClick(Sender: TObject);
+    procedure bitBtnModeloExcluirClick(Sender: TObject);
+    procedure bitBtnModeloGravarClick(Sender: TObject);
+    procedure bitBtnModeloImprimirClick(Sender: TObject);
+    procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure bitBtnModeloPesquisarClick(Sender: TObject);
     procedure bitBtnNovoClick(Sender: TObject);
+    procedure dbEdtModeloPesquisarChange(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure dbGridModeloDblClick(Sender: TObject);
     procedure dsCadModeloDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -59,6 +67,7 @@ procedure TCadCategoriaF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   inherited;
+  qryCadCategoria.Close;
   dbEdtCadCategoriaDescricao.ReadOnly:=true;
 end;
 
@@ -81,7 +90,7 @@ procedure TCadCategoriaF.qryCadCategoriaNewRecord(DataSet: TDataSet);
 begin
 
 end;
-end;
+
 
 procedure TCadCategoriaF.bitBtnNovoClick(Sender: TObject);
 begin
@@ -91,7 +100,17 @@ begin
   dbEdtCadCategoriaDescricao.ReadOnly:=False;
 end;
 
+procedure TCadCategoriaF.dbEdtModeloPesquisarChange(Sender: TObject);
+begin
+
+end;
+
 procedure TCadCategoriaF.DBGrid1DblClick(Sender: TObject);
+begin
+  PageControl1.ActivePage:=tbCadastro;
+end;
+
+procedure TCadCategoriaF.dbGridModeloDblClick(Sender: TObject);
 begin
   PageControl1.ActivePage:=tbCadastro;
 end;
@@ -102,6 +121,71 @@ begin
   dbEdtCadCategoriaDescricao.ReadOnly:=true;
   PageControl1.ActivePage:=tbPesquisa;
 
+end;
+
+procedure TCadCategoriaF.bitBtnModeloCancelarClick(Sender: TObject);
+begin
+  inherited;
+  dbEdtCadCategoriaDescricao.ReadOnly:= True;
+end;
+
+procedure TCadCategoriaF.bitBtnModeloEditarClick(Sender: TObject);
+begin
+  inherited;
+  PageControl1.ActivePage:= tbCadastro;
+  if dbEdtCadCategoriaDescricao.CanFocus then
+  begin
+     dbEdtCadCategoriaDescricao.SetFocus;
+  end;
+  dbEdtCadCategoriaDescricao.ReadOnly:= False;
+  qryCadCategoria.Edit;
+end;
+
+procedure TCadCategoriaF.bitBtnModeloExcluirClick(Sender: TObject);
+begin
+       //inherited;
+  If MessageDlg('Deseja excluir esse registro?',mtWarning,[mbYes,mbNo],0)=mrYes Then
+  begin
+
+     qryCadCategoria.delete;
+     dbEdtCadCategoriaDescricao.ReadOnly:= True;
+  end;
+
+end;
+
+procedure TCadCategoriaF.bitBtnModeloGravarClick(Sender: TObject);
+begin
+  inherited;
+  qryCadCategoria.Post;
+  dbEdtCadCategoriaDescricao.ReadOnly:= True;
+end;
+
+procedure TCadCategoriaF.bitBtnModeloImprimirClick(Sender: TObject);
+begin
+  inherited;
+  //terminar
+  dbEdtCadCategoriaDescricao.ReadOnly:= True;
+end;
+
+procedure TCadCategoriaF.bitBtnModeloNovoClick(Sender: TObject);
+begin
+  inherited;
+  qryCadCategoria.Insert;
+  dbEdtCadCategoriaDescricao.ReadOnly := False;
+  if dbEdtCadCategoriaDescricao.CanFocus then
+  begin
+     dbEdtCadCategoriaDescricao.SetFocus;
+  end;
+
+end;
+
+procedure TCadCategoriaF.bitBtnModeloPesquisarClick(Sender: TObject);
+begin
+  qryCadCategoria.Close;
+  qryCadCategoria.SQL.Clear;
+  qryCadCategoria.SQL.Text:='select * from categoria_produto'+ 'WHERE upper (ds_categoria_produto) LIKE'+
+  QuotedStr(UpperCase('%'+dbEdtModeloPesquisar.Text+'%'));
+  ShowMessage(qryCadCategoria.SQL.Text);
 end;
 
 procedure TCadCategoriaF.bitBtnFecharClick(Sender: TObject);
@@ -138,6 +222,17 @@ procedure TCadCategoriaF.bitBtnancelarClick(Sender: TObject);
 begin
   inherited;
   dbEdtCadCategoriaDescricao.ReadOnly:=True;
+end;
+
+procedure TCadCategoriaF.BitBtn1Click(Sender: TObject);
+begin
+  if MessageDlg('Deseja excluir este arquivo?', mtWarning, [mbYes,mbNo],0)=mrYes then
+  begin
+     qryCadCategoria.Delete;
+     PageControl1.ActivePage:=tbPesquisa;
+     dbEdtCadCategoriaDescricao.ReadOnly:=True;
+
+  end;
 end;
 
 end.

@@ -31,7 +31,7 @@ type
     pnlModeloCadBotoes: TPanel;
     pnlCadTop: TPanel;
     pnlGrid: TPanel;
-    pnlModeloPesquisa: TPanel;
+    pnlPesquisa: TPanel;
     PageControl1: TPageControl;
     tbPesquisa: TTabSheet;
     tbCadastro: TTabSheet;

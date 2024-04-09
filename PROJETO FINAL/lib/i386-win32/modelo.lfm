@@ -1,7 +1,7 @@
 object ModeloF: TModeloF
-  Left = 461
+  Left = 798
   Height = 550
-  Top = 174
+  Top = 176
   Width = 1089
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
