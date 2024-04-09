@@ -21,9 +21,8 @@ type
     bitBtnModeloGravar: TBitBtn;
     bitBtnModeloNovo: TBitBtn;
     bitBtnModeloPesquisar: TBitBtn;
-    dbEdtModeloPesquisar: TDBEdit;
     dbGridModelo: TDBGrid;
-    dsCadModelo: TDataSource;
+    edtPesquisarModelo: TEdit;
     ImageList1: TImageList;
     lblModeloPesquisar: TLabel;
     Panel1: TPanel;
@@ -42,6 +41,7 @@ type
     procedure bitBtnModeloFecharClick(Sender: TObject);
     procedure bitBtnModeloGravarClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure dbGridModeloDblClick(Sender: TObject);
     procedure SClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -84,6 +84,11 @@ begin
   PageControl1.ActivePage:=tbCadastro;
 end;
 
+procedure TModeloF.dbGridModeloDblClick(Sender: TObject);
+begin
+  PageControl1.ActivePage:=tbCadastro;
+end;
+
 procedure TModeloF.bitBtnModeloFecharClick(Sender: TObject);
 begin
   Close;
@@ -91,7 +96,7 @@ end;
 
 procedure TModeloF.bitBtnModeloGravarClick(Sender: TObject);
 begin
-
+  PageControl1.ActivePage:=tbPesquisa;
 end;
 
 procedure TModeloF.bitBtnModeloCancelarClick(Sender: TObject);
@@ -101,17 +106,17 @@ end;
 
 procedure TModeloF.bitBtnModeloEditarClick(Sender: TObject);
 begin
-
+  PageControl1.ActivePage:= tbCadastro;
 end;
 
 procedure TModeloF.bitBtnModeloImprimirClick(Sender: TObject);
 begin
-
+  PageControl1.ActivePage:=tbPesquisa;
 end;
 
 procedure TModeloF.bitBtnModeloExcluirClick(Sender: TObject);
 begin
-
+  PageControl1.ActivePage:=tbPesquisa;
 end;
 
 procedure TModeloF.PageControl1Change(Sender: TObject);

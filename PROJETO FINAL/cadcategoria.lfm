@@ -1,33 +1,24 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 459
-  Height = 667
-  Top = 133
+  Left = 405
+  Height = 554
+  Top = 166
   Width = 1031
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 667
+  ClientHeight = 554
   ClientWidth = 1031
   Font.Height = -16
   OnClose = FormClose
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
-    Height = 667
+    Height = 554
     Width = 1031
-    ActivePage = tbCadastro
-    TabIndex = 1
     OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 633
+      ClientHeight = 520
       ClientWidth = 1023
       inherited pnlPesquisa: TPanel
         Width = 1023
         ClientWidth = 1023
-        inherited dbEdtModeloPesquisar: TDBEdit
-          Left = 168
-          DataField = 'ds_categoria_produto'
-          DataSource = dsCadModelo
-          MaxLength = 50
-          OnChange = dbEdtModeloPesquisarChange
-        end
         inherited bitBtnModeloPesquisar: TBitBtn
           Left = 889
           OnClick = bitBtnModeloPesquisarClick
@@ -35,15 +26,18 @@ inherited CadCategoriaF: TCadCategoriaF
         inherited lblModeloPesquisar: TLabel
           Left = 168
         end
+        inherited edtPesquisarModelo: TEdit
+          Left = 168
+        end
       end
       inherited pnlGrid: TPanel
-        Height = 490
+        Height = 377
         Width = 1023
-        ClientHeight = 490
+        ClientHeight = 377
         ClientWidth = 1023
         TabOrder = 2
         inherited dbGridModelo: TDBGrid
-          Height = 490
+          Height = 377
           Width = 1023
           Columns = <          
             item
@@ -60,13 +54,12 @@ inherited CadCategoriaF: TCadCategoriaF
               Width = 200
               FieldName = 'ds_categoria_produto'
             end>
-          DataSource = dsCadModelo
-          ReadOnly = True
+          DataSource = dsCadCategoria
           OnDblClick = dbGridModeloDblClick
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 560
+        Top = 447
         Width = 1023
         ClientWidth = 1023
         TabOrder = 1
@@ -82,7 +75,7 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 633
+      ClientHeight = 520
       ClientWidth = 1023
       inherited pnlCadTop: TPanel
         Height = 113
@@ -109,7 +102,7 @@ inherited CadCategoriaF: TCadCategoriaF
           Top = 24
           Width = 80
           DataField = 'categoriaprodutoid'
-          DataSource = dsCadModelo
+          DataSource = dsCadCategoria
           ReadOnly = True
           Alignment = taRightJustify
           MaxLength = 0
@@ -121,20 +114,20 @@ inherited CadCategoriaF: TCadCategoriaF
           Top = 64
           Width = 312
           DataField = 'ds_categoria_produto'
-          DataSource = dsCadModelo
+          DataSource = dsCadCategoria
           ReadOnly = True
           MaxLength = 50
           TabOrder = 1
         end
       end
       inherited Panel1: TPanel
-        Height = 520
+        Height = 407
         Top = 113
         Width = 1023
-        ClientHeight = 520
+        ClientHeight = 407
         ClientWidth = 1023
         inherited pnlModeloCadBotoes: TPanel
-          Top = 447
+          Top = 334
           Width = 1023
           ClientWidth = 1023
           inherited bitBtnModeloGravar: TBitBtn
@@ -154,17 +147,11 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
   end
-  inherited dsCadModelo: TDataSource
-    DataSet = qryCadCategoria
-    OnDataChange = dsCadModeloDataChange
-    Left = 880
-    Top = 232
-  end
   inherited ImageList1: TImageList
-    Left = 880
-    Top = 304
+    Left = 320
+    Top = 168
   end
-  object qryCadCategoria: TZQuery[3]
+  object qryCadCategoria: TZQuery[2]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadCategoriaNewRecord
     Active = True
@@ -172,8 +159,8 @@ inherited CadCategoriaF: TCadCategoriaF
       'select * from categoria_produto'
     )
     Params = <>
-    Left = 880
-    Top = 164
+    Left = 520
+    Top = 168
     object qryCadCategoriacategoriaprodutoid: TLongintField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -193,5 +180,11 @@ inherited CadCategoriaF: TCadCategoriaF
       Required = True
       Size = 50
     end
+  end
+  object dsCadCategoria: TDataSource[3]
+    DataSet = qryCadCategoria
+    OnDataChange = dsCadCategoriaDataChange
+    Left = 416
+    Top = 168
   end
 end

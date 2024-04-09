@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons, DBGrids, ZDataset, modelo, DB;
+  Buttons, DBGrids, ZDataset, modelo, DB, dataModel;
 
 type
 
@@ -15,6 +15,7 @@ type
   TCadCategoriaF = class(TModeloF)
     dbEdtCadCategoriaID: TDBEdit;
     dbEdtCadCategoriaDescricao: TDBEdit;
+    dsCadCategoria: TDataSource;
     lblCadCategoriaID: TLabel;
     lblCadCategoriaDescricao: TLabel;
     qryCadCategoria: TZQuery;
@@ -38,7 +39,7 @@ type
     procedure dbEdtModeloPesquisarChange(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
-    procedure dsCadModeloDataChange(Sender: TObject; Field: TField);
+    procedure dsCadCategoriaDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
@@ -58,7 +59,7 @@ implementation
 
 { TCadCategoriaF }
 
-procedure TCadCategoriaF.dsCadModeloDataChange(Sender: TObject; Field: TField);
+procedure TCadCategoriaF.dsCadCategoriaDataChange(Sender: TObject; Field: TField);
 begin
 
 end;
@@ -88,7 +89,12 @@ end;
 
 procedure TCadCategoriaF.qryCadCategoriaNewRecord(DataSet: TDataSet);
 begin
+  dmF.qryGenerica.Close;
+  dmF.qryGenerica.SQL.Clear;
+  dmF.qryGenerica.SQL.Add('select nextval('+ QuotedStr('categoria_produto_categoriaprodutoid_seq')+') AS CODIGO');
+  dmF.qryGenerica.Open;
 
+  qryCadCategoriacategoriaprodutoid.AsInteger := dmF.qryGenerica.FieldByName('CODIGO').AsInteger;
 end;
 
 
@@ -183,9 +189,10 @@ procedure TCadCategoriaF.bitBtnModeloPesquisarClick(Sender: TObject);
 begin
   qryCadCategoria.Close;
   qryCadCategoria.SQL.Clear;
-  qryCadCategoria.SQL.Text:='select * from categoria_produto'+ 'WHERE upper (ds_categoria_produto) LIKE'+
-  QuotedStr(UpperCase('%'+dbEdtModeloPesquisar.Text+'%'));
+  qryCadCategoria.SQL.Text:=' select * from categoria_produto WHERE upper(ds_categoria_produto) LIKE '+
+  QuotedStr(UpperCase('%'+edtPesquisarModelo.Text+'%'));
   ShowMessage(qryCadCategoria.SQL.Text);
+  qryCadCategoria.Open;
 end;
 
 procedure TCadCategoriaF.bitBtnFecharClick(Sender: TObject);
