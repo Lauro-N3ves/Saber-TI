@@ -1,7 +1,7 @@
 object ModeloF: TModeloF
-  Left = 826
+  Left = 707
   Height = 461
-  Top = 32
+  Top = 93
   Width = 701
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
@@ -46,14 +46,6 @@ object ModeloF: TModeloF
         Font.Quality = fqDraft
         ParentFont = False
         TabOrder = 0
-        object dbEdtModeloPesquisar: TDBEdit
-          Left = 26
-          Height = 27
-          Top = 32
-          Width = 346
-          MaxLength = 0
-          TabOrder = 0
-        end
         object bitBtnModeloPesquisar: TBitBtn
           Left = 559
           Height = 70
@@ -63,7 +55,7 @@ object ModeloF: TModeloF
           Caption = 'Pesquisar'
           Images = ImageList1
           ImageIndex = 7
-          TabOrder = 1
+          TabOrder = 0
         end
         object lblModeloPesquisar: TLabel
           Left = 26
@@ -71,6 +63,22 @@ object ModeloF: TModeloF
           Top = 6
           Width = 71
           Caption = 'PESQUISAR'
+        end
+        object edtPesquisarModelo: TEdit
+          Left = 26
+          Height = 27
+          Top = 32
+          Width = 288
+          TabOrder = 1
+        end
+        object cmbBoxModelo: TComboBox
+          Left = 360
+          Height = 27
+          Top = 32
+          Width = 116
+          ItemHeight = 19
+          TabOrder = 2
+          Text = 'filtro'
         end
       end
       object pnlGrid: TPanel

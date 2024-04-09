@@ -36,10 +36,13 @@ type
     procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure bitBtnModeloPesquisarClick(Sender: TObject);
     procedure bitBtnNovoClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure DBComboBox1Change(Sender: TObject);
     procedure dbEdtModeloPesquisarChange(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
     procedure dsCadCategoriaDataChange(Sender: TObject; Field: TField);
+    procedure edtPesquisarModeloChange(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
@@ -62,6 +65,17 @@ implementation
 procedure TCadCategoriaF.dsCadCategoriaDataChange(Sender: TObject; Field: TField);
 begin
 
+end;
+
+procedure TCadCategoriaF.edtPesquisarModeloChange(Sender: TObject);
+var
+  filtro : string;
+begin
+  filtro := cmbBoxModelo.text;
+  if  filtro = 'ID' then
+  begin
+     edtPesquisarModelo.NumbersOnly:= True;
+  end;
 end;
 
 procedure TCadCategoriaF.FormClose(Sender: TObject;
@@ -104,6 +118,16 @@ begin
   qryCadCategoria.Insert;
   PageControl1.ActivePage:=tbCadastro;
   dbEdtCadCategoriaDescricao.ReadOnly:=False;
+end;
+
+procedure TCadCategoriaF.Button1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TCadCategoriaF.DBComboBox1Change(Sender: TObject);
+begin
+
 end;
 
 procedure TCadCategoriaF.dbEdtModeloPesquisarChange(Sender: TObject);
@@ -186,12 +210,30 @@ begin
 end;
 
 procedure TCadCategoriaF.bitBtnModeloPesquisarClick(Sender: TObject);
+var
+filtro : String;
 begin
+  filtro := cmbBoxModelo.text;
+
   qryCadCategoria.Close;
   qryCadCategoria.SQL.Clear;
-  qryCadCategoria.SQL.Text:=' select * from categoria_produto WHERE upper(ds_categoria_produto) LIKE '+
-  QuotedStr(UpperCase('%'+edtPesquisarModelo.Text+'%'));
-  ShowMessage(qryCadCategoria.SQL.Text);
+
+  if filtro = 'ID' then
+  begin
+     qryCadCategoria.SQL.Add('select * from categoria_produto WHERE categoriaprodutoid = ' + edtPesquisarModelo.Text);
+     qryCadCategoria.Open;
+  end
+     else if filtro =  'Descrição' then
+     begin
+        qryCadCategoria.SQL.Text:=' select * from categoria_produto WHERE upper(ds_categoria_produto) LIKE '+
+        QuotedStr(UpperCase('%'+edtPesquisarModelo.Text+'%'));
+     // ShowMessage(qryCadCategoria.SQL.Text);
+        qryCadCategoria.Open;
+  end;
+ // else if edtPesquisarModelo.Text = '' and filtro = 'ID' then
+
+
+
 end;
 
 procedure TCadCategoriaF.bitBtnFecharClick(Sender: TObject);

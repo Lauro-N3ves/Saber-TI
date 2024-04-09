@@ -21,8 +21,9 @@ type
     bitBtnModeloGravar: TBitBtn;
     bitBtnModeloNovo: TBitBtn;
     bitBtnModeloPesquisar: TBitBtn;
-    dbEdtModeloPesquisar: TDBEdit;
+    cmbBoxModelo: TComboBox;
     dbGridModelo: TDBGrid;
+    edtPesquisarModelo: TEdit;
     ImageList1: TImageList;
     lblModeloPesquisar: TLabel;
     Panel1: TPanel;

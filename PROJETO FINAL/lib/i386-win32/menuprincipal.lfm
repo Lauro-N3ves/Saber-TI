@@ -25,6 +25,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object subMnCadastroProdutos: TMenuItem
         Caption = 'Produtos'
+        OnClick = subMnCadastroProdutosClick
       end
       object subMnCadastroUsuarios: TMenuItem
         Caption = 'Usuários'

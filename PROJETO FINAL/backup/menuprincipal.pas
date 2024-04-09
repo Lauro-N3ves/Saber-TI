@@ -33,6 +33,7 @@ type
     procedure mnSairClick(Sender: TObject);
     procedure subMnCadastroCategoriaClick(Sender: TObject);
     procedure subMnCadastroClienteClick(Sender: TObject);
+    procedure subMnCadastroProdutosClick(Sender: TObject);
     procedure subMnRelatoriosProdutosClick(Sender: TObject);
     procedure subMnVendasOrcamentoClick(Sender: TObject);
   private
@@ -80,6 +81,11 @@ procedure TMenuPrincipalF.subMnCadastroClienteClick(Sender: TObject);
 begin
   CadClienteF:=TCadClienteF.Create(self);
   CadClienteF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.subMnCadastroProdutosClick(Sender: TObject);
+begin
+
 end;
 
 procedure TMenuPrincipalF.subMnRelatoriosProdutosClick(Sender: TObject);

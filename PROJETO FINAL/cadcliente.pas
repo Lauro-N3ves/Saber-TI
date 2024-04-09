@@ -34,6 +34,7 @@ type
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure bitBtnModeloPesquisarClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
     procedure lblCadClienteIDClick(Sender: TObject);
@@ -69,6 +70,10 @@ end;
 procedure TCadClienteF.bitBtnModeloPesquisarClick(Sender: TObject);
 begin
 
+end;
+
+procedure TCadClienteF.Button1Click(Sender: TObject);
+begin
 end;
 
 procedure TCadClienteF.bitBtnModeloEditarClick(Sender: TObject);

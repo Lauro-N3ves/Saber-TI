@@ -4,7 +4,7 @@ object dmF: TdmF
   Height = 328
   HorizontalOffset = 312
   VerticalOffset = 186
-  Width = 421
+  Width = 420
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True

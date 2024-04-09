@@ -1,0 +1,19 @@
+inherited cadProdutosF: TcadProdutosF
+  Caption = 'Cadastro de Produtos'
+  inherited PageControl1: TPageControl
+    ActivePage = tbPesquisa
+    TabIndex = 0
+  end
+  object qryCadProdutos: TZQuery[2]
+    Connection = dmF.ZConnection1
+    Params = <>
+    Left = 192
+    Top = 192
+  end
+  object dsCadProdutos: TDataSource[3]
+    DataSet = qryCadProdutos
+    OnDataChange = dsCadProdutosDataChange
+    Left = 288
+    Top = 248
+  end
+end

@@ -1,0 +1,153 @@
+inherited cadProdutosF: TcadProdutosF
+  Left = 534
+  Top = 154
+  Caption = 'Cadastro de Produtos'
+  inherited PageControl1: TPageControl
+    ActivePage = tbPesquisa
+    TabIndex = 0
+    inherited tbPesquisa: TTabSheet
+      inherited pnlGrid: TPanel
+        inherited dbGridModelo: TDBGrid
+          Columns = <          
+            item
+              Alignment = taCenter
+              PickList.Strings = (              )
+              Title.Alignment = taCenter
+              Title.Caption = 'ID'
+              Width = 50
+              FieldName = 'produtoid'
+            end          
+            item
+              Alignment = taCenter
+              PickList.Strings = (              )
+              Title.Alignment = taCenter
+              Title.Caption = 'Categoria'
+              Width = 100
+              FieldName = 'categoriaprodutoid'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Descrição'
+              Width = 170
+              FieldName = 'ds_produto'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Observação'
+              Width = 170
+              FieldName = 'obs_produto'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Valor de Venda'
+              Width = 150
+              FieldName = 'vl_venda_produto'
+            end          
+            item
+              Alignment = taCenter
+              PickList.Strings = (              )
+              Title.Alignment = taLeftJustify
+              Title.Caption = 'Data de Cadastro'
+              Width = 100
+              FieldName = 'dt_cadastro_produto'
+            end          
+            item
+              Alignment = taCenter
+              PickList.Strings = (              )
+              Title.Caption = 'Status'
+              Width = 100
+              FieldName = 'status_produto'
+            end>
+          DataSource = dsCadProdutos
+        end
+      end
+    end
+  end
+  inherited ImageList1: TImageList
+    Left = 216
+    Top = 328
+  end
+  object qryCadProdutos: TZQuery[2]
+    Connection = dmF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from produto'
+    )
+    Params = <>
+    Left = 48
+    Top = 320
+    object qryCadProdutosprodutoid: TLongintField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutoscategoriaprodutoid: TLongintField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutosds_produto: TStringField
+      FieldKind = fkData
+      FieldName = 'ds_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryCadProdutosobs_produto: TStringField
+      FieldKind = fkData
+      FieldName = 'obs_produto'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 300
+    end
+    object qryCadProdutosvl_venda_produto: TFloatField
+      FieldKind = fkData
+      FieldName = 'vl_venda_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 983042
+    end
+    object qryCadProdutosdt_cadastro_produto: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_cadastro_produto'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutosstatus_produto: TStringField
+      FieldKind = fkData
+      FieldName = 'status_produto'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 10
+    end
+  end
+  object dsCadProdutos: TDataSource[3]
+    DataSet = qryCadProdutos
+    OnDataChange = dsCadProdutosDataChange
+    Left = 136
+    Top = 320
+  end
+end

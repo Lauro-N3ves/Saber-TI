@@ -1,36 +1,44 @@
 inherited CadClienteF: TCadClienteF
-  Left = 547
-  Height = 453
-  Top = 115
-  Width = 718
+  Left = 620
+  Height = 448
+  Top = 173
+  Width = 730
   Caption = 'Cadastro Cliente'
-  ClientHeight = 453
-  ClientWidth = 718
+  ClientHeight = 448
+  ClientWidth = 730
   inherited PageControl1: TPageControl
-    Height = 453
-    Width = 718
+    Height = 448
+    Width = 730
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 421
-      ClientWidth = 710
+      ClientHeight = 416
+      ClientWidth = 722
       inherited pnlPesquisa: TPanel
-        Width = 710
-        ClientWidth = 710
+        Width = 722
+        ClientWidth = 722
         inherited bitBtnModeloPesquisar: TBitBtn
-          Left = 576
+          Left = 588
           OnClick = bitBtnModeloPesquisarClick
         end
         inherited edtPesquisarModelo: TEdit
           Width = 302
         end
+        inherited cmbBoxModelo: TComboBox
+          Items.Strings = (
+            'ID'
+            'Tipo'
+            'CPF/CNPJ'
+            'Nome'
+          )
+        end
       end
       inherited pnlGrid: TPanel
-        Height = 278
-        Width = 710
-        ClientHeight = 278
-        ClientWidth = 710
+        Height = 273
+        Width = 722
+        ClientHeight = 273
+        ClientWidth = 722
         inherited dbGridModelo: TDBGrid
-          Height = 278
-          Width = 710
+          Height = 273
+          Width = 722
           Columns = <          
             item
               Alignment = taCenter
@@ -66,11 +74,11 @@ inherited CadClienteF: TCadClienteF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 348
-        Width = 710
-        ClientWidth = 710
+        Top = 343
+        Width = 722
+        ClientWidth = 722
         inherited bitBtnModeloFechar: TBitBtn
-          Left = 604
+          Left = 616
           ImageIndex = 12
         end
         inherited bitBtnModeloNovo: TBitBtn
@@ -84,13 +92,13 @@ inherited CadClienteF: TCadClienteF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 421
-      ClientWidth = 710
+      ClientHeight = 416
+      ClientWidth = 722
       inherited pnlCadTop: TPanel
         Height = 160
-        Width = 710
+        Width = 722
         ClientHeight = 160
-        ClientWidth = 710
+        ClientWidth = 722
         object lblCadClienteID: TLabel[0]
           Left = 32
           Height = 19
@@ -142,7 +150,7 @@ inherited CadClienteF: TCadClienteF
           DataSource = dsCadCliente
           ReadOnly = True
           MaxLength = 18
-          TabOrder = 1
+          TabOrder = 2
         end
         object dbEdtCadClienteNome: TDBEdit[6]
           Left = 80
@@ -153,7 +161,7 @@ inherited CadClienteF: TCadClienteF
           DataSource = dsCadCliente
           ReadOnly = True
           MaxLength = 100
-          TabOrder = 2
+          TabOrder = 3
         end
         object dbComboBoxCadClienteTipo: TDBComboBox[7]
           Left = 176
@@ -169,19 +177,19 @@ inherited CadClienteF: TCadClienteF
           )
           MaxLength = 0
           ReadOnly = True
-          TabOrder = 3
+          TabOrder = 1
         end
       end
       inherited Panel1: TPanel
-        Height = 261
+        Height = 256
         Top = 160
-        Width = 710
-        ClientHeight = 261
-        ClientWidth = 710
+        Width = 722
+        ClientHeight = 256
+        ClientWidth = 722
         inherited pnlModeloCadBotoes: TPanel
-          Top = 188
-          Width = 710
-          ClientWidth = 710
+          Top = 183
+          Width = 722
+          ClientWidth = 722
           inherited bitBtnModeloGravar: TBitBtn
             ImageIndex = 15
             OnClick = bitBtnModeloGravarClick
@@ -191,7 +199,7 @@ inherited CadClienteF: TCadClienteF
             OnClick = bitBtnModeloExcluirClick
           end
           inherited bitBtnModeloCancelar: TBitBtn
-            Left = 596
+            Left = 608
             ImageIndex = 0
             OnClick = bitBtnModeloCancelarClick
           end

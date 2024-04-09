@@ -1,44 +1,55 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 405
-  Height = 554
-  Top = 166
-  Width = 1031
+  Left = 539
+  Height = 447
+  Top = 315
+  Width = 727
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 554
-  ClientWidth = 1031
+  ClientHeight = 447
+  ClientWidth = 727
   Font.Height = -16
   OnClose = FormClose
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
-    Height = 554
-    Width = 1031
+    Height = 447
+    Width = 727
     OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 520
-      ClientWidth = 1023
+      ClientHeight = 413
+      ClientWidth = 719
       inherited pnlPesquisa: TPanel
-        Width = 1023
-        ClientWidth = 1023
+        Height = 72
+        Width = 719
+        ClientHeight = 72
+        ClientWidth = 719
         inherited bitBtnModeloPesquisar: TBitBtn
-          Left = 889
+          Left = 585
+          Height = 72
           OnClick = bitBtnModeloPesquisarClick
         end
         inherited lblModeloPesquisar: TLabel
-          Left = 168
+          Left = 32
+          Top = 8
         end
         inherited edtPesquisarModelo: TEdit
-          Left = 168
+          Left = 32
+          OnChange = edtPesquisarModeloChange
+        end
+        inherited cmbBoxModelo: TComboBox
+          Items.Strings = (
+            'ID'
+            'Descrição'
+          )
         end
       end
       inherited pnlGrid: TPanel
-        Height = 377
-        Width = 1023
-        ClientHeight = 377
-        ClientWidth = 1023
-        TabOrder = 2
+        Height = 268
+        Top = 72
+        Width = 719
+        ClientHeight = 268
+        ClientWidth = 719
         inherited dbGridModelo: TDBGrid
-          Height = 377
-          Width = 1023
+          Height = 268
+          Width = 719
           Columns = <          
             item
               Alignment = taCenter
@@ -59,12 +70,11 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 447
-        Width = 1023
-        ClientWidth = 1023
-        TabOrder = 1
+        Top = 340
+        Width = 719
+        ClientWidth = 719
         inherited bitBtnModeloFechar: TBitBtn
-          Left = 917
+          Left = 613
         end
         inherited bitBtnModeloNovo: TBitBtn
           OnClick = bitBtnModeloNovoClick
@@ -75,13 +85,13 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 520
-      ClientWidth = 1023
+      ClientHeight = 413
+      ClientWidth = 719
       inherited pnlCadTop: TPanel
         Height = 113
-        Width = 1023
+        Width = 719
         ClientHeight = 113
-        ClientWidth = 1023
+        ClientWidth = 719
         object lblCadCategoriaID: TLabel[0]
           Left = 76
           Height = 21
@@ -121,15 +131,15 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited Panel1: TPanel
-        Height = 407
+        Height = 300
         Top = 113
-        Width = 1023
-        ClientHeight = 407
-        ClientWidth = 1023
+        Width = 719
+        ClientHeight = 300
+        ClientWidth = 719
         inherited pnlModeloCadBotoes: TPanel
-          Top = 334
-          Width = 1023
-          ClientWidth = 1023
+          Top = 227
+          Width = 719
+          ClientWidth = 719
           inherited bitBtnModeloGravar: TBitBtn
             OnClick = bitBtnModeloGravarClick
           end
@@ -137,7 +147,7 @@ inherited CadCategoriaF: TCadCategoriaF
             OnClick = bitBtnModeloExcluirClick
           end
           inherited bitBtnModeloCancelar: TBitBtn
-            Left = 909
+            Left = 605
             OnClick = bitBtnModeloCancelarClick
           end
           inherited bitBtnModeloImprimir: TBitBtn
