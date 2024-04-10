@@ -88,6 +88,7 @@ end;
 procedure TCadClienteF.bitBtnModeloCancelarClick(Sender: TObject);
 begin
   inherited;
+  qryCadCliente.Cancel;
   dbEdtCadClienteCpfCnpj.ReadOnly:= True;
   dbEdtCadClienteNome.ReadOnly:= True;
   dbComboBoxCadClienteTipo.ReadOnly:= True;
@@ -96,7 +97,7 @@ end;
 procedure TCadClienteF.bitBtnModeloExcluirClick(Sender: TObject);
 begin
   inherited;
-  If MessageDlg('Deseja excluir esse arquivo?', mtWarning,[mbYes,mbNo],0)= mrYes Then
+  If MessageDlg('Deseja excluir esse registro?', mtWarning,[mbYes,mbNo],0)= mrYes Then
   begin
        qryCadCliente.Delete;
        dbEdtCadClienteCpfCnpj.ReadOnly:= True;

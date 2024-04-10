@@ -87,6 +87,27 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="cadProdutos"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadcategoria.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pesquisacategoriacadproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="pesquisaCategoriaCadProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PesquisaCategoriaCadProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadusuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="cadUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="cadUsuario"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

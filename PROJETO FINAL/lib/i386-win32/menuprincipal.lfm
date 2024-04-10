@@ -1,17 +1,18 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 383
+  Left = 336
   Height = 344
-  Top = 277
+  Top = 377
   Width = 1144
   Caption = 'Menu Principal'
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '3.2.0.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
-    Left = 358
-    Top = 77
+    Left = 448
+    Top = 96
     object mnCadastro: TMenuItem
       Caption = 'Cadastro'
       OnClick = mnCadastroClick
@@ -27,8 +28,12 @@ object MenuPrincipalF: TMenuPrincipalF
         Caption = 'Produtos'
         OnClick = subMnCadastroProdutosClick
       end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
       object subMnCadastroUsuarios: TMenuItem
         Caption = 'Usuários'
+        OnClick = subMnCadastroUsuariosClick
       end
     end
     object mnVendas: TMenuItem

@@ -42,6 +42,7 @@ type
     procedure bitBtnModeloFecharClick(Sender: TObject);
     procedure bitBtnModeloGravarClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure bitBtnModeloPesquisarClick(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
     procedure SClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -83,6 +84,11 @@ end;
 procedure TModeloF.bitBtnModeloNovoClick(Sender: TObject);
 begin
   PageControl1.ActivePage:=tbCadastro;
+end;
+
+procedure TModeloF.bitBtnModeloPesquisarClick(Sender: TObject);
+begin
+
 end;
 
 procedure TModeloF.dbGridModeloDblClick(Sender: TObject);

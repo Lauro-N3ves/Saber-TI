@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 539
+  Left = 1111
   Height = 447
-  Top = 315
+  Top = 187
   Width = 727
   Caption = 'Cadastro de Categoria'
   ClientHeight = 447
@@ -12,6 +12,8 @@ inherited CadCategoriaF: TCadCategoriaF
   inherited PageControl1: TPageControl
     Height = 447
     Width = 727
+    ActivePage = tbCadastro
+    TabIndex = 1
     OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
       ClientHeight = 413
@@ -22,16 +24,11 @@ inherited CadCategoriaF: TCadCategoriaF
         ClientHeight = 72
         ClientWidth = 719
         inherited bitBtnModeloPesquisar: TBitBtn
-          Left = 585
+          Left = 551
           Height = 72
           OnClick = bitBtnModeloPesquisarClick
         end
-        inherited lblModeloPesquisar: TLabel
-          Left = 32
-          Top = 8
-        end
         inherited edtPesquisarModelo: TEdit
-          Left = 32
           OnChange = edtPesquisarModeloChange
         end
         inherited cmbBoxModelo: TComboBox
@@ -42,13 +39,13 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlGrid: TPanel
-        Height = 268
+        Height = 250
         Top = 72
         Width = 719
-        ClientHeight = 268
+        ClientHeight = 250
         ClientWidth = 719
         inherited dbGridModelo: TDBGrid
-          Height = 268
+          Height = 250
           Width = 719
           Columns = <          
             item
@@ -70,11 +67,11 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 340
+        Top = 322
         Width = 719
         ClientWidth = 719
         inherited bitBtnModeloFechar: TBitBtn
-          Left = 613
+          Left = 587
         end
         inherited bitBtnModeloNovo: TBitBtn
           OnClick = bitBtnModeloNovoClick
@@ -136,8 +133,9 @@ inherited CadCategoriaF: TCadCategoriaF
         Width = 719
         ClientHeight = 300
         ClientWidth = 719
+        ParentFont = True
         inherited pnlModeloCadBotoes: TPanel
-          Top = 227
+          Top = 209
           Width = 719
           ClientWidth = 719
           inherited bitBtnModeloGravar: TBitBtn
@@ -147,7 +145,7 @@ inherited CadCategoriaF: TCadCategoriaF
             OnClick = bitBtnModeloExcluirClick
           end
           inherited bitBtnModeloCancelar: TBitBtn
-            Left = 605
+            Left = 577
             OnClick = bitBtnModeloCancelarClick
           end
           inherited bitBtnModeloImprimir: TBitBtn
@@ -164,7 +162,6 @@ inherited CadCategoriaF: TCadCategoriaF
   object qryCadCategoria: TZQuery[2]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadCategoriaNewRecord
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto'
     )

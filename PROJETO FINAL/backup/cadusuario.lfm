@@ -1,0 +1,196 @@
+inherited cadUsuarioF: TcadUsuarioF
+  Caption = 'Cadastro de Usuário'
+  inherited PageControl1: TPageControl
+    ActivePage = tbCadastro
+    TabIndex = 1
+    inherited tbPesquisa: TTabSheet
+      inherited pnlGrid: TPanel
+        inherited dbGridModelo: TDBGrid
+          Columns = <          
+            item
+              Alignment = taCenter
+              PickList.Strings = (              )
+              Title.Alignment = taCenter
+              Title.Caption = 'ID'
+              Width = 70
+              FieldName = 'id'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Usuário'
+              Width = 200
+              FieldName = 'usuario'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Alignment = taLeftJustify
+              Title.Caption = 'Nome Completo'
+              Width = 300
+              FieldName = 'nome_completo'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Senha'
+              Width = 170
+              FieldName = 'senha'
+            end>
+          DataSource = dsCadUsuario
+        end
+      end
+      inherited pnlModeloPesquisaBotoes: TPanel
+        inherited bitBtnModeloNovo: TBitBtn
+          OnClick = bitBtnModeloNovoClick
+        end
+        inherited bitBtnModeloEditar: TBitBtn
+          OnClick = bitBtnModeloEditarClick
+        end
+      end
+    end
+    inherited tbCadastro: TTabSheet
+      inherited pnlCadTop: TPanel
+        Height = 295
+        ClientHeight = 295
+        object lblCadUsuarioID: TLabel[0]
+          Left = 72
+          Height = 25
+          Top = 32
+          Width = 22
+          Caption = 'ID:'
+        end
+        object lblCadUsuarioUser: TLabel[1]
+          Left = 184
+          Height = 25
+          Top = 32
+          Width = 64
+          Caption = 'Usuário:'
+        end
+        object lblCadUsuarioNomeCompleto: TLabel[2]
+          Left = 72
+          Height = 25
+          Top = 83
+          Width = 137
+          Caption = 'Nome Completo:'
+        end
+        object lblCadUsuarioSenha: TLabel[3]
+          Left = 72
+          Height = 25
+          Top = 140
+          Width = 52
+          Caption = 'Senha:'
+        end
+        object dbEdtCadusuarioID: TDBEdit[4]
+          Left = 104
+          Height = 33
+          Top = 29
+          Width = 40
+          DataField = 'id'
+          DataSource = dsCadUsuario
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object dbEdtCadUsuarioUser: TDBEdit[5]
+          Left = 264
+          Height = 33
+          Top = 29
+          Width = 264
+          DataField = 'usuario'
+          DataSource = dsCadUsuario
+          MaxLength = 30
+          TabOrder = 1
+        end
+        object dbEdtCadUsuarioNomeCompleto: TDBEdit[6]
+          Left = 216
+          Height = 33
+          Top = 80
+          Width = 312
+          DataField = 'nome_completo'
+          DataSource = dsCadUsuario
+          MaxLength = 60
+          TabOrder = 2
+        end
+        object dbEdtCadUsuarioSenha: TDBEdit[7]
+          Left = 136
+          Height = 33
+          Top = 136
+          Width = 392
+          DataField = 'senha'
+          DataSource = dsCadUsuario
+          MaxLength = 50
+          TabOrder = 3
+        end
+      end
+      inherited Panel1: TPanel
+        Height = 238
+        Top = 295
+        ClientHeight = 238
+        inherited pnlModeloCadBotoes: TPanel
+          Top = 147
+          inherited bitBtnModeloGravar: TBitBtn
+            OnClick = bitBtnModeloGravarClick
+          end
+          inherited bitBtnModeloExcluir: TBitBtn
+            OnClick = bitBtnModeloExcluirClick
+          end
+          inherited bitBtnModeloCancelar: TBitBtn
+            OnClick = bitBtnModeloCancelarClick
+          end
+        end
+      end
+    end
+  end
+  object qryCadUsuario: TZQuery[2]
+    Connection = dmF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM usuarios '
+    )
+    Params = <>
+    Left = 152
+    Top = 384
+    object qryCadUsuarioid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadUsuariousuario: TStringField
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryCadUsuarionome_completo: TStringField
+      FieldKind = fkData
+      FieldName = 'nome_completo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryCadUsuariosenha: TStringField
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dsCadUsuario: TDataSource[3]
+    DataSet = qryCadUsuario
+    Left = 352
+    Top = 384
+  end
+end

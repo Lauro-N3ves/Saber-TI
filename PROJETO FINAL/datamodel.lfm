@@ -2,8 +2,8 @@ object dmF: TdmF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 328
-  HorizontalOffset = 312
-  VerticalOffset = 186
+  HorizontalOffset = 249
+  VerticalOffset = 150
   Width = 420
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8

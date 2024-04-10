@@ -1,13 +1,25 @@
 inherited cadProdutosF: TcadProdutosF
-  Left = 534
-  Top = 154
+  Left = 756
+  Height = 507
+  Top = 292
   Caption = 'Cadastro de Produtos'
+  ClientHeight = 507
   inherited PageControl1: TPageControl
-    ActivePage = tbPesquisa
-    TabIndex = 0
+    Height = 507
+    ActivePage = tbCadastro
+    TabIndex = 1
     inherited tbPesquisa: TTabSheet
+      ClientHeight = 469
+      inherited pnlPesquisa: TPanel
+        inherited bitBtnModeloPesquisar: TBitBtn
+          OnClick = nil
+        end
+      end
       inherited pnlGrid: TPanel
+        Height = 290
+        ClientHeight = 290
         inherited dbGridModelo: TDBGrid
+          Height = 290
           Columns = <          
             item
               Alignment = taCenter
@@ -28,7 +40,7 @@ inherited cadProdutosF: TcadProdutosF
             item
               PickList.Strings = (              )
               Title.Caption = 'Descrição'
-              Width = 170
+              Width = 150
               FieldName = 'ds_produto'
             end          
             item
@@ -46,26 +58,214 @@ inherited cadProdutosF: TcadProdutosF
             item
               Alignment = taCenter
               PickList.Strings = (              )
-              Title.Alignment = taLeftJustify
+              Title.Alignment = taCenter
               Title.Caption = 'Data de Cadastro'
-              Width = 100
+              Width = 130
               FieldName = 'dt_cadastro_produto'
             end          
             item
-              Alignment = taCenter
               PickList.Strings = (              )
               Title.Caption = 'Status'
               Width = 100
               FieldName = 'status_produto'
             end>
           DataSource = dsCadProdutos
+          OnDblClick = dbGridModeloDblClick
+        end
+      end
+      inherited pnlModeloPesquisaBotoes: TPanel
+        Top = 378
+        inherited bitBtnModeloNovo: TBitBtn
+          OnClick = bitBtnModeloNovoClick
+        end
+        inherited bitBtnModeloEditar: TBitBtn
+          OnClick = bitBtnModeloEditarClick
+        end
+      end
+    end
+    inherited tbCadastro: TTabSheet
+      ClientHeight = 469
+      inherited pnlCadTop: TPanel
+        Height = 264
+        ClientHeight = 264
+        Font.Height = -16
+        ParentFont = False
+        object lblCadProdutosID: TLabel[0]
+          Left = 69
+          Height = 21
+          Top = 24
+          Width = 18
+          Caption = 'ID:'
+        end
+        object lblCadProdutosCategoria: TLabel[1]
+          Left = 24
+          Height = 21
+          Top = 66
+          Width = 70
+          Caption = 'Categoria:'
+        end
+        object lblCadProdutosStatus: TLabel[2]
+          Left = 192
+          Height = 21
+          Top = 21
+          Width = 45
+          Caption = 'Status:'
+        end
+        object lblCadProdutosDataCad: TLabel[3]
+          Left = 368
+          Height = 21
+          Top = 21
+          Width = 148
+          Caption = 'Dt. Cadastro Produto:'
+        end
+        object lblCadProdutosValorVenda: TLabel[4]
+          Left = 426
+          Height = 21
+          Top = 66
+          Width = 86
+          Caption = 'Valor Venda:'
+        end
+        object dbEdtId: TDBEdit[5]
+          Left = 112
+          Height = 29
+          Top = 16
+          Width = 48
+          DataField = 'produtoid'
+          DataSource = dsCadProdutos
+          ReadOnly = True
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object dbEdtCategoria: TDBEdit[6]
+          Left = 112
+          Height = 29
+          Top = 58
+          Width = 48
+          DataField = 'categoriaprodutoid'
+          DataSource = dsCadProdutos
+          ReadOnly = True
+          Alignment = taRightJustify
+          MaxLength = 50
+          TabOrder = 1
+        end
+        object dbEdtValorVenda: TDBEdit[7]
+          Left = 536
+          Height = 29
+          Top = 63
+          Width = 112
+          DataField = 'vl_venda_produto'
+          DataSource = dsCadProdutos
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 2
+        end
+        object dbCmbBoxStatus: TDBComboBox[8]
+          Left = 256
+          Height = 29
+          Top = 16
+          Width = 100
+          DataField = 'status_produto'
+          DataSource = dsCadProdutos
+          ItemHeight = 21
+          Items.Strings = (
+            'ATIVO'
+            'INATIVO'
+          )
+          MaxLength = 0
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object lbCadProdutosDescricao: TLabel[9]
+          Left = 24
+          Height = 21
+          Top = 112
+          Width = 70
+          Caption = 'Descrição:'
+        end
+        object lblCadProdutosObs: TLabel[10]
+          Left = 9
+          Height = 21
+          Top = 155
+          Width = 85
+          Caption = 'Observação:'
+        end
+        object dbEdtCadProdutosDescricao: TDBEdit[11]
+          Left = 112
+          Height = 29
+          Top = 109
+          Width = 536
+          DataField = 'ds_produto'
+          DataSource = dsCadProdutos
+          MaxLength = 50
+          TabOrder = 4
+        end
+        object dbEdtCadProdutosObs: TDBEdit[12]
+          Left = 112
+          Height = 29
+          Top = 152
+          Width = 536
+          DataField = 'obs_produto'
+          DataSource = dsCadProdutos
+          MaxLength = 300
+          TabOrder = 5
+        end
+        object btnCadprodutos: TButton[13]
+          Left = 176
+          Height = 30
+          Top = 58
+          Width = 32
+          Caption = '...'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -21
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 6
+          OnClick = btnCadprodutosClick
+        end
+        object dbDataEdtCadProdutos: TDBDateEdit[14]
+          Left = 528
+          Height = 29
+          Top = 16
+          Width = 136
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          DateOrder = doNone
+          ButtonWidth = 23
+          NumGlyphs = 1
+          MaxLength = 0
+          TabOrder = 7
+          Text = '18/02/2023'
+          DataField = 'dt_cadastro_produto'
+          DataSource = dsCadProdutos
+        end
+      end
+      inherited Panel1: TPanel
+        Height = 205
+        Top = 264
+        ClientHeight = 205
+        ParentFont = True
+        inherited pnlModeloCadBotoes: TPanel
+          Top = 114
+          inherited bitBtnModeloGravar: TBitBtn
+            OnClick = bitBtnModeloGravarClick
+          end
+          inherited bitBtnModeloExcluir: TBitBtn
+            OnClick = bitBtnModeloExcluirClick
+          end
+          inherited bitBtnModeloCancelar: TBitBtn
+            OnClick = bitBtnModeloCancelarClick
+          end
+          inherited bitBtnModeloImprimir: TBitBtn
+            OnClick = bitBtnModeloImprimirClick
+          end
         end
       end
     end
   end
   inherited ImageList1: TImageList
     Left = 216
-    Top = 328
+    Top = 320
   end
   object qryCadProdutos: TZQuery[2]
     Connection = dmF.ZConnection1
@@ -75,7 +275,7 @@ inherited cadProdutosF: TcadProdutosF
     )
     Params = <>
     Left = 48
-    Top = 320
+    Top = 312
     object qryCadProdutosprodutoid: TLongintField
       FieldKind = fkData
       FieldName = 'produtoid'
