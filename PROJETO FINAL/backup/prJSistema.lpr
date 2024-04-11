@@ -12,7 +12,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, zcomponent, modelo, dataModel, menuPrincipal, CadCategoria, CadCliente,
   cadProdutos, cadProdutosPesquisaCategoria, PesquisaCategoriaCadProduto,
-cadUsuario;
+cadUsuario, Orcamento;
 
 {$R *.res}
 
@@ -28,6 +28,7 @@ begin
   Application.CreateForm(TcadProdutosF, cadProdutosF);
   Application.CreateForm(TpesquisaCategoriaCadProdutoF,
     pesquisaCategoriaCadProdutoF);
+  Application.CreateForm(TcadUsuarioF, cadUsuarioF);
   Application.CreateForm(TModeloF1, ModeloF1);
   Application.Run;
 end.

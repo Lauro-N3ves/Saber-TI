@@ -5,7 +5,7 @@ unit menuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria, CadCliente, cadProdutos, cadUsuario;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria, CadCliente, cadProdutos, cadUsuario, Orcamento;
 
 type
 
@@ -104,7 +104,8 @@ end;
 
 procedure TMenuPrincipalF.subMnVendasOrcamentoClick(Sender: TObject);
 begin
-
+  OrcamentoF:=TOrcamentoF.Create(Self);
+  OrcamentoF.ShowModal;
 end;
 
 end.

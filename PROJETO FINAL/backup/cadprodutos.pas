@@ -78,6 +78,7 @@ end;
 
 procedure TcadProdutosF.btnCadprodutosClick(Sender: TObject);
 begin
+  qryCadProdutos.Edit;
   pesquisaCategoriaCadProdutoF:=TpesquisaCategoriaCadProdutoF.Create(Self);
   pesquisaCategoriaCadProdutoF.ShowModal;
 end;

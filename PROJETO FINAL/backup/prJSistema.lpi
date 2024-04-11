@@ -108,6 +108,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="cadUsuario"/>
       </Unit>
+      <Unit>
+        <Filename Value="orcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Orcamento"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

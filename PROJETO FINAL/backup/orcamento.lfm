@@ -1,0 +1,40 @@
+inherited ModeloF1: TModeloF1
+  inherited PageControl1: TPageControl
+    ActivePage = tbCadastro
+    TabIndex = 1
+    inherited tbCadastro: TTabSheet
+      inherited pnlCadTop: TPanel
+        Height = 144
+      end
+      inherited Panel1: TPanel
+        Height = 389
+        Top = 144
+        ClientHeight = 389
+        inherited pnlModeloCadBotoes: TPanel
+          Top = 298
+        end
+        object StringGrid1: TStringGrid[1]
+          Left = 0
+          Height = 298
+          Top = 0
+          Width = 868
+          Align = alClient
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object dsOrcamentoPesquisa: TDataSource[2]
+    Left = 112
+    Top = 304
+  end
+  object DataSource2: TDataSource[3]
+    Left = 280
+    Top = 296
+  end
+  object qryOrcamentoPesquisa: TZQuery[4]
+    Params = <>
+    Left = 212
+    Top = 226
+  end
+end

@@ -544,6 +544,7 @@ object pesquisaCategoriaCadProdutoF: TpesquisaCategoriaCadProdutoF
   end
   object qryPesquisaCategoriaCadProd: TZQuery
     Connection = dmF.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from categoria_produto'
     )

@@ -1,7 +1,7 @@
 object pesquisaCategoriaCadProdutoF: TpesquisaCategoriaCadProdutoF
-  Left = 633
+  Left = 1083
   Height = 480
-  Top = 404
+  Top = 323
   Width = 640
   Caption = 'Pesquisa de Categoria'
   ClientHeight = 480
@@ -544,7 +544,6 @@ object pesquisaCategoriaCadProdutoF: TpesquisaCategoriaCadProdutoF
   end
   object qryPesquisaCategoriaCadProd: TZQuery
     Connection = dmF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto'
     )
