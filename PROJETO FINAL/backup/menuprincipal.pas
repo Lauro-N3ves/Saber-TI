@@ -104,7 +104,8 @@ end;
 
 procedure TMenuPrincipalF.subMnVendasOrcamentoClick(Sender: TObject);
 begin
-  Orcam;
+  OrcamentoF:=TOrcamentoF.Create(Self);
+  OrcamentoF.ShowModal;
 end;
 
 end.

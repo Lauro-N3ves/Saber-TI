@@ -1,12 +1,12 @@
 object ModeloF: TModeloF
-  Left = 587
-  Height = 576
-  Top = 165
+  Left = 970
+  Height = 571
+  Top = 322
   Width = 876
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Modelo'
-  ClientHeight = 576
+  ClientHeight = 571
   ClientWidth = 876
   DesignTimePPI = 120
   Font.CharSet = ANSI_CHARSET
@@ -19,7 +19,7 @@ object ModeloF: TModeloF
   LCLVersion = '3.2.0.0'
   object PageControl1: TPageControl
     Left = 0
-    Height = 576
+    Height = 571
     Top = 0
     Width = 876
     ActivePage = tbPesquisa
@@ -29,7 +29,7 @@ object ModeloF: TModeloF
     OnChange = PageControl1Change
     object tbPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 538
+      ClientHeight = 533
       ClientWidth = 868
       OnContextPopup = tbPesquisaContextPopup
       object pnlPesquisa: TPanel
@@ -85,18 +85,18 @@ object ModeloF: TModeloF
       end
       object pnlGrid: TPanel
         Left = 0
-        Height = 359
+        Height = 354
         Top = 88
         Width = 868
         Align = alClient
         BevelOuter = bvNone
-        ClientHeight = 359
+        ClientHeight = 354
         ClientWidth = 868
         TabOrder = 1
         OnClick = pnlGridClick
         object dbGridModelo: TDBGrid
           Left = 0
-          Height = 359
+          Height = 354
           Top = 0
           Width = 868
           Align = alClient
@@ -110,7 +110,7 @@ object ModeloF: TModeloF
       object pnlModeloPesquisaBotoes: TPanel
         Left = 0
         Height = 91
-        Top = 447
+        Top = 442
         Width = 868
         Align = alBottom
         BevelOuter = bvNone
@@ -156,7 +156,7 @@ object ModeloF: TModeloF
     end
     object tbCadastro: TTabSheet
       Caption = 'Cadastro'
-      ClientHeight = 538
+      ClientHeight = 533
       ClientWidth = 868
       object pnlCadTop: TPanel
         Left = 0
@@ -169,12 +169,12 @@ object ModeloF: TModeloF
       end
       object Panel1: TPanel
         Left = 0
-        Height = 467
+        Height = 462
         Top = 71
         Width = 868
         Align = alClient
         BevelOuter = bvNone
-        ClientHeight = 467
+        ClientHeight = 462
         ClientWidth = 868
         Font.CharSet = ANSI_CHARSET
         Font.Height = -20
@@ -185,7 +185,7 @@ object ModeloF: TModeloF
         object pnlModeloCadBotoes: TPanel
           Left = 0
           Height = 91
-          Top = 376
+          Top = 371
           Width = 868
           Align = alBottom
           BevelOuter = bvNone

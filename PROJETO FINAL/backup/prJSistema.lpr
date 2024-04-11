@@ -29,7 +29,7 @@ begin
   Application.CreateForm(TpesquisaCategoriaCadProdutoF,
     pesquisaCategoriaCadProdutoF);
   Application.CreateForm(TcadUsuarioF, cadUsuarioF);
-  Application.CreateForm(TModeloF1, ModeloF1);
+  Application.CreateForm(TOrcamentoF, OrcamentoF);
   Application.Run;
 end.
 

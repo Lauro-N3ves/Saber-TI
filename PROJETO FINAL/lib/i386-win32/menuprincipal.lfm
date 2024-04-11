@@ -1,7 +1,7 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 361
+  Left = 410
   Height = 344
-  Top = 377
+  Top = 578
   Width = 1144
   Caption = 'Menu Principal'
   DesignTimePPI = 120
@@ -47,6 +47,7 @@ object MenuPrincipalF: TMenuPrincipalF
       Caption = 'Relatórios'
       object subMnRelatoriosClientes: TMenuItem
         Caption = 'Clientes'
+        OnClick = subMnRelatoriosClientesClick
       end
       object subMnRelatoriosProdutos: TMenuItem
         Caption = 'Produtos'
