@@ -6,16 +6,26 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
-  ZDataset, modelo;
+  StdCtrls, DBCtrls, DBExtCtrls, ZDataset, modelo;
 
 type
 
   { TOrcamentoF }
 
   TOrcamentoF = class(TModeloF)
+    DBDateEdit1: TDBDateEdit;
+    DBDateEdit2: TDBDateEdit;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
     DBGrid1: TDBGrid;
     dsOrcamentoPesquisa: TDataSource;
     dsOrcamentoCadastro: TDataSource;
+    lblOrcamentoCadID: TLabel;
+    lblOrcamentoCadIDCliente: TLabel;
+    lblOrcamentoCadDataOrcamento: TLabel;
+    lblOrcamentoCadDataValidade: TLabel;
+    lblOrcamentoCadValorTotal: TLabel;
     qryOrcamentoPesquisa: TZQuery;
     qryOrcamentoPesquisaclienteid: TLongintField;
     qryOrcamentoPesquisadt_orcamento: TDateTimeField;

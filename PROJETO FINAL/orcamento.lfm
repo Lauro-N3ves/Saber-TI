@@ -44,10 +44,127 @@ inherited OrcamentoF: TOrcamentoF
           DataSource = dsOrcamentoPesquisa
         end
       end
+      inherited pnlModeloPesquisaBotoes: TPanel
+        inherited bitBtnModeloNovo: TBitBtn
+          OnClick = bitBtnModeloNovoClick
+        end
+        inherited bitBtnModeloEditar: TBitBtn
+          OnClick = bitBtnModeloEditarClick
+        end
+      end
     end
     inherited tbCadastro: TTabSheet
       inherited pnlCadTop: TPanel
         Height = 144
+        ClientHeight = 144
+        object lblOrcamentoCadID: TLabel[0]
+          Left = 88
+          Height = 25
+          Top = 21
+          Width = 22
+          Caption = 'ID:'
+        end
+        object lblOrcamentoCadIDCliente: TLabel[1]
+          Left = 30
+          Height = 25
+          Top = 72
+          Width = 80
+          Caption = 'ID Cliente:'
+        end
+        object lblOrcamentoCadDataOrcamento: TLabel[2]
+          Left = 224
+          Height = 25
+          Top = 21
+          Width = 135
+          Caption = 'Data Orçamento:'
+        end
+        object lblOrcamentoCadDataValidade: TLabel[3]
+          Left = 246
+          Height = 25
+          Top = 64
+          Width = 113
+          Caption = 'Data Validade:'
+        end
+        object lblOrcamentoCadValorTotal: TLabel[4]
+          Left = 648
+          Height = 30
+          Top = 16
+          Width = 106
+          Caption = 'Valor Total:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -22
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object dbEdtID: TDBEdit[5]
+          Left = 128
+          Height = 33
+          Top = 16
+          Width = 44
+          DataField = 'orcamentoid'
+          DataSource = dsOrcamentoPesquisa
+          ReadOnly = True
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 0
+        end
+        object dbedtIdCliente: TDBEdit[6]
+          Left = 128
+          Height = 33
+          Top = 64
+          Width = 44
+          DataField = 'clienteid'
+          DataSource = dsOrcamentoPesquisa
+          ReadOnly = True
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 1
+        end
+        object dbDateOrcamento: TDBDateEdit[7]
+          Left = 392
+          Height = 33
+          Top = 18
+          Width = 144
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          ReadOnly = True
+          DateOrder = doNone
+          ButtonWidth = 29
+          NumGlyphs = 1
+          MaxLength = 0
+          TabOrder = 2
+          Text = '18/02/2023'
+          DataField = 'dt_orcamento'
+          DataSource = dsOrcamentoPesquisa
+        end
+        object dbDateValidade: TDBDateEdit[8]
+          Left = 392
+          Height = 33
+          Top = 64
+          Width = 144
+          CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+          ReadOnly = True
+          DateOrder = doNone
+          ButtonWidth = 29
+          NumGlyphs = 1
+          MaxLength = 0
+          TabOrder = 3
+          Text = '19/02/2023'
+          DataField = 'dt_validade_orcamento'
+          DataSource = dsOrcamentoPesquisa
+        end
+        object dbEdtValorTotal: TDBEdit[9]
+          Left = 648
+          Height = 33
+          Top = 64
+          Width = 112
+          DataField = 'vl_total_orcamento'
+          DataSource = dsOrcamentoPesquisa
+          ReadOnly = True
+          Alignment = taRightJustify
+          MaxLength = 0
+          TabOrder = 4
+        end
       end
       inherited Panel1: TPanel
         Height = 389
@@ -55,6 +172,18 @@ inherited OrcamentoF: TOrcamentoF
         ClientHeight = 389
         inherited pnlModeloCadBotoes: TPanel
           Top = 298
+          inherited bitBtnModeloGravar: TBitBtn
+            OnClick = bitBtnModeloGravarClick
+          end
+          inherited bitBtnModeloExcluir: TBitBtn
+            OnClick = bitBtnModeloExcluirClick
+          end
+          inherited bitBtnModeloCancelar: TBitBtn
+            OnClick = bitBtnModeloCancelarClick
+          end
+          inherited bitBtnModeloImprimir: TBitBtn
+            OnClick = bitBtnModeloImprimirClick
+          end
         end
         object DBGrid1: TDBGrid[1]
           Left = 0
@@ -76,8 +205,8 @@ inherited OrcamentoF: TOrcamentoF
     Top = 336
   end
   object dsOrcamentoCadastro: TDataSource[3]
-    Left = 376
-    Top = 296
+    Left = 360
+    Top = 336
   end
   object qryOrcamentoPesquisa: TZQuery[4]
     Connection = dmF.ZConnection1
@@ -87,7 +216,7 @@ inherited OrcamentoF: TOrcamentoF
     )
     Params = <>
     Left = 120
-    Top = 264
+    Top = 280
     object qryOrcamentoPesquisaorcamentoid: TLongintField
       FieldKind = fkData
       FieldName = 'orcamentoid'
