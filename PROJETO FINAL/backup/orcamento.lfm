@@ -1,7 +1,7 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = 448
+  Left = 481
   Height = 661
-  Top = 239
+  Top = 302
   Width = 1069
   Caption = 'Orçamento'
   ClientHeight = 661
@@ -205,6 +205,7 @@ inherited OrcamentoF: TOrcamentoF
           Width = 32
           Caption = '...'
           TabOrder = 5
+          OnClick = btnOrcamentoCadClick
         end
       end
       inherited Panel1: TPanel
@@ -240,7 +241,6 @@ inherited OrcamentoF: TOrcamentoF
           Color = clWindow
           Columns = <          
             item
-              Alignment = taLeftJustify
               Title.Caption = 'ID Orc.'
               Width = 80
               FieldName = 'orcamentoid'

@@ -1,7 +1,7 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = 453
+  Left = 861
   Height = 466
-  Top = 310
+  Top = 351
   Width = 769
   Caption = 'Pesquisa do Cliente'
   ClientHeight = 466
@@ -17,20 +17,19 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
     ClientHeight = 80
     ClientWidth = 769
     TabOrder = 0
-    object Label1: TLabel
+    object lblPesquisarClienteOrc: TLabel
       Left = 36
       Height = 20
       Top = 7
-      Width = 44
-      Caption = 'Label1'
+      Width = 76
+      Caption = 'PESQUISAR'
     end
-    object Edit1: TEdit
+    object edtPesquisarClienteOrc: TEdit
       Left = 36
       Height = 28
       Top = 40
       Width = 188
       TabOrder = 0
-      Text = 'Edit1'
     end
     object bitBtnModeloPesquisar: TBitBtn
       Left = 600
@@ -42,6 +41,62 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
       Images = ImageList1
       ImageIndex = 7
       TabOrder = 1
+    end
+    object cmbBoxModelo: TComboBox
+      Left = 400
+      Height = 28
+      Top = 32
+      Width = 145
+      ItemHeight = 20
+      TabOrder = 2
+      Text = 'filtro'
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 386
+    Top = 80
+    Width = 769
+    Align = alClient
+    Caption = 'Panel1'
+    ClientHeight = 386
+    ClientWidth = 769
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 1
+      Height = 384
+      Top = 1
+      Width = 767
+      Align = alClient
+      Color = clWindow
+      Columns = <      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'ID'
+          Width = 70
+          FieldName = 'clienteid'
+        end      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'Tipo'
+          Width = 70
+          FieldName = 'tipo_cliente'
+        end      
+        item
+          Title.Caption = 'CPF/CNPJ'
+          Width = 140
+          FieldName = 'cpf_cnpj_cliente'
+        end      
+        item
+          Title.Caption = 'Nome do Cliente'
+          Width = 300
+          FieldName = 'nome_cliente'
+        end>
+      DataSource = dsPesquisaClienteOrc
+      TabOrder = 0
+      OnDblClick = DBGrid1DblClick
     end
   end
   object ImageList1: TImageList
@@ -498,5 +553,59 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
       80678654CEE782FB733E2B8BDDF5A99F868AE78F1F2555ECF1D5378BE50FE825
       1D3FA4A9F8795819176203EE691F6FDFBE4A51F6326594FF03A92C39FE
     }
+  end
+  object dsPesquisaClienteOrc: TDataSource
+    DataSet = qryPesquisaClienteOrc
+    Left = 296
+    Top = 304
+  end
+  object qryPesquisaClienteOrc: TZQuery
+    Connection = dmF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from cliente'
+    )
+    Params = <>
+    Left = 160
+    Top = 304
+    object qryPesquisaClienteOrcclienteid: TLongintField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryPesquisaClienteOrctipo_cliente: TStringField
+      FieldKind = fkData
+      FieldName = 'tipo_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 1
+    end
+    object qryPesquisaClienteOrccpf_cnpj_cliente: TStringField
+      FieldKind = fkData
+      FieldName = 'cpf_cnpj_cliente'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 18
+    end
+    object qryPesquisaClienteOrcnome_cliente: TStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
   end
 end

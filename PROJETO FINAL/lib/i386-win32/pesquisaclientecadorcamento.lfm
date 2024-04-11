@@ -1,7 +1,7 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = 453
+  Left = 861
   Height = 466
-  Top = 310
+  Top = 351
   Width = 769
   Caption = 'Pesquisa do Cliente'
   ClientHeight = 466
@@ -96,6 +96,7 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
         end>
       DataSource = dsPesquisaClienteOrc
       TabOrder = 0
+      OnDblClick = DBGrid1DblClick
     end
   end
   object ImageList1: TImageList

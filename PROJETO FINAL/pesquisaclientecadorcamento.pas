@@ -27,6 +27,7 @@ type
     qryPesquisaClienteOrccpf_cnpj_cliente: TStringField;
     qryPesquisaClienteOrcnome_cliente: TStringField;
     qryPesquisaClienteOrctipo_cliente: TStringField;
+    procedure DBGrid1DblClick(Sender: TObject);
   private
 
   public
@@ -38,7 +39,18 @@ var
 
 implementation
 
+uses
+  Orcamento;
+
 {$R *.lfm}
+
+{ TpesquisaClienteCadOrcamentoF }
+
+procedure TpesquisaClienteCadOrcamentoF.DBGrid1DblClick(Sender: TObject);
+begin
+  OrcamentoF.qryOrcamentoCadorcamentoid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
+  Close;
+end;
 
 end.
 

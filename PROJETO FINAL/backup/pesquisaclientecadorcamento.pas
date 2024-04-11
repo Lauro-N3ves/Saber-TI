@@ -5,8 +5,8 @@ unit pesquisaClienteCadOrcamento;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Buttons, DBGrids, ZDataset;
 
 type
 
@@ -14,10 +14,20 @@ type
 
   TpesquisaClienteCadOrcamentoF = class(TForm)
     bitBtnModeloPesquisar: TBitBtn;
-    Edit1: TEdit;
+    cmbBoxModelo: TComboBox;
+    dsPesquisaClienteOrc: TDataSource;
+    DBGrid1: TDBGrid;
+    edtPesquisarClienteOrc: TEdit;
     ImageList1: TImageList;
-    Label1: TLabel;
+    lblPesquisarClienteOrc: TLabel;
+    Panel1: TPanel;
     pnlPesquisaClienteOrcamento: TPanel;
+    qryPesquisaClienteOrc: TZQuery;
+    qryPesquisaClienteOrcclienteid: TLongintField;
+    qryPesquisaClienteOrccpf_cnpj_cliente: TStringField;
+    qryPesquisaClienteOrcnome_cliente: TStringField;
+    qryPesquisaClienteOrctipo_cliente: TStringField;
+    procedure DBGrid1DblClick(Sender: TObject);
   private
 
   public
@@ -29,7 +39,18 @@ var
 
 implementation
 
+uses
+  Orcamento;
+
 {$R *.lfm}
+
+{ TpesquisaClienteCadOrcamentoF }
+
+procedure TpesquisaClienteCadOrcamentoF.DBGrid1DblClick(Sender: TObject);
+begin
+  OrcamentoF.qryOrcamentoPesquisaclienteid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
+  Close;
+end;
 
 end.
 

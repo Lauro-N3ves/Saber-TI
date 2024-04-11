@@ -1,7 +1,7 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = 448
+  Left = 503
   Height = 661
-  Top = 239
+  Top = 181
   Width = 1069
   Caption = 'Orçamento'
   ClientHeight = 661
@@ -9,8 +9,6 @@ inherited OrcamentoF: TOrcamentoF
   inherited PageControl1: TPageControl
     Height = 661
     Width = 1069
-    ActivePage = tbCadastro
-    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       ClientHeight = 623
       ClientWidth = 1061
@@ -241,7 +239,6 @@ inherited OrcamentoF: TOrcamentoF
           Color = clWindow
           Columns = <          
             item
-              Alignment = taLeftJustify
               Title.Caption = 'ID Orc.'
               Width = 80
               FieldName = 'orcamentoid'

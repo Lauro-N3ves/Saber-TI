@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
-  StdCtrls, DBCtrls, DBExtCtrls, ZDataset, modelo;
+  StdCtrls, DBCtrls, DBExtCtrls, ZDataset, modelo, pesquisaClienteCadOrcamento;
 
 type
 
@@ -73,7 +73,9 @@ end;
 
 procedure TOrcamentoF.btnOrcamentoCadClick(Sender: TObject);
 begin
-
+  dbedtIdCliente.ReadOnly:=false;
+  pesquisaClienteCadOrcamentoF:=TpesquisaClienteCadOrcamentoF.Create(Self);
+  pesquisaClienteCadOrcamentoF.ShowModal;
 end;
 
 procedure TOrcamentoF.bitBtnModeloEditarClick(Sender: TObject);
