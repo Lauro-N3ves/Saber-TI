@@ -8,29 +8,38 @@ inherited OrcamentoF: TOrcamentoF
         inherited dbGridModelo: TDBGrid
           Columns = <          
             item
+              Alignment = taCenter
               PickList.Strings = (              )
-              Title.Caption = 'orcamentoid'
+              Title.Alignment = taCenter
+              Title.Caption = 'ID'
+              Width = 70
               FieldName = 'orcamentoid'
             end          
             item
+              Alignment = taCenter
               PickList.Strings = (              )
-              Title.Caption = 'clienteid'
+              Title.Alignment = taCenter
+              Title.Caption = 'ID Cliente'
+              Width = 100
               FieldName = 'clienteid'
             end          
             item
               PickList.Strings = (              )
-              Title.Caption = 'dt_orcamento'
+              Title.Caption = 'Data Orçamento'
+              Width = 150
               FieldName = 'dt_orcamento'
             end          
             item
               PickList.Strings = (              )
-              Title.Caption = 'dt_validade_orcamento'
+              Title.Caption = 'Data Validade'
+              Width = 140
               FieldName = 'dt_validade_orcamento'
             end          
             item
               PickList.Strings = (              )
-              Title.Caption = 'vl_total_orcamento'
+              Title.Caption = 'Valor Total'
               FieldName = 'vl_total_orcamento'
+              DisplayFormat = '#.###,##'
             end>
           DataSource = dsOrcamentoPesquisa
         end
@@ -123,6 +132,7 @@ inherited OrcamentoF: TOrcamentoF
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = True
+      DisplayFormat = '#.###,##'
       Precision = 983042
     end
   end

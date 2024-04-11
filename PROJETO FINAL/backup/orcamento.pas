@@ -5,18 +5,23 @@ unit Orcamento;
 interface
 
 uses
-  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, ZDataset,
-  modelo;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
+  ZDataset, modelo;
 
 type
 
-  { TModeloF1 }
+  { TOrcamentoF }
 
-  TModeloF1 = class(TModeloF)
+  TOrcamentoF = class(TModeloF)
+    DBGrid1: TDBGrid;
     dsOrcamentoPesquisa: TDataSource;
-    DataSource2: TDataSource;
+    dsOrcamentoCadastro: TDataSource;
     qryOrcamentoPesquisa: TZQuery;
-    StringGrid1: TStringGrid;
+    qryOrcamentoPesquisaclienteid: TLongintField;
+    qryOrcamentoPesquisadt_orcamento: TDateTimeField;
+    qryOrcamentoPesquisadt_validade_orcamento: TDateTimeField;
+    qryOrcamentoPesquisaorcamentoid: TLongintField;
+    qryOrcamentoPesquisavl_total_orcamento: TFloatField;
   private
 
   public
@@ -24,7 +29,7 @@ type
   end;
 
 var
-  ModeloF1: TModeloF1;
+  OrcamentoF: TOrcamentoF;
 
 implementation
 

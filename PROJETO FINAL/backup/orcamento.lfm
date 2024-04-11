@@ -1,7 +1,41 @@
-inherited ModeloF1: TModeloF1
+inherited OrcamentoF: TOrcamentoF
+  Left = 668
+  Top = 277
+  Caption = 'Orçamento'
   inherited PageControl1: TPageControl
-    ActivePage = tbCadastro
-    TabIndex = 1
+    inherited tbPesquisa: TTabSheet
+      inherited pnlGrid: TPanel
+        inherited dbGridModelo: TDBGrid
+          Columns = <          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'orcamentoid'
+              FieldName = 'orcamentoid'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'clienteid'
+              FieldName = 'clienteid'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'dt_orcamento'
+              FieldName = 'dt_orcamento'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'dt_validade_orcamento'
+              FieldName = 'dt_validade_orcamento'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'vl_total_orcamento'
+              FieldName = 'vl_total_orcamento'
+            end>
+          DataSource = dsOrcamentoPesquisa
+        end
+      end
+    end
     inherited tbCadastro: TTabSheet
       inherited pnlCadTop: TPanel
         Height = 144
@@ -13,28 +47,83 @@ inherited ModeloF1: TModeloF1
         inherited pnlModeloCadBotoes: TPanel
           Top = 298
         end
-        object StringGrid1: TStringGrid[1]
+        object DBGrid1: TDBGrid[1]
           Left = 0
           Height = 298
           Top = 0
           Width = 868
           Align = alClient
+          Color = clWindow
+          Columns = <>
+          DataSource = dsOrcamentoCadastro
           TabOrder = 1
         end
       end
     end
   end
   object dsOrcamentoPesquisa: TDataSource[2]
-    Left = 112
-    Top = 304
+    DataSet = qryOrcamentoPesquisa
+    Left = 120
+    Top = 336
   end
-  object DataSource2: TDataSource[3]
-    Left = 280
+  object dsOrcamentoCadastro: TDataSource[3]
+    Left = 376
     Top = 296
   end
   object qryOrcamentoPesquisa: TZQuery[4]
+    Connection = dmF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from orcamento '
+    )
     Params = <>
-    Left = 212
-    Top = 226
+    Left = 120
+    Top = 264
+    object qryOrcamentoPesquisaorcamentoid: TLongintField
+      FieldKind = fkData
+      FieldName = 'orcamentoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoPesquisaclienteid: TLongintField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoPesquisadt_orcamento: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_orcamento'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoPesquisadt_validade_orcamento: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_validade_orcamento'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoPesquisavl_total_orcamento: TFloatField
+      FieldKind = fkData
+      FieldName = 'vl_total_orcamento'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 983042
+    end
   end
 end
