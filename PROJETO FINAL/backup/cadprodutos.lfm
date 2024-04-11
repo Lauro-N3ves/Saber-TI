@@ -1,7 +1,7 @@
 inherited cadProdutosF: TcadProdutosF
-  Left = 756
+  Left = 1073
   Height = 507
-  Top = 292
+  Top = 399
   Caption = 'Cadastro de Produtos'
   ClientHeight = 507
   inherited PageControl1: TPageControl
@@ -269,7 +269,6 @@ inherited cadProdutosF: TcadProdutosF
   end
   object qryCadProdutos: TZQuery[2]
     Connection = dmF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from produto'
     )

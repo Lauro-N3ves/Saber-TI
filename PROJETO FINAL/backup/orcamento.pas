@@ -13,11 +13,12 @@ type
   { TOrcamentoF }
 
   TOrcamentoF = class(TModeloF)
-    DBDateEdit1: TDBDateEdit;
-    DBDateEdit2: TDBDateEdit;
-    DBEdit1: TDBEdit;
-    DBEdit2: TDBEdit;
-    DBEdit3: TDBEdit;
+    btnOrcamentoCad: TButton;
+    dbDateOrcamento: TDBDateEdit;
+    dbDateValidade: TDBDateEdit;
+    dbEdtID: TDBEdit;
+    dbedtIdCliente: TDBEdit;
+    dbEdtValorTotal: TDBEdit;
     DBGrid1: TDBGrid;
     dsOrcamentoPesquisa: TDataSource;
     dsOrcamentoCadastro: TDataSource;
@@ -26,12 +27,26 @@ type
     lblOrcamentoCadDataOrcamento: TLabel;
     lblOrcamentoCadDataValidade: TLabel;
     lblOrcamentoCadValorTotal: TLabel;
+    qryOrcamentoCadorcamentoid: TLongintField;
+    qryOrcamentoCadorcamentoitemid: TLongintField;
+    qryOrcamentoCadprodutodesc: TStringField;
+    qryOrcamentoCadprodutoid: TLongintField;
+    qryOrcamentoCadqt_produto: TFloatField;
+    qryOrcamentoCadvl_total: TFloatField;
+    qryOrcamentoCadvl_unitario: TFloatField;
     qryOrcamentoPesquisa: TZQuery;
     qryOrcamentoPesquisaclienteid: TLongintField;
     qryOrcamentoPesquisadt_orcamento: TDateTimeField;
     qryOrcamentoPesquisadt_validade_orcamento: TDateTimeField;
     qryOrcamentoPesquisaorcamentoid: TLongintField;
     qryOrcamentoPesquisavl_total_orcamento: TFloatField;
+    qryOrcamentoCad: TZQuery;
+    procedure bitBtnModeloCancelarClick(Sender: TObject);
+    procedure bitBtnModeloEditarClick(Sender: TObject);
+    procedure bitBtnModeloExcluirClick(Sender: TObject);
+    procedure bitBtnModeloGravarClick(Sender: TObject);
+    procedure bitBtnModeloImprimirClick(Sender: TObject);
+    procedure bitBtnModeloNovoClick(Sender: TObject);
   private
 
   public
@@ -44,6 +59,49 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TOrcamentoF }
+
+procedure TOrcamentoF.bitBtnModeloNovoClick(Sender: TObject);
+begin
+  inherited;
+  qryOrcamentoPesquisa.Insert;
+  dbDateValidade.ReadOnly:= False;
+
+end;
+
+procedure TOrcamentoF.bitBtnModeloEditarClick(Sender: TObject);
+begin
+  inherited;
+  qryOrcamentoPesquisa.Edit;
+  dbDateValidade.ReadOnly:= False;
+end;
+
+procedure TOrcamentoF.bitBtnModeloCancelarClick(Sender: TObject);
+begin
+  inherited;
+  dbDateValidade.ReadOnly:= True;
+  qryOrcamentoPesquisa.Cancel;
+end;
+
+procedure TOrcamentoF.bitBtnModeloExcluirClick(Sender: TObject);
+begin
+  inherited;
+  dbDateValidade.ReadOnly:= True;
+end;
+
+procedure TOrcamentoF.bitBtnModeloGravarClick(Sender: TObject);
+begin
+  inherited;
+  qryOrcamentoPesquisa.Post;
+  dbDateValidade.ReadOnly:= True;
+end;
+
+procedure TOrcamentoF.bitBtnModeloImprimirClick(Sender: TObject);
+begin
+  inherited;
+  dbDateValidade.ReadOnly:= True;
+end;
 
 end.
 

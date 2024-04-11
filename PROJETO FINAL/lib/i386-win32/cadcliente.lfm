@@ -1,6 +1,7 @@
 inherited CadClienteF: TCadClienteF
-  Left = 1055
+  Left = 1161
   Height = 448
+  Top = 305
   Width = 730
   Caption = 'Cadastro Cliente'
   ClientHeight = 448
@@ -9,8 +10,6 @@ inherited CadClienteF: TCadClienteF
   inherited PageControl1: TPageControl
     Height = 448
     Width = 730
-    ActivePage = tbCadastro
-    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       ClientHeight = 414
       ClientWidth = 722
@@ -25,6 +24,8 @@ inherited CadClienteF: TCadClienteF
           Width = 302
         end
         inherited cmbBoxModelo: TComboBox
+          Left = 392
+          Top = 32
           Items.Strings = (
             'ID'
             'Tipo'
@@ -627,6 +628,7 @@ inherited CadClienteF: TCadClienteF
   object qryCadCliente: TZQuery[3]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadClienteNewRecord
+    Active = True
     SQL.Strings = (
       'select * from cliente'
     )

@@ -3,8 +3,6 @@ inherited cadUsuarioF: TcadUsuarioF
   Top = 190
   Caption = 'Cadastro de Usuário'
   inherited PageControl1: TPageControl
-    ActivePage = tbCadastro
-    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       inherited pnlGrid: TPanel
         inherited dbGridModelo: TDBGrid
@@ -25,7 +23,6 @@ inherited cadUsuarioF: TcadUsuarioF
             end          
             item
               PickList.Strings = (              )
-              Title.Alignment = taLeftJustify
               Title.Caption = 'Nome Completo'
               Width = 300
               FieldName = 'nome_completo'

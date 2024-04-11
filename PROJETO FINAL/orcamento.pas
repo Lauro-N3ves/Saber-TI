@@ -13,6 +13,7 @@ type
   { TOrcamentoF }
 
   TOrcamentoF = class(TModeloF)
+    btnOrcamentoCad: TButton;
     dbDateOrcamento: TDBDateEdit;
     dbDateValidade: TDBDateEdit;
     dbEdtID: TDBEdit;
@@ -26,18 +27,27 @@ type
     lblOrcamentoCadDataOrcamento: TLabel;
     lblOrcamentoCadDataValidade: TLabel;
     lblOrcamentoCadValorTotal: TLabel;
+    qryOrcamentoCadorcamentoid: TLongintField;
+    qryOrcamentoCadorcamentoitemid: TLongintField;
+    qryOrcamentoCadprodutodesc: TStringField;
+    qryOrcamentoCadprodutoid: TLongintField;
+    qryOrcamentoCadqt_produto: TFloatField;
+    qryOrcamentoCadvl_total: TFloatField;
+    qryOrcamentoCadvl_unitario: TFloatField;
     qryOrcamentoPesquisa: TZQuery;
     qryOrcamentoPesquisaclienteid: TLongintField;
     qryOrcamentoPesquisadt_orcamento: TDateTimeField;
     qryOrcamentoPesquisadt_validade_orcamento: TDateTimeField;
     qryOrcamentoPesquisaorcamentoid: TLongintField;
     qryOrcamentoPesquisavl_total_orcamento: TFloatField;
+    qryOrcamentoCad: TZQuery;
     procedure bitBtnModeloCancelarClick(Sender: TObject);
     procedure bitBtnModeloEditarClick(Sender: TObject);
     procedure bitBtnModeloExcluirClick(Sender: TObject);
     procedure bitBtnModeloGravarClick(Sender: TObject);
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure btnOrcamentoCadClick(Sender: TObject);
   private
 
   public
@@ -58,6 +68,11 @@ begin
   inherited;
   qryOrcamentoPesquisa.Insert;
   dbDateValidade.ReadOnly:= False;
+
+end;
+
+procedure TOrcamentoF.btnOrcamentoCadClick(Sender: TObject);
+begin
 
 end;
 

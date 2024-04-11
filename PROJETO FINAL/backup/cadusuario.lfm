@@ -1,4 +1,6 @@
 inherited cadUsuarioF: TcadUsuarioF
+  Left = 673
+  Top = 190
   Caption = 'Cadastro de Usuário'
   inherited PageControl1: TPageControl
     ActivePage = tbCadastro

@@ -1,37 +1,33 @@
 inherited CadCategoriaF: TCadCategoriaF
   Left = 1111
-  Height = 447
+  Height = 513
   Top = 187
   Width = 727
   Caption = 'Cadastro de Categoria'
-  ClientHeight = 447
+  ClientHeight = 513
   ClientWidth = 727
   Font.Height = -16
   OnClose = FormClose
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
-    Height = 447
+    Height = 513
     Width = 727
-    ActivePage = tbCadastro
-    TabIndex = 1
     OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 413
+      ClientHeight = 479
       ClientWidth = 719
       inherited pnlPesquisa: TPanel
-        Height = 72
         Width = 719
-        ClientHeight = 72
         ClientWidth = 719
         inherited bitBtnModeloPesquisar: TBitBtn
           Left = 551
-          Height = 72
           OnClick = bitBtnModeloPesquisarClick
         end
         inherited edtPesquisarModelo: TEdit
           OnChange = edtPesquisarModeloChange
         end
         inherited cmbBoxModelo: TComboBox
+          Left = 400
           Items.Strings = (
             'ID'
             'Descrição'
@@ -39,13 +35,12 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlGrid: TPanel
-        Height = 250
-        Top = 72
+        Height = 300
         Width = 719
-        ClientHeight = 250
+        ClientHeight = 300
         ClientWidth = 719
         inherited dbGridModelo: TDBGrid
-          Height = 250
+          Height = 300
           Width = 719
           Columns = <          
             item
@@ -67,7 +62,7 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 322
+        Top = 388
         Width = 719
         ClientWidth = 719
         inherited bitBtnModeloFechar: TBitBtn
@@ -82,7 +77,7 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 413
+      ClientHeight = 479
       ClientWidth = 719
       inherited pnlCadTop: TPanel
         Height = 113
@@ -128,14 +123,14 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited Panel1: TPanel
-        Height = 300
+        Height = 366
         Top = 113
         Width = 719
-        ClientHeight = 300
+        ClientHeight = 366
         ClientWidth = 719
         ParentFont = True
         inherited pnlModeloCadBotoes: TPanel
-          Top = 209
+          Top = 275
           Width = 719
           ClientWidth = 719
           inherited bitBtnModeloGravar: TBitBtn
@@ -162,6 +157,7 @@ inherited CadCategoriaF: TCadCategoriaF
   object qryCadCategoria: TZQuery[2]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadCategoriaNewRecord
+    Active = True
     SQL.Strings = (
       'select * from categoria_produto'
     )
