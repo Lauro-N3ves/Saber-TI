@@ -628,6 +628,7 @@ inherited CadClienteF: TCadClienteF
   object qryCadCliente: TZQuery[3]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadClienteNewRecord
+    Active = True
     SQL.Strings = (
       'select * from cliente'
     )

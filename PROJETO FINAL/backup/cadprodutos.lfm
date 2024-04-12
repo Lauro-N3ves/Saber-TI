@@ -4,22 +4,23 @@ inherited cadProdutosF: TcadProdutosF
   Top = 399
   Caption = 'Cadastro de Produtos'
   ClientHeight = 507
+  OnCreate = FormCreate
   inherited PageControl1: TPageControl
     Height = 507
     ActivePage = tbCadastro
     TabIndex = 1
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 469
+      ClientHeight = 475
       inherited pnlPesquisa: TPanel
         inherited bitBtnModeloPesquisar: TBitBtn
           OnClick = nil
         end
       end
       inherited pnlGrid: TPanel
-        Height = 290
-        ClientHeight = 290
+        Height = 332
+        ClientHeight = 332
         inherited dbGridModelo: TDBGrid
-          Height = 290
+          Height = 332
           Columns = <          
             item
               Alignment = taCenter
@@ -74,7 +75,7 @@ inherited cadProdutosF: TcadProdutosF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 378
+        Top = 402
         inherited bitBtnModeloNovo: TBitBtn
           OnClick = bitBtnModeloNovoClick
         end
@@ -84,7 +85,7 @@ inherited cadProdutosF: TcadProdutosF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 469
+      ClientHeight = 475
       inherited pnlCadTop: TPanel
         Height = 264
         ClientHeight = 264
@@ -241,12 +242,12 @@ inherited cadProdutosF: TcadProdutosF
         end
       end
       inherited Panel1: TPanel
-        Height = 205
+        Height = 211
         Top = 264
-        ClientHeight = 205
+        ClientHeight = 211
         ParentFont = True
         inherited pnlModeloCadBotoes: TPanel
-          Top = 114
+          Top = 138
           inherited bitBtnModeloGravar: TBitBtn
             OnClick = bitBtnModeloGravarClick
           end

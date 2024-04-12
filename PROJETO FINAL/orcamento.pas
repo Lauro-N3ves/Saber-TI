@@ -48,6 +48,7 @@ type
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure btnOrcamentoCadClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -76,6 +77,13 @@ begin
   dbedtIdCliente.ReadOnly:=false;
   pesquisaClienteCadOrcamentoF:=TpesquisaClienteCadOrcamentoF.Create(Self);
   pesquisaClienteCadOrcamentoF.ShowModal;
+end;
+
+procedure TOrcamentoF.FormCreate(Sender: TObject);
+begin
+  inherited;
+  qryOrcamentoCad.Active:=True;
+  qryOrcamentoPesquisa.Active:=True;
 end;
 
 procedure TOrcamentoF.bitBtnModeloEditarClick(Sender: TObject);

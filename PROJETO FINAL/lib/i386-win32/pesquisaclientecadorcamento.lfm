@@ -1,41 +1,41 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
   Left = 861
-  Height = 466
+  Height = 373
   Top = 351
-  Width = 769
+  Width = 615
   Caption = 'Pesquisa do Cliente'
-  ClientHeight = 466
-  ClientWidth = 769
-  DesignTimePPI = 120
+  ClientHeight = 373
+  ClientWidth = 615
+  OnCreate = FormCreate
   LCLVersion = '3.2.0.0'
   object pnlPesquisaClienteOrcamento: TPanel
     Left = 0
-    Height = 80
+    Height = 64
     Top = 0
-    Width = 769
+    Width = 615
     Align = alTop
-    ClientHeight = 80
-    ClientWidth = 769
+    ClientHeight = 64
+    ClientWidth = 615
     TabOrder = 0
     object lblPesquisarClienteOrc: TLabel
-      Left = 36
-      Height = 20
-      Top = 7
-      Width = 76
+      Left = 29
+      Height = 15
+      Top = 6
+      Width = 60
       Caption = 'PESQUISAR'
     end
     object edtPesquisarClienteOrc: TEdit
-      Left = 36
-      Height = 28
-      Top = 40
-      Width = 188
+      Left = 29
+      Height = 23
+      Top = 32
+      Width = 150
       TabOrder = 0
     end
     object bitBtnModeloPesquisar: TBitBtn
-      Left = 600
-      Height = 78
+      Left = 480
+      Height = 62
       Top = 1
-      Width = 168
+      Width = 134
       Align = alRight
       Caption = 'Pesquisar'
       Images = ImageList1
@@ -43,30 +43,30 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
       TabOrder = 1
     end
     object cmbBoxModelo: TComboBox
-      Left = 400
-      Height = 28
-      Top = 32
-      Width = 145
-      ItemHeight = 20
+      Left = 320
+      Height = 23
+      Top = 26
+      Width = 116
+      ItemHeight = 15
       TabOrder = 2
       Text = 'filtro'
     end
   end
   object Panel1: TPanel
     Left = 0
-    Height = 386
-    Top = 80
-    Width = 769
+    Height = 309
+    Top = 64
+    Width = 615
     Align = alClient
     Caption = 'Panel1'
-    ClientHeight = 386
-    ClientWidth = 769
+    ClientHeight = 309
+    ClientWidth = 615
     TabOrder = 1
     object DBGrid1: TDBGrid
       Left = 1
-      Height = 384
+      Height = 307
       Top = 1
-      Width = 767
+      Width = 613
       Align = alClient
       Color = clWindow
       Columns = <      
@@ -74,24 +74,24 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
           Alignment = taCenter
           Title.Alignment = taCenter
           Title.Caption = 'ID'
-          Width = 70
+          Width = 56
           FieldName = 'clienteid'
         end      
         item
           Alignment = taCenter
           Title.Alignment = taCenter
           Title.Caption = 'Tipo'
-          Width = 70
+          Width = 56
           FieldName = 'tipo_cliente'
         end      
         item
           Title.Caption = 'CPF/CNPJ'
-          Width = 140
+          Width = 112
           FieldName = 'cpf_cnpj_cliente'
         end      
         item
           Title.Caption = 'Nome do Cliente'
-          Width = 300
+          Width = 240
           FieldName = 'nome_cliente'
         end>
       DataSource = dsPesquisaClienteOrc
@@ -103,8 +103,8 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
     DrawingStyle = dsTransparent
     Height = 32
     Width = 32
-    Left = 274
-    Top = 414
+    Left = 219
+    Top = 331
     Bitmap = {
       4C7A160000002000000020000000A73700000000000078DAED9D075C14C7F7C0
       97DE8F0E2A6201290AA258C0AE5862456CD8110BF6124B54D4D87B41ECA222F6
@@ -556,18 +556,17 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
   end
   object dsPesquisaClienteOrc: TDataSource
     DataSet = qryPesquisaClienteOrc
-    Left = 296
-    Top = 304
+    Left = 237
+    Top = 243
   end
   object qryPesquisaClienteOrc: TZQuery
     Connection = dmF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from cliente'
     )
     Params = <>
-    Left = 160
-    Top = 304
+    Left = 96
+    Top = 240
     object qryPesquisaClienteOrcclienteid: TLongintField
       FieldKind = fkData
       FieldName = 'clienteid'

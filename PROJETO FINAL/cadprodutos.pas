@@ -46,6 +46,7 @@ type
     procedure btnCadprodutosClick(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
     procedure dsCadProdutosDataChange(Sender: TObject; Field: TField);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -64,6 +65,12 @@ implementation
 procedure TcadProdutosF.dsCadProdutosDataChange(Sender: TObject; Field: TField);
 begin
 
+end;
+
+procedure TcadProdutosF.FormCreate(Sender: TObject);
+begin
+  inherited;
+  qryCadProdutos.Active:=True;
 end;
 
 procedure TcadProdutosF.bitBtnModeloNovoClick(Sender: TObject);

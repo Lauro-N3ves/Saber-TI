@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 1111
+  Left = 1143
   Height = 513
-  Top = 187
+  Top = 142
   Width = 727
   Caption = 'Cadastro de Categoria'
   ClientHeight = 513
@@ -20,7 +20,7 @@ inherited CadCategoriaF: TCadCategoriaF
         Width = 719
         ClientWidth = 719
         inherited bitBtnModeloPesquisar: TBitBtn
-          Left = 551
+          Left = 585
           OnClick = bitBtnModeloPesquisarClick
         end
         inherited edtPesquisarModelo: TEdit
@@ -35,12 +35,12 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlGrid: TPanel
-        Height = 300
+        Height = 336
         Width = 719
-        ClientHeight = 300
+        ClientHeight = 336
         ClientWidth = 719
         inherited dbGridModelo: TDBGrid
-          Height = 300
+          Height = 336
           Width = 719
           Columns = <          
             item
@@ -62,11 +62,11 @@ inherited CadCategoriaF: TCadCategoriaF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 388
+        Top = 406
         Width = 719
         ClientWidth = 719
         inherited bitBtnModeloFechar: TBitBtn
-          Left = 587
+          Left = 613
         end
         inherited bitBtnModeloNovo: TBitBtn
           OnClick = bitBtnModeloNovoClick
@@ -130,7 +130,7 @@ inherited CadCategoriaF: TCadCategoriaF
         ClientWidth = 719
         ParentFont = True
         inherited pnlModeloCadBotoes: TPanel
-          Top = 275
+          Top = 293
           Width = 719
           ClientWidth = 719
           inherited bitBtnModeloGravar: TBitBtn
@@ -140,7 +140,7 @@ inherited CadCategoriaF: TCadCategoriaF
             OnClick = bitBtnModeloExcluirClick
           end
           inherited bitBtnModeloCancelar: TBitBtn
-            Left = 577
+            Left = 605
             OnClick = bitBtnModeloCancelarClick
           end
           inherited bitBtnModeloImprimir: TBitBtn
@@ -157,7 +157,6 @@ inherited CadCategoriaF: TCadCategoriaF
   object qryCadCategoria: TZQuery[2]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadCategoriaNewRecord
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto'
     )

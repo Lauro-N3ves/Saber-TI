@@ -131,6 +131,7 @@
         <Filename Value="pesquisaclientecadorcamento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="pesquisaClienteCadOrcamentoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaClienteCadOrcamento"/>
       </Unit>

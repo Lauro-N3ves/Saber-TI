@@ -37,6 +37,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure lblCadClienteIDClick(Sender: TObject);
     procedure qryCadClienteNewRecord(DataSet: TDataSet);
   private
@@ -133,6 +134,12 @@ end;
 procedure TCadClienteF.dbGridModeloDblClick(Sender: TObject);
 begin
   PageControl1.ActivePage:=tbCadastro;
+end;
+
+procedure TCadClienteF.FormCreate(Sender: TObject);
+begin
+  inherited;
+  qryCadCliente.Active:=True;
 end;
 
 procedure TCadClienteF.lblCadClienteIDClick(Sender: TObject);
