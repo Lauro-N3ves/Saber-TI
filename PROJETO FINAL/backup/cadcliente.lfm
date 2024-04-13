@@ -1,12 +1,13 @@
 inherited CadClienteF: TCadClienteF
-  Left = 1161
+  Left = 797
   Height = 448
-  Top = 305
+  Top = 245
   Width = 730
   Caption = 'Cadastro Cliente'
   ClientHeight = 448
   ClientWidth = 730
   Font.Height = -16
+  OnCreate = FormCreate
   inherited PageControl1: TPageControl
     Height = 448
     Width = 730
@@ -17,7 +18,7 @@ inherited CadClienteF: TCadClienteF
         Width = 722
         ClientWidth = 722
         inherited bitBtnModeloPesquisar: TBitBtn
-          Left = 554
+          Left = 588
           OnClick = bitBtnModeloPesquisarClick
         end
         inherited edtPesquisarModelo: TEdit
@@ -25,7 +26,6 @@ inherited CadClienteF: TCadClienteF
         end
         inherited cmbBoxModelo: TComboBox
           Left = 392
-          Top = 32
           Items.Strings = (
             'ID'
             'Tipo'
@@ -35,12 +35,12 @@ inherited CadClienteF: TCadClienteF
         end
       end
       inherited pnlGrid: TPanel
-        Height = 235
+        Height = 271
         Width = 722
-        ClientHeight = 235
+        ClientHeight = 271
         ClientWidth = 722
         inherited dbGridModelo: TDBGrid
-          Height = 235
+          Height = 271
           Width = 722
           Columns = <          
             item
@@ -76,11 +76,11 @@ inherited CadClienteF: TCadClienteF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 323
+        Top = 341
         Width = 722
         ClientWidth = 722
         inherited bitBtnModeloFechar: TBitBtn
-          Left = 590
+          Left = 616
           ImageIndex = 12
         end
         inherited bitBtnModeloNovo: TBitBtn
@@ -190,7 +190,7 @@ inherited CadClienteF: TCadClienteF
         ClientWidth = 722
         ParentFont = True
         inherited pnlModeloCadBotoes: TPanel
-          Top = 163
+          Top = 181
           Width = 722
           ClientWidth = 722
           inherited bitBtnModeloGravar: TBitBtn
@@ -202,7 +202,7 @@ inherited CadClienteF: TCadClienteF
             OnClick = bitBtnModeloExcluirClick
           end
           inherited bitBtnModeloCancelar: TBitBtn
-            Left = 580
+            Left = 608
             ImageIndex = 0
             OnClick = bitBtnModeloCancelarClick
           end
@@ -628,7 +628,6 @@ inherited CadClienteF: TCadClienteF
   object qryCadCliente: TZQuery[3]
     Connection = dmF.ZConnection1
     OnNewRecord = qryCadClienteNewRecord
-    Active = True
     SQL.Strings = (
       'select * from cliente'
     )

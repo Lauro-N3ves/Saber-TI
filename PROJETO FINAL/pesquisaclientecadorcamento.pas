@@ -49,7 +49,7 @@ uses
 
 procedure TpesquisaClienteCadOrcamentoF.DBGrid1DblClick(Sender: TObject);
 begin
- OrcamentoF.qryOrcamentoCadorcamentoid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
+ OrcamentoF.qryOrcamentoPesquisaclienteid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
   Close;
 end;
 

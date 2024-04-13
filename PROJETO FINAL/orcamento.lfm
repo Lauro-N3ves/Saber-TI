@@ -1,17 +1,17 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = 481
-  Height = 661
-  Top = 50
+  Left = 220
+  Height = 656
+  Top = 288
   Width = 1069
   Caption = 'Orçamento'
-  ClientHeight = 661
+  ClientHeight = 656
   ClientWidth = 1069
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
-    Height = 661
+    Height = 656
     Width = 1069
     inherited tbPesquisa: TTabSheet
-      ClientHeight = 629
+      ClientHeight = 624
       ClientWidth = 1061
       inherited pnlPesquisa: TPanel
         Width = 1061
@@ -21,12 +21,12 @@ inherited OrcamentoF: TOrcamentoF
         end
       end
       inherited pnlGrid: TPanel
-        Height = 486
+        Height = 481
         Width = 1061
-        ClientHeight = 486
+        ClientHeight = 481
         ClientWidth = 1061
         inherited dbGridModelo: TDBGrid
-          Height = 486
+          Height = 481
           Width = 1061
           Columns = <          
             item
@@ -67,7 +67,7 @@ inherited OrcamentoF: TOrcamentoF
         end
       end
       inherited pnlModeloPesquisaBotoes: TPanel
-        Top = 556
+        Top = 551
         Width = 1061
         ClientWidth = 1061
         inherited bitBtnModeloFechar: TBitBtn
@@ -82,7 +82,7 @@ inherited OrcamentoF: TOrcamentoF
       end
     end
     inherited tbCadastro: TTabSheet
-      ClientHeight = 629
+      ClientHeight = 624
       ClientWidth = 1061
       inherited pnlCadTop: TPanel
         Height = 144
@@ -97,7 +97,7 @@ inherited OrcamentoF: TOrcamentoF
           Caption = 'ID:'
         end
         object lblOrcamentoCadIDCliente: TLabel[1]
-          Left = 30
+          Left = 42
           Height = 19
           Top = 72
           Width = 63
@@ -152,6 +152,7 @@ inherited OrcamentoF: TOrcamentoF
           Alignment = taRightJustify
           MaxLength = 0
           TabOrder = 1
+          OnChange = dbedtIdClienteChange
         end
         object dbDateOrcamento: TDBDateEdit[7]
           Left = 392
@@ -165,6 +166,7 @@ inherited OrcamentoF: TOrcamentoF
           NumGlyphs = 1
           MaxLength = 0
           TabOrder = 2
+          Text = '17/02/2023'
           DataField = 'dt_orcamento'
           DataSource = dsOrcamentoPesquisa
         end
@@ -180,6 +182,7 @@ inherited OrcamentoF: TOrcamentoF
           NumGlyphs = 1
           MaxLength = 0
           TabOrder = 3
+          Text = '19/02/2023'
           DataField = 'dt_validade_orcamento'
           DataSource = dsOrcamentoPesquisa
         end
@@ -204,15 +207,31 @@ inherited OrcamentoF: TOrcamentoF
           TabOrder = 5
           OnClick = btnOrcamentoCadClick
         end
+        object lblNomeCli: TLabel[11]
+          Left = 65
+          Height = 19
+          Top = 104
+          Width = 40
+          Caption = 'Nome:'
+        end
+        object DBEdit1: TDBEdit[12]
+          Left = 128
+          Height = 27
+          Top = 104
+          Width = 80
+          DataSource = dsOrcamentoPesquisa
+          MaxLength = 0
+          TabOrder = 6
+        end
       end
       inherited Panel1: TPanel
-        Height = 485
+        Height = 480
         Top = 144
         Width = 1061
-        ClientHeight = 485
+        ClientHeight = 480
         ClientWidth = 1061
         inherited pnlModeloCadBotoes: TPanel
-          Top = 412
+          Top = 407
           Width = 1061
           ClientWidth = 1061
           inherited bitBtnModeloGravar: TBitBtn
@@ -231,7 +250,7 @@ inherited OrcamentoF: TOrcamentoF
         end
         object DBGrid1: TDBGrid[1]
           Left = 0
-          Height = 412
+          Height = 407
           Top = 0
           Width = 1061
           Align = alClient
@@ -283,6 +302,7 @@ inherited OrcamentoF: TOrcamentoF
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
+          ReadOnly = True
           TabOrder = 1
         end
       end
@@ -294,8 +314,9 @@ inherited OrcamentoF: TOrcamentoF
   end
   object dsOrcamentoPesquisa: TDataSource[2]
     DataSet = qryOrcamentoPesquisa
-    Left = 88
-    Top = 392
+    OnDataChange = dsOrcamentoPesquisaDataChange
+    Left = 104
+    Top = 384
   end
   object dsOrcamentoCadastro: TDataSource[3]
     DataSet = qryOrcamentoCad
@@ -304,6 +325,7 @@ inherited OrcamentoF: TOrcamentoF
   end
   object qryOrcamentoPesquisa: TZQuery[4]
     Connection = dmF.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from orcamento '
     )

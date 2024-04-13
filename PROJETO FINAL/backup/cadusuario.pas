@@ -32,6 +32,7 @@ type
     procedure bitBtnModeloExcluirClick(Sender: TObject);
     procedure bitBtnModeloGravarClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -51,6 +52,12 @@ procedure TcadUsuarioF.bitBtnModeloNovoClick(Sender: TObject);
 begin
   inherited;
   qryCadUsuario.Insert;
+end;
+
+procedure TcadUsuarioF.FormCreate(Sender: TObject);
+begin
+  inherited;
+  qryCadUsuario.Active:=True;
 end;
 
 procedure TcadUsuarioF.bitBtnModeloEditarClick(Sender: TObject);

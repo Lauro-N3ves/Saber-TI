@@ -1,7 +1,8 @@
 inherited cadUsuarioF: TcadUsuarioF
-  Left = 744
-  Top = 123
+  Left = 595
+  Top = 99
   Caption = 'Cadastro de Usuário'
+  OnCreate = FormCreate
   inherited PageControl1: TPageControl
     inherited tbPesquisa: TTabSheet
       inherited pnlGrid: TPanel
@@ -144,8 +145,8 @@ inherited cadUsuarioF: TcadUsuarioF
       'SELECT * FROM usuarios '
     )
     Params = <>
-    Left = 152
-    Top = 384
+    Left = 120
+    Top = 296
     object qryCadUsuarioid: TLongintField
       FieldKind = fkData
       FieldName = 'id'

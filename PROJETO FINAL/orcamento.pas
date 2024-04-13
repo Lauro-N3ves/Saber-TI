@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
-  StdCtrls, DBCtrls, DBExtCtrls, ZDataset, modelo, pesquisaClienteCadOrcamento;
+  StdCtrls, DBCtrls, DBExtCtrls, ExtCtrls, ZDataset, modelo,
+  pesquisaClienteCadOrcamento;
 
 type
 
@@ -16,12 +17,14 @@ type
     btnOrcamentoCad: TButton;
     dbDateOrcamento: TDBDateEdit;
     dbDateValidade: TDBDateEdit;
+    DBEdit1: TDBEdit;
     dbEdtID: TDBEdit;
     dbedtIdCliente: TDBEdit;
     dbEdtValorTotal: TDBEdit;
     DBGrid1: TDBGrid;
     dsOrcamentoPesquisa: TDataSource;
     dsOrcamentoCadastro: TDataSource;
+    lblNomeCli: TLabel;
     lblOrcamentoCadID: TLabel;
     lblOrcamentoCadIDCliente: TLabel;
     lblOrcamentoCadDataOrcamento: TLabel;
@@ -48,6 +51,8 @@ type
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure btnOrcamentoCadClick(Sender: TObject);
+    procedure dbedtIdClienteChange(Sender: TObject);
+    procedure dsOrcamentoPesquisaDataChange(Sender: TObject; Field: TField);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -74,9 +79,21 @@ end;
 
 procedure TOrcamentoF.btnOrcamentoCadClick(Sender: TObject);
 begin
-  dbedtIdCliente.ReadOnly:=false;
+  //dbedtIdCliente.ReadOnly:=false;
+  //qryOrcamentoPesquisa.Edit;
   pesquisaClienteCadOrcamentoF:=TpesquisaClienteCadOrcamentoF.Create(Self);
   pesquisaClienteCadOrcamentoF.ShowModal;
+end;
+
+procedure TOrcamentoF.dbedtIdClienteChange(Sender: TObject);
+begin
+
+end;
+
+procedure TOrcamentoF.dsOrcamentoPesquisaDataChange(Sender: TObject;
+  Field: TField);
+begin
+
 end;
 
 procedure TOrcamentoF.FormCreate(Sender: TObject);

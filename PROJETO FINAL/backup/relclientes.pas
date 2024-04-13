@@ -46,7 +46,7 @@ end;
 
 procedure TrelClientesF.bitBtnImprimirRelClientesClick(Sender: TObject);
 begin
-   frReport1.LoadFromFile('relCllientes.lrf');
+   frReport1.LoadFromFile('relClientes.lrf');
    frReport1.PrepareReport;
    frReport1.ShowReport;
 end;

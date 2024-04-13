@@ -44,6 +44,7 @@ type
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
     procedure btnCadprodutosClick(Sender: TObject);
+    procedure dbEdtCategoriaChange(Sender: TObject);
     procedure dbGridModeloDblClick(Sender: TObject);
     procedure dsCadProdutosDataChange(Sender: TObject; Field: TField);
     procedure FormCreate(Sender: TObject);
@@ -88,6 +89,11 @@ begin
   qryCadProdutos.Edit;
   pesquisaCategoriaCadProdutoF:=TpesquisaCategoriaCadProdutoF.Create(Self);
   pesquisaCategoriaCadProdutoF.ShowModal;
+end;
+
+procedure TcadProdutosF.dbEdtCategoriaChange(Sender: TObject);
+begin
+
 end;
 
 procedure TcadProdutosF.dbGridModeloDblClick(Sender: TObject);

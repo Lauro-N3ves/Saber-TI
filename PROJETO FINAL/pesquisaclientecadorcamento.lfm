@@ -1,7 +1,7 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = 861
+  Left = 656
   Height = 373
-  Top = 351
+  Top = 490
   Width = 615
   Caption = 'Pesquisa do Cliente'
   ClientHeight = 373
@@ -95,6 +95,7 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
           FieldName = 'nome_cliente'
         end>
       DataSource = dsPesquisaClienteOrc
+      ReadOnly = True
       TabOrder = 0
       OnDblClick = DBGrid1DblClick
     end

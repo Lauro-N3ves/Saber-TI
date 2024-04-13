@@ -8,7 +8,6 @@
       <Unit>
         <Filename Value="prJSistema.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="13"/>
         <CursorPos Y="26"/>
         <UsageCount Value="200"/>
@@ -46,7 +45,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="menuPrincipal"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="91"/>
+        <TopLine Value="85"/>
         <CursorPos X="76" Y="102"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -62,7 +61,7 @@
         <EditorIndex Value="8"/>
         <TopLine Value="77"/>
         <CursorPos X="4" Y="91"/>
-        <UsageCount Value="72"/>
+        <UsageCount Value="132"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -74,9 +73,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
         <EditorIndex Value="9"/>
-        <TopLine Value="132"/>
+        <TopLine Value="127"/>
         <CursorPos X="29" Y="142"/>
-        <UsageCount Value="50"/>
+        <UsageCount Value="110"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -88,9 +87,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="cadProdutos"/>
         <EditorIndex Value="11"/>
-        <TopLine Value="70"/>
-        <CursorPos X="30" Y="73"/>
-        <UsageCount Value="38"/>
+        <TopLine Value="71"/>
+        <CursorPos X="44" Y="84"/>
+        <UsageCount Value="98"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -100,7 +99,7 @@
         <HasResources Value="True"/>
         <EditorIndex Value="12"/>
         <CursorPos X="20" Y="9"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
@@ -112,9 +111,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="PesquisaCategoriaCadProduto"/>
         <EditorIndex Value="10"/>
-        <TopLine Value="31"/>
-        <CursorPos X="43" Y="55"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="25"/>
+        <CursorPos X="54" Y="49"/>
+        <UsageCount Value="88"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -128,7 +127,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="39"/>
         <CursorPos X="29" Y="60"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="88"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -139,10 +138,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Orcamento"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="80"/>
-        <CursorPos X="131" Y="80"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="88"/>
+        <CursorPos X="3" Y="90"/>
+        <UsageCount Value="86"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -154,9 +154,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relClientes"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="28"/>
-        <CursorPos X="65" Y="28"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="21"/>
+        <CursorPos X="101" Y="36"/>
+        <UsageCount Value="86"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -168,9 +168,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaClienteCadOrcamento"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="34"/>
-        <CursorPos X="37" Y="58"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="13"/>
+        <CursorPos X="23" Y="43"/>
+        <UsageCount Value="81"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -183,7 +183,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="28" Y="15"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="15"/>
       </Unit>
       <Unit>
         <Filename Value="pesquisaCategoriaCadProd.pas"/>
@@ -193,7 +193,7 @@
         <UnitName Value="cadProdutosPesquisaCategoria"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="10"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="13"/>
       </Unit>
       <Unit>
         <Filename Value="cadprodutospesquisacategoria.pas"/>
@@ -204,7 +204,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="53" Y="41"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="19"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\forms.pp"/>
@@ -212,119 +212,11 @@
         <EditorIndex Value="6"/>
         <TopLine Value="647"/>
         <CursorPos X="56" Y="848"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="19" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="18" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="19" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="20" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="21" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="22" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="23" Column="41" TopLine="2"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="24" Column="36" TopLine="3"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="8" Column="54" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="9" Column="79"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="8" Column="54" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="51" Column="33" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="52" Column="9" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="51" Column="82" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="85" Column="112" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="82" Column="3" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="68" Column="3" TopLine="66"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="102" Column="3" TopLine="93"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="96" Column="3" TopLine="93"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="109" Column="3" TopLine="93"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="52" Column="36" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="50" Column="7" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="76" Column="33" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="107" Column="95" TopLine="79"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisaclientecadorcamento.pas"/>
-        <Caret Line="52" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuario.pas"/>
-        <Caret Line="67" Column="39" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="cadcategoria.pas"/>
-        <Caret Line="174" Column="90" TopLine="173"/>
-      </Position>
       <Position>
         <Filename Value="cadcliente.pas"/>
         <Caret Line="105" Column="51" TopLine="98"/>
@@ -336,6 +228,114 @@
       <Position>
         <Filename Value="cadprodutos.pas"/>
         <Caret Line="95" Column="79" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="relclientes.pas"/>
+        <Caret Line="36" Column="101" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="81" Column="131" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="82" Column="131" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="81" Column="131" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="79" Column="23" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="78" Column="34" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="cadprodutos.pas"/>
+        <Caret Line="74" Column="30" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="cadprodutos.pas"/>
+        <Caret Line="96" Column="3" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="79" Column="25" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="80" Column="3" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="81" Column="31" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="65" Column="31" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="83" Column="3" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="81" Column="3" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="62" Column="15" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="pesquisaclientecadorcamento.pas"/>
+        <Caret Line="41" Column="25" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="pesquisaclientecadorcamento.pas"/>
+        <Caret Line="52" Column="42" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="pesquisaclientecadorcamento.pas"/>
+        <Caret Line="37" Column="16" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="79" Column="31" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="82" Column="50" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="77" Column="5" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="79" Column="3" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="71" Column="19" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="100" TopLine="100"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="94" Column="3" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="88" Column="3" TopLine="86"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="89" Column="3" TopLine="87"/>
       </Position>
     </JumpHistory>
     <RunParams>

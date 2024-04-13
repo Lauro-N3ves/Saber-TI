@@ -1,12 +1,14 @@
 inherited cadProdutosF: TcadProdutosF
-  Left = 1073
+  Left = 656
   Height = 507
-  Top = 399
+  Top = 116
   Caption = 'Cadastro de Produtos'
   ClientHeight = 507
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
     Height = 507
+    ActivePage = tbCadastro
+    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       ClientHeight = 475
       inherited pnlPesquisa: TPanel
@@ -148,6 +150,7 @@ inherited cadProdutosF: TcadProdutosF
           Alignment = taRightJustify
           MaxLength = 50
           TabOrder = 1
+          OnChange = dbEdtCategoriaChange
         end
         object dbEdtValorVenda: TDBEdit[7]
           Left = 536

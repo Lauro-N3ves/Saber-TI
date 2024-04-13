@@ -1,7 +1,7 @@
 inherited cadProdutosF: TcadProdutosF
-  Left = 1073
+  Left = 519
   Height = 507
-  Top = 399
+  Top = 456
   Caption = 'Cadastro de Produtos'
   ClientHeight = 507
   OnCreate = FormCreate
@@ -55,6 +55,7 @@ inherited cadProdutosF: TcadProdutosF
               Title.Caption = 'Valor de Venda'
               Width = 150
               FieldName = 'vl_venda_produto'
+              DisplayFormat = '#.###.##'
             end          
             item
               Alignment = taCenter
@@ -149,6 +150,7 @@ inherited cadProdutosF: TcadProdutosF
           Alignment = taRightJustify
           MaxLength = 50
           TabOrder = 1
+          OnChange = dbEdtCategoriaChange
         end
         object dbEdtValorVenda: TDBEdit[7]
           Left = 536

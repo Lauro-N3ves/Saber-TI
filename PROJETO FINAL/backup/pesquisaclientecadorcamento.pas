@@ -28,6 +28,7 @@ type
     qryPesquisaClienteOrcnome_cliente: TStringField;
     qryPesquisaClienteOrctipo_cliente: TStringField;
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -48,8 +49,13 @@ uses
 
 procedure TpesquisaClienteCadOrcamentoF.DBGrid1DblClick(Sender: TObject);
 begin
- OrcamentoF.qryOrcamentoCadorcamentoid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
+ OrcamentoF.qryOrcamentoPesquisaclienteid.AsInteger:=qryPesquisaClienteOrcclienteid.AsInteger;
   Close;
+end;
+
+procedure TpesquisaClienteCadOrcamentoF.FormCreate(Sender: TObject);
+begin
+  qryPesquisaClienteOrc.Active:=True;
 end;
 
 end.

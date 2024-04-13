@@ -1,11 +1,12 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = 861
+  Left = 525
   Height = 373
-  Top = 351
+  Top = 332
   Width = 615
   Caption = 'Pesquisa do Cliente'
   ClientHeight = 373
   ClientWidth = 615
+  OnCreate = FormCreate
   LCLVersion = '3.2.0.0'
   object pnlPesquisaClienteOrcamento: TPanel
     Left = 0
@@ -94,6 +95,7 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
           FieldName = 'nome_cliente'
         end>
       DataSource = dsPesquisaClienteOrc
+      ReadOnly = True
       TabOrder = 0
       OnDblClick = DBGrid1DblClick
     end
@@ -564,8 +566,8 @@ object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
       'select * from cliente'
     )
     Params = <>
-    Left = 128
-    Top = 243
+    Left = 96
+    Top = 240
     object qryPesquisaClienteOrcclienteid: TLongintField
       FieldKind = fkData
       FieldName = 'clienteid'

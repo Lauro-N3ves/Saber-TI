@@ -25,6 +25,7 @@ type
     qryPesquisaCategoriaCadProdcategoriaprodutoid: TLongintField;
     qryPesquisaCategoriaCadProdds_categoria_produto: TStringField;
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -47,6 +48,11 @@ procedure TpesquisaCategoriaCadProdutoF.DBGrid1DblClick(Sender: TObject);
 begin
      cadProdutosF.qryCadProdutoscategoriaprodutoid.AsInteger:= qryPesquisaCategoriaCadProdcategoriaprodutoid.AsInteger;
      Close;
+end;
+
+procedure TpesquisaCategoriaCadProdutoF.FormCreate(Sender: TObject);
+begin
+  qryPesquisaCategoriaCadProd.Active:=True;
 end;
 
 end.
