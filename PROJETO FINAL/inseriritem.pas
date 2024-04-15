@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBCtrls, StdCtrls,
-  ZDataset;
+  ZDataset, pesquisaProdutoInserir;
 
 type
 
@@ -51,7 +51,8 @@ implementation
 
 procedure TInserirItemF.btnInserirProdutoClick(Sender: TObject);
 begin
-
+    pesquisaProdutoInserirF := TpesquisaProdutoInserirF.Create(Self);
+    pesquisaProdutoInserirF.ShowModal;
 end;
 
 end.

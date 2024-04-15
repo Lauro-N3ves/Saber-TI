@@ -136,8 +136,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Orcamento"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="90"/>
-        <CursorPos X="3" Y="92"/>
+        <TopLine Value="113"/>
+        <CursorPos X="3" Y="131"/>
         <UsageCount Value="89"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -163,8 +163,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaClienteCadOrcamento"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="31"/>
+        <TopLine Value="32"/>
         <CursorPos Y="52"/>
         <UsageCount Value="84"/>
         <Loaded Value="True"/>
@@ -208,7 +209,7 @@
         <EditorIndex Value="8"/>
         <TopLine Value="647"/>
         <CursorPos X="56" Y="848"/>
-        <UsageCount Value="42"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -219,7 +220,7 @@
         <UnitName Value="inserirItem"/>
         <EditorIndex Value="4"/>
         <TopLine Value="34"/>
-        <CursorPos X="3" Y="54"/>
+        <CursorPos X="3" Y="55"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -227,12 +228,10 @@
       <Unit>
         <Filename Value="pesquisaprodutoinserir.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="pesquisaProdInserirF"/>
+        <ComponentName Value="pesquisaProdutoInserirF"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaProdutoInserir"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="4"/>
         <CursorPos X="29" Y="17"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
@@ -240,42 +239,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="79" Column="23" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="78" Column="34" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="cadprodutos.pas"/>
-        <Caret Line="74" Column="30" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="cadprodutos.pas"/>
-        <Caret Line="96" Column="3" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="79" Column="25" TopLine="65"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="80" Column="3" TopLine="66"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="81" Column="31" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="65" Column="31" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="orcamento.pas"/>
-        <Caret Line="83" Column="3" TopLine="69"/>
-      </Position>
       <Position>
         <Filename Value="orcamento.pas"/>
         <Caret Line="81" Column="3" TopLine="69"/>
@@ -357,6 +320,42 @@
       <Position>
         <Filename Value="pesquisaprodutoinserir.pas"/>
         <Caret Line="16" Column="29" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="92" Column="3" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="85" Column="3" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="10" Column="43"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="125" Column="25" TopLine="122"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="124" Column="25" TopLine="121"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="131" Column="25" TopLine="128"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="10" Column="43" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="130" Column="3" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="orcamento.pas"/>
+        <Caret Line="131" Column="3" TopLine="113"/>
       </Position>
     </JumpHistory>
     <RunParams>

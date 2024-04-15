@@ -6,14 +6,16 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
-  StdCtrls, DBCtrls, DBExtCtrls, ExtCtrls, ZDataset, modelo,
-  pesquisaClienteCadOrcamento;
+  StdCtrls, DBCtrls, DBExtCtrls, ExtCtrls, Buttons, ZDataset, modelo,
+  pesquisaClienteCadOrcamento, inserirItem;
 
 type
 
   { TOrcamentoF }
 
   TOrcamentoF = class(TModeloF)
+    bitBtnAdicionar: TBitBtn;
+    bitBtnRemover: TBitBtn;
     btnOrcamentoCad: TButton;
     dbDateOrcamento: TDBDateEdit;
     dbDateValidade: TDBDateEdit;
@@ -41,15 +43,18 @@ type
     qryOrcamentoPesquisaclienteid: TLongintField;
     qryOrcamentoPesquisadt_orcamento: TDateTimeField;
     qryOrcamentoPesquisadt_validade_orcamento: TDateTimeField;
+    qryOrcamentoPesquisanome_cliente: TStringField;
     qryOrcamentoPesquisaorcamentoid: TLongintField;
     qryOrcamentoPesquisavl_total_orcamento: TFloatField;
     qryOrcamentoCad: TZQuery;
+    procedure bitBtnAdicionarClick(Sender: TObject);
     procedure bitBtnModeloCancelarClick(Sender: TObject);
     procedure bitBtnModeloEditarClick(Sender: TObject);
     procedure bitBtnModeloExcluirClick(Sender: TObject);
     procedure bitBtnModeloGravarClick(Sender: TObject);
     procedure bitBtnModeloImprimirClick(Sender: TObject);
     procedure bitBtnModeloNovoClick(Sender: TObject);
+    procedure btnAdicionarClick(Sender: TObject);
     procedure btnOrcamentoCadClick(Sender: TObject);
     procedure dbedtIdClienteChange(Sender: TObject);
     procedure dsOrcamentoPesquisaDataChange(Sender: TObject; Field: TField);
@@ -77,10 +82,14 @@ begin
 
 end;
 
+procedure TOrcamentoF.btnAdicionarClick(Sender: TObject);
+begin
+
+end;
+
 procedure TOrcamentoF.btnOrcamentoCadClick(Sender: TObject);
 begin
-  //dbedtIdCliente.ReadOnly:=false;
-  //qryOrcamentoPesquisa.Edit;
+
   pesquisaClienteCadOrcamentoF:=TpesquisaClienteCadOrcamentoF.Create(Self);
   pesquisaClienteCadOrcamentoF.ShowModal;
 end;
@@ -115,6 +124,12 @@ begin
   inherited;
   dbDateValidade.ReadOnly:= True;
   qryOrcamentoPesquisa.Cancel;
+end;
+
+procedure TOrcamentoF.bitBtnAdicionarClick(Sender: TObject);
+begin
+  InserirItemF:= TInserirItemF.Create(Self);
+  InserirItemF.ShowModal;
 end;
 
 procedure TOrcamentoF.bitBtnModeloExcluirClick(Sender: TObject);

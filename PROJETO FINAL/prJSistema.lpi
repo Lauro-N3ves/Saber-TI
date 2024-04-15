@@ -145,7 +145,7 @@
       <Unit>
         <Filename Value="pesquisaprodutoinserir.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="pesquisaProdInserirF"/>
+        <ComponentName Value="pesquisaProdutoInserirF"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaProdutoInserir"/>
       </Unit>

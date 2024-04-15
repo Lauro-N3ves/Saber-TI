@@ -1,6 +1,6 @@
 inherited cadUsuarioF: TcadUsuarioF
-  Left = 595
-  Top = 99
+  Left = 744
+  Top = 123
   Caption = 'Cadastro de Usuário'
   OnCreate = FormCreate
   inherited PageControl1: TPageControl

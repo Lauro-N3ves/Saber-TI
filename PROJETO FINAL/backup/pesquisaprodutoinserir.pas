@@ -6,16 +6,21 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  ZDataset;
+  StdCtrls, Buttons, ZDataset;
 
 type
 
   { TpesquisaProdInserirF }
 
   TpesquisaProdInserirF = class(TForm)
+    bitBtnModeloPesquisar: TBitBtn;
+    cmbBoxModelo: TComboBox;
     dsPesquisaProdInserir: TDataSource;
     DBGrid1: TDBGrid;
+    edtPesquisarModelo: TEdit;
     ImageList1: TImageList;
+    lblModeloPesquisar: TLabel;
+    pnlPesquisarInserir: TPanel;
     pnlGridPesquisarProdInserir: TPanel;
     qryPesquisaProdInserir: TZQuery;
     qryPesquisaProdInserirds_produto: TStringField;

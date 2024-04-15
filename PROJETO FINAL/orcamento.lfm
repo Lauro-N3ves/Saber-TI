@@ -1,7 +1,7 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = 880
+  Left = 593
   Height = 641
-  Top = 303
+  Top = 253
   Width = 1069
   Caption = 'Orçamento'
   ClientHeight = 641
@@ -10,8 +10,6 @@ inherited OrcamentoF: TOrcamentoF
   inherited PageControl1: TPageControl
     Height = 641
     Width = 1069
-    ActivePage = tbCadastro
-    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       ClientHeight = 603
       ClientWidth = 1061
@@ -35,7 +33,7 @@ inherited OrcamentoF: TOrcamentoF
               Alignment = taCenter
               PickList.Strings = (              )
               Title.Alignment = taCenter
-              Title.Caption = 'ID'
+              Title.Caption = 'ID orc.'
               Width = 70
               FieldName = 'orcamentoid'
             end          
@@ -220,12 +218,13 @@ inherited OrcamentoF: TOrcamentoF
           Left = 128
           Height = 33
           Top = 104
-          Width = 80
+          Width = 208
+          DataField = 'nome_cliente'
           DataSource = dsOrcamentoPesquisa
-          MaxLength = 0
+          MaxLength = 100
           TabOrder = 6
         end
-        object BitBtn2: TBitBtn[13]
+        object bitBtnRemover: TBitBtn[13]
           Left = 783
           Height = 40
           Top = 89
@@ -235,6 +234,17 @@ inherited OrcamentoF: TOrcamentoF
           Images = ImageList1
           ImageIndex = 22
           TabOrder = 7
+        end
+        object bitBtnAdicionar: TBitBtn[14]
+          Left = 632
+          Height = 38
+          Top = 89
+          Width = 134
+          Caption = 'Adicionar'
+          Images = ImageList1
+          ImageIndex = 8
+          OnClick = bitBtnAdicionarClick
+          TabOrder = 8
         end
       end
       inherited Panel1: TPanel
@@ -306,6 +316,7 @@ inherited OrcamentoF: TOrcamentoF
             end          
             item
               Title.Caption = 'Valor Total'
+              Width = 120
               FieldName = 'vl_total'
               DisplayFormat = '#.###.##'
             end>
@@ -321,17 +332,7 @@ inherited OrcamentoF: TOrcamentoF
       end
     end
   end
-  object BitBtn1: TBitBtn[1]
-    Left = 648
-    Height = 40
-    Top = 122
-    Width = 128
-    Caption = 'Adicionar'
-    Images = ImageList1
-    ImageIndex = 8
-    TabOrder = 1
-  end
-  inherited ImageList1: TImageList[2]
+  inherited ImageList1: TImageList
     Left = 480
     Top = 400
     Bitmap = {
@@ -803,21 +804,25 @@ inherited OrcamentoF: TOrcamentoF
       F7EB3718CBB8519B36DA517D7A919896F33B17FF0729CFA416
     }
   end
-  object dsOrcamentoPesquisa: TDataSource[3]
+  object dsOrcamentoPesquisa: TDataSource[2]
     DataSet = qryOrcamentoPesquisa
     OnDataChange = dsOrcamentoPesquisaDataChange
-    Left = 104
+    Left = 88
     Top = 384
   end
-  object dsOrcamentoCadastro: TDataSource[4]
+  object dsOrcamentoCadastro: TDataSource[3]
     DataSet = qryOrcamentoCad
     Left = 256
     Top = 392
   end
-  object qryOrcamentoPesquisa: TZQuery[5]
+  object qryOrcamentoPesquisa: TZQuery[4]
     Connection = dmF.ZConnection1
+    Active = True
     SQL.Strings = (
-      'select * from orcamento '
+      'SELECT o.*, c.NOME_CLIENTE'
+      'FROM ORCAMENTO o'
+      'INNER JOIN CLIENTE c ON o.CLIENTEID = c.CLIENTEID;'
+      ''
     )
     Params = <>
     Left = 88
@@ -869,8 +874,18 @@ inherited OrcamentoF: TOrcamentoF
       DisplayFormat = '#.###,##'
       Precision = 983042
     end
+    object qryOrcamentoPesquisanome_cliente: TStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
   end
-  object qryOrcamentoCad: TZQuery[6]
+  object qryOrcamentoCad: TZQuery[5]
     Connection = dmF.ZConnection1
     SQL.Strings = (
       'select * from orcamento_item'

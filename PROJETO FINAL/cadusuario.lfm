@@ -1,9 +1,11 @@
 inherited cadUsuarioF: TcadUsuarioF
-  Left = 744
-  Top = 123
+  Left = 1151
+  Top = 108
   Caption = 'Cadastro de Usuário'
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
+    ActivePage = tbPesquisa
+    TabIndex = 0
     inherited tbPesquisa: TTabSheet
       inherited pnlGrid: TPanel
         inherited dbGridModelo: TDBGrid
@@ -52,35 +54,35 @@ inherited cadUsuarioF: TcadUsuarioF
         ClientHeight = 295
         object lblCadUsuarioID: TLabel[0]
           Left = 72
-          Height = 19
+          Height = 25
           Top = 32
-          Width = 17
+          Width = 22
           Caption = 'ID:'
         end
         object lblCadUsuarioUser: TLabel[1]
           Left = 184
-          Height = 19
+          Height = 25
           Top = 32
-          Width = 50
+          Width = 64
           Caption = 'Usuário:'
         end
         object lblCadUsuarioNomeCompleto: TLabel[2]
           Left = 72
-          Height = 19
+          Height = 25
           Top = 83
-          Width = 104
+          Width = 137
           Caption = 'Nome Completo:'
         end
         object lblCadUsuarioSenha: TLabel[3]
           Left = 72
-          Height = 19
+          Height = 25
           Top = 140
-          Width = 40
+          Width = 52
           Caption = 'Senha:'
         end
         object dbEdtCadusuarioID: TDBEdit[4]
           Left = 104
-          Height = 27
+          Height = 33
           Top = 29
           Width = 40
           DataField = 'id'
@@ -91,7 +93,7 @@ inherited cadUsuarioF: TcadUsuarioF
         end
         object dbEdtCadUsuarioUser: TDBEdit[5]
           Left = 264
-          Height = 27
+          Height = 33
           Top = 29
           Width = 264
           DataField = 'usuario'
@@ -101,7 +103,7 @@ inherited cadUsuarioF: TcadUsuarioF
         end
         object dbEdtCadUsuarioNomeCompleto: TDBEdit[6]
           Left = 216
-          Height = 27
+          Height = 33
           Top = 80
           Width = 312
           DataField = 'nome_completo'
@@ -111,7 +113,7 @@ inherited cadUsuarioF: TcadUsuarioF
         end
         object dbEdtCadUsuarioSenha: TDBEdit[7]
           Left = 136
-          Height = 27
+          Height = 33
           Top = 136
           Width = 392
           DataField = 'senha'
@@ -121,11 +123,11 @@ inherited cadUsuarioF: TcadUsuarioF
         end
       end
       inherited Panel1: TPanel
-        Height = 130
+        Height = 238
         Top = 295
-        ClientHeight = 130
+        ClientHeight = 238
         inherited pnlModeloCadBotoes: TPanel
-          Top = 57
+          Top = 147
           inherited bitBtnModeloGravar: TBitBtn
             OnClick = bitBtnModeloGravarClick
           end
