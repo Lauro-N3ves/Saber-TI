@@ -1,7 +1,7 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = 640
+  Left = 220
   Height = 656
-  Top = 236
+  Top = 288
   Width = 1069
   Caption = 'Orçamento'
   ClientHeight = 656
@@ -10,8 +10,6 @@ inherited OrcamentoF: TOrcamentoF
   inherited PageControl1: TPageControl
     Height = 656
     Width = 1069
-    ActivePage = tbCadastro
-    TabIndex = 1
     inherited tbPesquisa: TTabSheet
       ClientHeight = 624
       ClientWidth = 1061
@@ -99,7 +97,7 @@ inherited OrcamentoF: TOrcamentoF
           Caption = 'ID:'
         end
         object lblOrcamentoCadIDCliente: TLabel[1]
-          Left = 30
+          Left = 42
           Height = 19
           Top = 72
           Width = 63
@@ -208,6 +206,22 @@ inherited OrcamentoF: TOrcamentoF
           Caption = '...'
           TabOrder = 5
           OnClick = btnOrcamentoCadClick
+        end
+        object lblNomeCli: TLabel[11]
+          Left = 65
+          Height = 19
+          Top = 104
+          Width = 40
+          Caption = 'Nome:'
+        end
+        object DBEdit1: TDBEdit[12]
+          Left = 128
+          Height = 27
+          Top = 104
+          Width = 80
+          DataSource = dsOrcamentoPesquisa
+          MaxLength = 0
+          TabOrder = 6
         end
       end
       inherited Panel1: TPanel

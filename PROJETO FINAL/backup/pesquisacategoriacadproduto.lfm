@@ -1,7 +1,7 @@
 object pesquisaCategoriaCadProdutoF: TpesquisaCategoriaCadProdutoF
-  Left = 866
+  Left = 1083
   Height = 384
-  Top = 259
+  Top = 323
   Width = 512
   Caption = 'Pesquisa de Categoria'
   ClientHeight = 384

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, Grids, DBGrids,
-  StdCtrls, DBCtrls, DBExtCtrls, ExtCtrls, ZDataset, modelo,
+  StdCtrls, DBCtrls, DBExtCtrls, ExtCtrls, Buttons, ZDataset, modelo,
   pesquisaClienteCadOrcamento;
 
 type
@@ -14,6 +14,8 @@ type
   { TOrcamentoF }
 
   TOrcamentoF = class(TModeloF)
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
     btnOrcamentoCad: TButton;
     dbDateOrcamento: TDBDateEdit;
     dbDateValidade: TDBDateEdit;

@@ -135,6 +135,20 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="pesquisaClienteCadOrcamento"/>
       </Unit>
+      <Unit>
+        <Filename Value="inseriritem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="InserirItemF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="inserirItem"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pesquisaprodutoinserir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="pesquisaProdInserirF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="pesquisaProdutoInserir"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

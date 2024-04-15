@@ -1,0 +1,9 @@
+object InserirItemF: TInserirItemF
+  Left = 689
+  Height = 240
+  Top = 229
+  Width = 320
+  Caption = 'InserirItemF'
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+end

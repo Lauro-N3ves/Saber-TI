@@ -17,12 +17,14 @@ type
     btnOrcamentoCad: TButton;
     dbDateOrcamento: TDBDateEdit;
     dbDateValidade: TDBDateEdit;
+    DBEdit1: TDBEdit;
     dbEdtID: TDBEdit;
     dbedtIdCliente: TDBEdit;
     dbEdtValorTotal: TDBEdit;
     DBGrid1: TDBGrid;
     dsOrcamentoPesquisa: TDataSource;
     dsOrcamentoCadastro: TDataSource;
+    lblNomeCli: TLabel;
     lblOrcamentoCadID: TLabel;
     lblOrcamentoCadIDCliente: TLabel;
     lblOrcamentoCadDataOrcamento: TLabel;
