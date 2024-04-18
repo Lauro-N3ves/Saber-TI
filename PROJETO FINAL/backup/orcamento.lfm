@@ -316,6 +316,7 @@ inherited OrcamentoF: TOrcamentoF
             end          
             item
               Title.Caption = 'Valor Total'
+              Width = 120
               FieldName = 'vl_total'
               DisplayFormat = '#.###.##'
             end>
@@ -806,7 +807,7 @@ inherited OrcamentoF: TOrcamentoF
   object dsOrcamentoPesquisa: TDataSource[2]
     DataSet = qryOrcamentoPesquisa
     OnDataChange = dsOrcamentoPesquisaDataChange
-    Left = 104
+    Left = 88
     Top = 384
   end
   object dsOrcamentoCadastro: TDataSource[3]

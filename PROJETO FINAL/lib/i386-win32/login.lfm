@@ -1,0 +1,22 @@
+object loginF: TloginF
+  Left = 674
+  Height = 488
+  Top = 232
+  Width = 580
+  Caption = 'Login'
+  ClientHeight = 488
+  ClientWidth = 580
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -20
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '3.2.0.0'
+  object lblLogin: TLabel
+    Left = 248
+    Height = 28
+    Top = 40
+    Width = 57
+    Caption = 'LOGIN'
+  end
+end

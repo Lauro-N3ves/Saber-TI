@@ -1,7 +1,7 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = 525
+  Left = 656
   Height = 373
-  Top = 332
+  Top = 490
   Width = 615
   Caption = 'Pesquisa do Cliente'
   ClientHeight = 373

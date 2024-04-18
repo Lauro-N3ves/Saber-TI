@@ -1,5 +1,5 @@
 object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
-  Left = 1240
+  Left = -1160
   Height = 497
   Top = 178
   Width = 666

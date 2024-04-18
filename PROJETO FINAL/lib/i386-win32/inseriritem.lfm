@@ -1,5 +1,5 @@
 object InserirItemF: TInserirItemF
-  Left = 1055
+  Left = -1345
   Height = 397
   Top = 262
   Width = 512

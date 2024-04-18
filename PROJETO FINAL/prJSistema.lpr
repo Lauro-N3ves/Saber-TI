@@ -13,7 +13,7 @@ uses
   Forms, zcomponent, modelo, dataModel, menuPrincipal, CadCategoria,
   cadProdutos, cadProdutosPesquisaCategoria, cadUsuario, Orcamento, relClientes,
   CadCliente, PesquisaCategoriaCadProduto, pesquisaClienteCadOrcamento,
-inserirItem, pesquisaProdutoInserir;
+inserirItem, pesquisaProdutoInserir, login;
 
 {$R *.res}
 
@@ -35,6 +35,7 @@ begin
     pesquisaClienteCadOrcamentoF);
   Application.CreateForm(TInserirItemF, InserirItemF);
   Application.CreateForm(TpesquisaProdutoInserirF, pesquisaProdutoInserirF);
+  Application.CreateForm(TloginF, loginF);
   Application.Run;
 end.
 

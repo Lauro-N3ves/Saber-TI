@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TpesquisaProdInserirF }
+  { TpesquisaProdutoInserirF }
 
-  TpesquisaProdInserirF = class(TForm)
+  TpesquisaProdutoInserirF = class(TForm)
     bitBtnModeloPesquisar: TBitBtn;
     cmbBoxModelo: TComboBox;
     dsPesquisaProdInserir: TDataSource;
@@ -33,7 +33,7 @@ type
   end;
 
 var
-  pesquisaProdInserirF: TpesquisaProdInserirF;
+  pesquisaProdutoInserirF: TpesquisaProdutoInserirF;
 
 implementation
 

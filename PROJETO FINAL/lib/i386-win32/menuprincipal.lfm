@@ -1,5 +1,5 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 417
+  Left = -1983
   Height = 344
   Top = 549
   Width = 1144

@@ -34,7 +34,7 @@ begin
   Application.CreateForm(TpesquisaClienteCadOrcamentoF,
     pesquisaClienteCadOrcamentoF);
   Application.CreateForm(TInserirItemF, InserirItemF);
-  Application.CreateForm(TpesquisaProdInserirF, pesquisaProdInserirF);
+  Application.CreateForm(TpesquisaProdutoInserirF, pesquisaProdutoInserirF);
   Application.Run;
 end.
 

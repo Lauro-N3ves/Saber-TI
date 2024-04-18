@@ -1,9 +1,9 @@
-object pesquisaProdInserirF: TpesquisaProdInserirF
-  Left = 294
+object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
+  Left = 1240
   Height = 497
-  Top = 223
+  Top = 178
   Width = 666
-  Caption = 'pesquisaProdInserirF'
+  Caption = 'pesquisaProdutoInserirF'
   ClientHeight = 497
   ClientWidth = 666
   DesignTimePPI = 120

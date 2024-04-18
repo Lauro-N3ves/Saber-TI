@@ -1,21 +1,22 @@
 object relClientesF: TrelClientesF
-  Left = 743
-  Height = 240
+  Left = -1657
+  Height = 300
   Top = 197
-  Width = 466
+  Width = 582
   Caption = 'Relação Clientes'
-  ClientHeight = 240
-  ClientWidth = 466
+  ClientHeight = 300
+  ClientWidth = 582
+  DesignTimePPI = 120
   OnShow = FormShow
   LCLVersion = '3.2.0.0'
   object bitBtnImprimirRelClientes: TBitBtn
-    Left = 134
-    Height = 77
-    Top = 70
-    Width = 197
+    Left = 168
+    Height = 96
+    Top = 88
+    Width = 246
     Caption = ' Imprimir Relatorio'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
+    Font.Height = -20
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Images = ImageList1
@@ -28,8 +29,8 @@ object relClientesF: TrelClientesF
     DrawingStyle = dsTransparent
     Height = 32
     Width = 32
-    Left = 26
-    Top = 96
+    Left = 33
+    Top = 120
     Bitmap = {
       4C7A160000002000000020000000A73700000000000078DAED9D075C14C7F7C0
       97DE8F0E2A6201290AA258C0AE5862456CD8110BF6124B54D4D87B41ECA222F6
@@ -481,8 +482,8 @@ object relClientesF: TrelClientesF
   end
   object frDBDataSet1: TfrDBDataSet
     DataSet = qryRelClientes
-    Left = 173
-    Top = 13
+    Left = 216
+    Top = 16
   end
   object qryRelClientes: TZQuery
     Connection = dmF.ZConnection1
@@ -490,8 +491,8 @@ object relClientesF: TrelClientesF
       'select * from cliente'
     )
     Params = <>
-    Left = 320
-    Top = 13
+    Left = 400
+    Top = 16
     object qryRelClientesclienteid: TLongintField
       FieldKind = fkData
       FieldName = 'clienteid'
@@ -538,7 +539,7 @@ object relClientesF: TrelClientesF
     Options = []
     PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
     DataType = dtDataSet
-    Left = 58
-    Top = 13
+    Left = 73
+    Top = 16
   end
 end
