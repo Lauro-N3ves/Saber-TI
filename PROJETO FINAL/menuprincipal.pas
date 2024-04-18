@@ -5,7 +5,8 @@ unit menuPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria, CadCliente, cadProdutos, cadUsuario, Orcamento, relClientes;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria,
+  CadCliente, cadProdutos, cadUsuario, Orcamento, relClientes, relProdutos;
 
 type
 
@@ -106,6 +107,8 @@ end;
 
 procedure TMenuPrincipalF.subMnRelatoriosProdutosClick(Sender: TObject);
 begin
+  relProdutosF:= TrelProdutosF.Create(Self);
+  relProdutosF.ShowModal;
 
 end;
 

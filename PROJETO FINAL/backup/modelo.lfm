@@ -1,5 +1,5 @@
 object ModeloF: TModeloF
-  Left = 1069
+  Left = -1366
   Height = 571
   Top = 117
   Width = 876

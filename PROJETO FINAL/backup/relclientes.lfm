@@ -1,7 +1,7 @@
 object relClientesF: TrelClientesF
-  Left = 743
+  Left = -1292
   Height = 240
-  Top = 197
+  Top = 239
   Width = 466
   Caption = 'Relação Clientes'
   ClientHeight = 240
@@ -481,6 +481,7 @@ object relClientesF: TrelClientesF
   end
   object frDBDataSet1: TfrDBDataSet
     DataSet = qryRelClientes
+    OnCheckEOF = frDBDataSet1CheckEOF
     Left = 173
     Top = 13
   end

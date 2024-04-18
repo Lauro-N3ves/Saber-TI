@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, ZDataset, DB,
-  LR_DBSet, LR_Class, dataModel;
+  LR_DBSet, LR_Class, dataModel, LR_DSet;
 
 type
 
@@ -24,6 +24,7 @@ type
     qryRelClientestipo_cliente: TStringField;
     procedure bitBtnImprimirRelClientesClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure frDBDataSet1CheckEOF(Sender: TObject; var Eof: Boolean);
   private
 
   public
@@ -42,6 +43,11 @@ implementation
 procedure TrelClientesF.FormShow(Sender: TObject);
 begin
   qryRelClientes.Open;
+end;
+
+procedure TrelClientesF.frDBDataSet1CheckEOF(Sender: TObject; var Eof: Boolean);
+begin
+
 end;
 
 procedure TrelClientesF.bitBtnImprimirRelClientesClick(Sender: TObject);
