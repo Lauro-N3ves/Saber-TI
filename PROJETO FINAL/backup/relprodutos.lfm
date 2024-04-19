@@ -1,9 +1,9 @@
 object relProdutosF: TrelProdutosF
-  Left = 597
+  Left = 661
   Height = 362
-  Top = 394
+  Top = 204
   Width = 553
-  Caption = 'relProdutosF'
+  Caption = 'Relatório de Produtos'
   ClientHeight = 362
   ClientWidth = 553
   OnCreate = FormCreate

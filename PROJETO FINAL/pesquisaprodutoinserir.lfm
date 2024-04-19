@@ -1,27 +1,26 @@
 object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
-  Left = -1160
-  Height = 497
+  Left = 760
+  Height = 398
   Top = 178
-  Width = 666
+  Width = 533
   Caption = 'pesquisaProdutoInserirF'
-  ClientHeight = 497
-  ClientWidth = 666
-  DesignTimePPI = 120
+  ClientHeight = 398
+  ClientWidth = 533
   LCLVersion = '3.2.0.0'
   object pnlGridPesquisarProdInserir: TPanel
     Left = 0
-    Height = 497
+    Height = 398
     Top = 0
-    Width = 666
+    Width = 533
     Align = alClient
-    ClientHeight = 497
-    ClientWidth = 666
+    ClientHeight = 398
+    ClientWidth = 533
     TabOrder = 0
     object DBGrid1: TDBGrid
       Left = 1
-      Height = 432
-      Top = 64
-      Width = 664
+      Height = 346
+      Top = 51
+      Width = 531
       Align = alClient
       Color = clWindow
       Columns = <      
@@ -29,17 +28,17 @@ object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
           Alignment = taCenter
           Title.Alignment = taCenter
           Title.Caption = 'ID'
-          Width = 70
+          Width = 56
           FieldName = 'produtoid'
         end      
         item
           Title.Caption = 'Descrição Produto'
-          Width = 250
+          Width = 200
           FieldName = 'ds_produto'
         end      
         item
           Title.Caption = 'Observação Produto'
-          Width = 250
+          Width = 200
           FieldName = 'obs_produto'
         end>
       DataSource = dsPesquisaProdInserir
@@ -48,41 +47,41 @@ object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
     end
     object pnlPesquisarInserir: TPanel
       Left = 1
-      Height = 63
+      Height = 50
       Top = 1
-      Width = 664
+      Width = 531
       Align = alTop
-      ClientHeight = 63
-      ClientWidth = 664
+      ClientHeight = 50
+      ClientWidth = 531
       TabOrder = 1
       object edtPesquisarModelo: TEdit
-        Left = 32
-        Height = 28
-        Top = 30
-        Width = 224
+        Left = 26
+        Height = 23
+        Top = 24
+        Width = 179
         TabOrder = 0
       end
       object lblModeloPesquisar: TLabel
-        Left = 32
-        Height = 20
-        Top = 8
-        Width = 76
+        Left = 26
+        Height = 15
+        Top = 6
+        Width = 60
         Caption = 'PESQUISAR'
       end
       object cmbBoxModelo: TComboBox
-        Left = 304
-        Height = 28
-        Top = 24
-        Width = 145
-        ItemHeight = 20
+        Left = 243
+        Height = 23
+        Top = 19
+        Width = 116
+        ItemHeight = 15
         TabOrder = 1
         Text = 'filtro'
       end
       object bitBtnModeloPesquisar: TBitBtn
-        Left = 495
-        Height = 61
+        Left = 396
+        Height = 48
         Top = 1
-        Width = 168
+        Width = 134
         Align = alRight
         Caption = 'Pesquisar'
         Images = ImageList1
@@ -95,8 +94,8 @@ object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
     DrawingStyle = dsTransparent
     Height = 32
     Width = 32
-    Left = 274
-    Top = 414
+    Left = 219
+    Top = 331
     Bitmap = {
       4C7A160000002000000020000000A73700000000000078DAED9D075C14C7F7C0
       97DE8F0E2A6201290AA258C0AE5862456CD8110BF6124B54D4D87B41ECA222F6
@@ -548,18 +547,17 @@ object pesquisaProdutoInserirF: TpesquisaProdutoInserirF
   end
   object dsPesquisaProdInserir: TDataSource
     DataSet = qryPesquisaProdInserir
-    Left = 395
-    Top = 332
+    Left = 316
+    Top = 266
   end
   object qryPesquisaProdInserir: TZQuery
     Connection = dmF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select produtoid, ds_produto, obs_produto from produto'
     )
     Params = <>
-    Left = 160
-    Top = 288
+    Left = 128
+    Top = 230
     object qryPesquisaProdInserirprodutoid: TLongintField
       FieldKind = fkData
       FieldName = 'produtoid'

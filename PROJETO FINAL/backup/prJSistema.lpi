@@ -166,6 +166,20 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="relProdutos"/>
       </Unit>
+      <Unit>
+        <Filename Value="relorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relOrcamentoF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relOrcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relcategorias.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relCategoriasF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relCategorias"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

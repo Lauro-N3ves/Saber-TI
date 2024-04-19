@@ -1,5 +1,5 @@
 object pesquisaClienteCadOrcamentoF: TpesquisaClienteCadOrcamentoF
-  Left = -1744
+  Left = 176
   Height = 373
   Top = 411
   Width = 615

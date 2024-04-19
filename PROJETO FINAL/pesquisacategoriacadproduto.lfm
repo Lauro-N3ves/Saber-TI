@@ -1,11 +1,11 @@
 object pesquisaCategoriaCadProdutoF: TpesquisaCategoriaCadProdutoF
-  Left = 1079
+  Left = 782
   Height = 388
-  Top = 355
+  Top = 285
   Width = 745
   Caption = 'Pesquisa de Categoria'
-  ClientHeight = 388
-  ClientWidth = 745
+  ClientHeight = 0
+  ClientWidth = 0
   Font.CharSet = ANSI_CHARSET
   Font.Height = -14
   Font.Pitch = fpVariable

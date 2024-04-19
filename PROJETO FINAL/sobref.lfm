@@ -1,0 +1,27 @@
+object SobreForms: TSobreForms
+  Left = 572
+  Height = 431
+  Top = 274
+  Width = 487
+  Caption = 'Sobre esta Empresa'
+  ClientHeight = 431
+  ClientWidth = 487
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 431
+    Top = 0
+    Width = 487
+    Align = alClient
+    ClientHeight = 431
+    ClientWidth = 487
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Height = 345
+      Top = 32
+      Width = 478
+      Caption = 'Sobre Nossa Empresa'#13#10'Fundada no início do milênio, a AgroTech Soluções Sustentáveis tem se dedicado a '#13#10'revolucionar o campo da agronomia com inovações que respeitam tanto a natureza '#13#10'quanto as tradições agrícolas. Com mais de 20 anos de experiência, somos líderes'#13#10'em oferecer soluções que potencializam a produtividade agrícola de maneira sustentável.'#13#10#13#10'Desde a nossa fundação em 2001, nosso compromisso sempre foi com a excelência e '#13#10'com o avanço tecnológico voltado para a agricultura. Nossos produtos e serviços são '#13#10'desenvolvidos por uma equipe de especialistas altamente qualificados, incluindo'#13#10' agrônomos, biólogos e  engenheiros ambientais, todos apaixonados por contribuir para'#13#10' um futuro mais verde.'#13#10#13#10'Nossas iniciativas incluem desenvolvimento de fertilizantes orgânicos de alta performance,'#13#10' sistemas de irrigação otimizados para economia de água e projetos de consultoria '#13#10'personalizada para fazendas que buscam transformar suas operações e reduzir seu '#13#10'impacto ambiental. Atendemos clientes em todo o Brasil, sempre focados em entregar '#13#10'resultados que superem as expectativas.'#13#10#13#10'A AgroTech é mais do que uma empresa; somos uma comunidade de visionários que '#13#10'acredita na força da terra e no poder da inovação responsável. Venha fazer parte dessa'#13#10' história de sucesso e descubra como podemos ajudar você a alcançar novos horizontes '#13#10'em sua produção agrícola. '#13#10
+    end
+  end
+end

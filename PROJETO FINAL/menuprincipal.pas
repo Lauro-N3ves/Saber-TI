@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, modelo, CadCategoria,
-  CadCliente, cadProdutos, cadUsuario, Orcamento, relClientes, relProdutos;
+  CadCliente, cadProdutos, cadUsuario, Orcamento, relClientes, relProdutos, relOrcamento,
+  relCategorias, SobreF;
 
 type
 
@@ -33,11 +34,14 @@ type
     procedure FormCreate(Sender: TObject);
     procedure mnCadastroClick(Sender: TObject);
     procedure mnSairClick(Sender: TObject);
+    procedure mnSobreClick(Sender: TObject);
     procedure subMnCadastroCategoriaClick(Sender: TObject);
     procedure subMnCadastroClienteClick(Sender: TObject);
     procedure subMnCadastroProdutosClick(Sender: TObject);
     procedure subMnCadastroUsuariosClick(Sender: TObject);
+    procedure subMnRelatoriosCategoriasClick(Sender: TObject);
     procedure subMnRelatoriosClientesClick(Sender: TObject);
+    procedure subMnRelatoriosOrcamentoClick(Sender: TObject);
     procedure subMnRelatoriosProdutosClick(Sender: TObject);
     procedure subMnVendasOrcamentoClick(Sender: TObject);
   private
@@ -64,6 +68,7 @@ procedure TMenuPrincipalF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   CloseAction:=caFree;
+  Application.Terminate;
 end;
 
 procedure TMenuPrincipalF.mnCadastroClick(Sender: TObject);
@@ -73,6 +78,12 @@ begin
 procedure TMenuPrincipalF.mnSairClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TMenuPrincipalF.mnSobreClick(Sender: TObject);
+begin
+  SobreForms:=TSobreForms.Create(Self);
+  SobreForms.ShowModal;
 end;
 
 procedure TMenuPrincipalF.subMnCadastroCategoriaClick(Sender: TObject);
@@ -99,10 +110,22 @@ begin
   cadUsuarioF.ShowModal;
 end;
 
+procedure TMenuPrincipalF.subMnRelatoriosCategoriasClick(Sender: TObject);
+begin
+  relCategoriasF:=TrelCategoriasF.Create(Self);
+  relCategoriasF.ShowModal;
+end;
+
 procedure TMenuPrincipalF.subMnRelatoriosClientesClick(Sender: TObject);
 begin
   relClientesF:=TrelClientesF.Create(Self);
   relClientesF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.subMnRelatoriosOrcamentoClick(Sender: TObject);
+begin
+  relOrcamentoF:=TrelOrcamentoF.Create(Self);
+  relOrcamentoF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.subMnRelatoriosProdutosClick(Sender: TObject);

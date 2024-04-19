@@ -1,5 +1,5 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = -1120
+  Left = 800
   Height = 513
   Top = 115
   Width = 727

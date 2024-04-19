@@ -1,5 +1,5 @@
 inherited cadUsuarioF: TcadUsuarioF
-  Left = -1784
+  Left = 136
   Top = 158
   Caption = 'Cadastro de Usuário'
   OnCreate = FormCreate

@@ -1,9 +1,9 @@
 object relProdutosF: TrelProdutosF
-  Left = 597
+  Left = 528
   Height = 362
-  Top = 394
+  Top = 164
   Width = 553
-  Caption = 'relProdutosF'
+  Caption = 'Relatório de Produtos'
   ClientHeight = 362
   ClientWidth = 553
   OnCreate = FormCreate
@@ -482,6 +482,7 @@ object relProdutosF: TrelProdutosF
   end
   object qryRelProdutos: TZQuery
     Connection = dmF.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from produto'
     )

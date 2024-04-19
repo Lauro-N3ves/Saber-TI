@@ -1,7 +1,7 @@
 inherited OrcamentoF: TOrcamentoF
-  Left = -1807
+  Left = 157
   Height = 641
-  Top = 143
+  Top = 144
   Width = 1069
   Caption = 'Orçamento'
   ClientHeight = 641
@@ -225,9 +225,9 @@ inherited OrcamentoF: TOrcamentoF
           TabOrder = 6
         end
         object bitBtnRemover: TBitBtn[13]
-          Left = 783
+          Left = 712
           Height = 40
-          Top = 89
+          Top = 96
           Width = 136
           Align = alCustom
           Caption = 'Remover'
@@ -236,9 +236,9 @@ inherited OrcamentoF: TOrcamentoF
           TabOrder = 7
         end
         object bitBtnAdicionar: TBitBtn[14]
-          Left = 632
+          Left = 714
           Height = 38
-          Top = 89
+          Top = 72
           Width = 134
           Caption = 'Adicionar'
           Images = ImageList1
