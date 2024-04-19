@@ -1,11 +1,12 @@
 object relClientesF: TrelClientesF
-  Left = -1292
+  Left = 1294
   Height = 240
-  Top = 239
+  Top = 204
   Width = 466
   Caption = 'Relação Clientes'
   ClientHeight = 240
   ClientWidth = 466
+  OnCreate = FormCreate
   OnShow = FormShow
   LCLVersion = '3.2.0.0'
   object bitBtnImprimirRelClientes: TBitBtn

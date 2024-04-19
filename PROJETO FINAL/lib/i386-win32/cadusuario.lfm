@@ -1,12 +1,17 @@
 inherited cadUsuarioF: TcadUsuarioF
-  Left = 237
-  Top = 181
+  Left = -1784
+  Top = 158
   Caption = 'Cadastro de Usuário'
   OnCreate = FormCreate
   inherited PageControl1: TPageControl
     ActivePage = tbPesquisa
     TabIndex = 0
     inherited tbPesquisa: TTabSheet
+      inherited pnlPesquisa: TPanel
+        inherited bitBtnModeloPesquisar: TBitBtn
+          OnClick = bitBtnModeloPesquisarClick
+        end
+      end
       inherited pnlGrid: TPanel
         inherited dbGridModelo: TDBGrid
           Columns = <          

@@ -23,6 +23,7 @@ type
     qryRelClientesnome_cliente: TStringField;
     qryRelClientestipo_cliente: TStringField;
     procedure bitBtnImprimirRelClientesClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure frDBDataSet1CheckEOF(Sender: TObject; var Eof: Boolean);
   private
@@ -52,9 +53,14 @@ end;
 
 procedure TrelClientesF.bitBtnImprimirRelClientesClick(Sender: TObject);
 begin
-   frReport1.LoadFromFile('relClientes.lrf');
+   frReport1.LoadFromFile('relclientes.lrf');
    frReport1.PrepareReport;
    frReport1.ShowReport;
+end;
+
+procedure TrelClientesF.FormCreate(Sender: TObject);
+begin
+
 end;
 
 end.

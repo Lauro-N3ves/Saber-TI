@@ -1,7 +1,7 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 1143
+  Left = -1120
   Height = 513
-  Top = 142
+  Top = 115
   Width = 727
   Caption = 'Cadastro de Categoria'
   ClientHeight = 513
@@ -12,6 +12,8 @@ inherited CadCategoriaF: TCadCategoriaF
   inherited PageControl1: TPageControl
     Height = 513
     Width = 727
+    ActivePage = tbPesquisa
+    TabIndex = 0
     OnChange = PageControl1Change
     inherited tbPesquisa: TTabSheet
       ClientHeight = 479
